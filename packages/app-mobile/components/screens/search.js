@@ -12,7 +12,7 @@ const { themeStyle } = require('../global-style.js');
 const DialogBox = require('react-native-dialogbox').default;
 const SearchEngineUtils = require('@joplin/lib/services/searchengine/SearchEngineUtils').default;
 const SearchEngine = require('@joplin/lib/services/searchengine/SearchEngine').default;
-
+import lod from 'lodash';
 Icon.loadFont();
 
 class SearchScreenComponent extends BaseScreenComponent {
@@ -25,6 +25,8 @@ class SearchScreenComponent extends BaseScreenComponent {
 		this.state = {
 			query: '',
 			notes: [],
+			allNotes: [],
+			filterNotes: [],
 		};
 		this.isMounted_ = false;
 		this.styles_ = {};
@@ -64,7 +66,7 @@ class SearchScreenComponent extends BaseScreenComponent {
 	}
 
 	componentDidMount() {
-		this.setState({ query: this.props.query });
+		this.setState({ query: this.props.query, allNotes: this.props.items, filterNotes: this.props.items });
 		this.refreshSearch(this.props.query);
 		this.isMounted_ = true;
 	}
@@ -136,6 +138,15 @@ class SearchScreenComponent extends BaseScreenComponent {
 
 	searchTextInput_changeText(text) {
 		this.setState({ query: text });
+
+		const data = lod.filter(this.state.allNotes, item =>{
+			 if (item.title.toLowerCase().includes(text.toLowerCase())) {
+				 return true;
+			 }
+			 return false;
+		});
+		this.setState({ filterNotes: data });
+		console.log('here is the valuse filterd :', this.state.filterNotes);
 	}
 
 	render() {
@@ -175,7 +186,10 @@ class SearchScreenComponent extends BaseScreenComponent {
 							onSubmitEditing={() => {
 								this.searchTextInput_submit();
 							}}
-							onChangeText={text => this.searchTextInput_changeText(text)}
+							onChangeText={text =>
+
+								this.searchTextInput_changeText(text)}
+
 							value={this.state.query}
 							selectionColor={theme.textSelectionColor}
 							keyboardAppearance={theme.keyboardAppearance}
@@ -185,7 +199,7 @@ class SearchScreenComponent extends BaseScreenComponent {
 						</TouchableHighlight>
 					</View>
 
-					<FlatList data={this.state.notes} keyExtractor={(item) => item.id} renderItem={event => <NoteItem note={event.item} />} />
+					<FlatList data={this.state.filterNotes} keyExtractor={(item) => item.id} renderItem={({ item }) => <NoteItem note={item} />} />
 				</View>
 				<DialogBox
 					ref={dialogbox => {
@@ -199,6 +213,7 @@ class SearchScreenComponent extends BaseScreenComponent {
 
 const SearchScreen = connect(state => {
 	return {
+		items: state.notes,
 		query: state.searchQuery,
 		themeId: state.settings.theme,
 		settings: state.settings,
