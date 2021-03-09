@@ -1,21 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR Laurent Cozic
-# This file is distributed under the same license as the Joplin-CLI package.
+# This file is distributed under the same license as the Joplin package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Joplin-CLI 1.0.0\n"
+"Project-Id-Version: Joplin 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: konhi <hello.konhi@gmail.com>\n"
+"Last-Translator: Vyacheslav Andreykiv <vandreykiv@gmail.com>\n"
 "Language-Team: \n"
-"Language: pl_PL\n"
+"Language: uk_UA\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
 "X-Generator: Poedit 2.4.2\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
-"|| n%100>14) ? 1 : 2);\n"
 
 #: packages/app-desktop/bridge.js:106 packages/app-desktop/bridge.js:110
 #: packages/app-desktop/bridge.js:126 packages/app-desktop/bridge.js:134
@@ -55,13 +55,14 @@ msgstr "OK"
 #: packages/app-mobile/components/screens/Note.js:506
 #: packages/lib/shim-init-node.js:148
 msgid "Cancel"
-msgstr "Anuluj"
+msgstr "Скасувати"
 
 #: packages/app-desktop/bridge.js:188
 msgid ""
 "The app is now going to close. Please relaunch it to complete the process."
 msgstr ""
-"Aplikacja zostanie teraz zamknięta. Uruchom ją ponownie, aby ukończyć proces."
+"Додаток зараз буде закрито. Будь ласка, перезапустіть його, щоб завершити "
+"процес."
 
 #: packages/app-desktop/plugins/GotoAnything.js:431
 msgid ""
@@ -69,80 +70,80 @@ msgid ""
 "by a tag name, or @ followed by a notebook name. Or type : to search for "
 "commands."
 msgstr ""
-"Wpisz tytuł notatki lub jej fragment, aby do niej przejść. Możesz także "
-"wpisać #, a po nim nazwę tagu lub @, a następnie nazwę notatnika. Lub "
-"wpisz : aby wyszukać polecenia."
+"Введіть заголовок нотатки або частину її вмісту, щоб перейти до неї. Або "
+"введіть # а потім ім'я тега, або @, а потім ім'я блокнота. Або введіть : для "
+"пошуку команд."
 
 #: packages/app-desktop/plugins/GotoAnything.js:456
 #: packages/app-desktop/gui/KeymapConfig/utils/getLabel.js:20
 msgid "Goto Anything..."
-msgstr "Idź do..."
+msgstr "Перейти будь-куди…"
 
 #: packages/app-desktop/plugins/GotoAnything.js:463
 #: packages/app-desktop/gui/KeymapConfig/utils/getLabel.js:28
 msgid "Command palette"
-msgstr "Paleta komend"
+msgstr "Командна палітра"
 
 #: packages/app-desktop/InteropServiceHelper.js:154
 #, javascript-format
 msgid "Exporting to \"%s\" as \"%s\" format. Please wait..."
-msgstr "Eksportowanie do \"%s\" jako \"%s\". Proszę czekać..."
+msgstr "Експортування до \"%s\" у форматі \"%s\". Будь ласка, зачекайте…"
 
 #: packages/app-desktop/InteropServiceHelper.js:174
 #, javascript-format
 msgid "Could not export notes: %s"
-msgstr "Nie udało się wyeksportować notatek: %s"
+msgstr "Не вдалося експортувати примітки: %s"
 
 #: packages/app-desktop/checkForUpdates.js:138
 msgid "Current version is up-to-date."
-msgstr "Obecna wersja jest aktualna."
+msgstr "Поточна версія є оновленою."
 
 #: packages/app-desktop/checkForUpdates.js:148
 #, javascript-format
 msgid "%s (pre-release)"
-msgstr "%s (przedpremiera)"
+msgstr "%s (попередній випуск)"
 
 #: packages/app-desktop/checkForUpdates.js:152
 msgid "An update is available, do you want to download it now?"
-msgstr "Aktualizacja jest dostępna, czy chcesz ją pobrać?"
+msgstr "Доступне оновлення, ви хочете завантажити його зараз?"
 
 #: packages/app-desktop/checkForUpdates.js:153
 #, javascript-format
 msgid "Your version: %s"
-msgstr "Twoja wersja: %s"
+msgstr "Ваша версія: %s"
 
 #: packages/app-desktop/checkForUpdates.js:153
 #, javascript-format
 msgid "New version: %s"
-msgstr "Nowa wersja: %s"
+msgstr "Нова версія: %s"
 
 #: packages/app-desktop/checkForUpdates.js:154
 msgid "Download"
-msgstr "Pobierz"
+msgstr "Завантажити"
 
 #: packages/app-desktop/checkForUpdates.js:154
 msgid "Full Release Notes"
-msgstr "Całe informacje o wersji / opis zmian"
+msgstr "Повні примітки до випуску"
 
 #: packages/app-desktop/gui/NoteRevisionViewer.min.js:75
 #, javascript-format
 msgid "The note \"%s\" has been successfully restored to the notebook \"%s\"."
-msgstr "Notatka \"%s\" została pomyślnie przywrócona do notatnika \"%s\"."
+msgstr "Примітку “%s” успішно відновлено до блокнота “%s”."
 
 #: packages/app-desktop/gui/NoteRevisionViewer.min.js:100
 msgid "This note has no history"
-msgstr "Notatka nie posiada historii"
+msgstr "Ця примітка не має історії"
 
 #: packages/app-desktop/gui/NoteRevisionViewer.min.js:142
 #: packages/app-desktop/gui/NoteEditor/utils/useMessageHandler.js:122
 #, javascript-format
 msgid "Unsupported link or message: %s"
-msgstr "Niewspierany odnośnik lub wiadomość: %s"
+msgstr "Непідтримуване посилання або повідомлення: %s"
 
 #: packages/app-desktop/gui/NoteRevisionViewer.min.js:177
 #: packages/app-desktop/gui/KeymapConfig/ShortcutRecorder.js:51
 msgid "Restore"
-msgstr "Przywróć"
+msgstr "Відновити"
 
 #: packages/app-desktop/gui/NoteRevisionViewer.min.js:178
 #, javascript-format
@@ -150,20 +151,19 @@ msgid ""
 "Click \"%s\" to restore the note. It will be copied in the notebook named "
 "\"%s\". The current version of the note will not be replaced or modified."
 msgstr ""
-"Naciśnij \"%s\" aby przywrócić notatkę. Zostanie ona skopiowana do notatnika "
-"o nazwie \"%s\". Obecna wersja notatki nie zostanie nadpisana lub "
-"zmodyfikowana."
+"Натисніть “%s”, щоб відновити нотатку. Вона буде скопійована у блокнот із "
+"назвою “%s”. Поточна версія примітки не буде замінена або змінена."
 
 #: packages/app-desktop/gui/NoteRevisionViewer.min.js:187
 #: packages/app-desktop/gui/ConfigScreen/ConfigScreen.js:535
 #: packages/app-desktop/gui/ConfigScreen/ButtonBar.js:30
 #: packages/lib/commands/historyBackward.js:17
 msgid "Back"
-msgstr "Cofnij"
+msgstr "Назад"
 
 #: packages/app-desktop/gui/Sidebar/Sidebar.js:176
 msgid "Remove"
-msgstr "Usuń"
+msgstr "Видалити"
 
 #: packages/app-desktop/gui/Sidebar/Sidebar.js:179
 #: packages/app-mobile/components/side-menu-content.js:148
@@ -173,10 +173,9 @@ msgid ""
 "\n"
 "All notes and sub-notebooks within this notebook will also be deleted."
 msgstr ""
-"Usunąć notatnik \"%s:?\n"
+"Видалити блокнот “%s”?\n"
 "\n"
-"Wszystkie notatki i notatniki podrzędne zawarte w tym notatniku także "
-"zostaną usunięte."
+"Усі нотатки та блокноти в цьому блокноті також будуть видалені."
 
 #: packages/app-desktop/gui/Sidebar/Sidebar.js:180
 #: packages/app-desktop/gui/utils/NoteListUtils.js:140
@@ -187,39 +186,39 @@ msgstr ""
 #: packages/app-mobile/components/side-menu-content.js:146
 #: packages/app-mobile/components/screens/Note.js:830
 msgid "Delete"
-msgstr "Usuń"
+msgstr "Видалити"
 
 #: packages/app-desktop/gui/Sidebar/Sidebar.js:184
 #, javascript-format
 msgid "Remove tag \"%s\" from all notes?"
-msgstr "Usunąć znacznik \"%s\" ze wszystkich notatek?"
+msgstr "Видалити тег “%s” з усіх нотаток?"
 
 #: packages/app-desktop/gui/Sidebar/Sidebar.js:187
 msgid "Remove this search from the sidebar?"
-msgstr "Usunąć wyszukiwanie z nawigatora?"
+msgstr "Видалити цей пошук із бічної панелі?"
 
 #: packages/app-desktop/gui/Sidebar/Sidebar.js:238
 #: packages/app-desktop/gui/KeymapConfig/KeymapConfigScreen.js:122
 #: packages/app-desktop/gui/utils/NoteListUtils.js:136
 msgid "Export"
-msgstr "Eksportuj"
+msgstr "Експорт"
 
 #: packages/app-desktop/gui/Sidebar/Sidebar.js:301
 #: packages/app-mobile/components/side-menu-content.js:360
 #: packages/app-mobile/components/screens/notes.js:188
 msgid "All notes"
-msgstr "Wszystkie notatki"
+msgstr "Всі нотатки"
 
 #: packages/app-desktop/gui/Sidebar/Sidebar.js:430
 #: packages/app-mobile/components/side-menu-content.js:338
 #: packages/lib/commands/synchronize.js:18
 msgid "Synchronise"
-msgstr "Synchronizuj"
+msgstr "Синхронізувати"
 
 #: packages/app-desktop/gui/Sidebar/Sidebar.js:455
 #: packages/app-mobile/components/side-menu-content.js:364
 msgid "Notebooks"
-msgstr "Notatniki"
+msgstr "Блокноти"
 
 #: packages/app-desktop/gui/Sidebar/Sidebar.js:467
 #: packages/app-desktop/gui/MainScreen/commands/setTags.js:17
@@ -227,23 +226,23 @@ msgstr "Notatniki"
 #: packages/app-mobile/components/screens/tags.js:101
 #: packages/app-mobile/components/screens/Note.js:803
 msgid "Tags"
-msgstr "Znaczniki"
+msgstr "Теги"
 
 #: packages/app-desktop/gui/Sidebar/Sidebar.js:478
 #: packages/app-mobile/components/side-menu-content.js:325
 #, javascript-format
 msgid "Decrypting items: %d/%d"
-msgstr "Deszyfrowanie obiektów %d/%d"
+msgstr "Дешифрування елементів: %d/%d"
 
 #: packages/app-desktop/gui/Sidebar/Sidebar.js:482
 #: packages/app-mobile/components/side-menu-content.js:330
 #, javascript-format
 msgid "Fetching resources: %d/%d"
-msgstr "Pobieranie zasobów: %d/%d"
+msgstr "Завантаження ресурсів: %d/%d"
 
 #: packages/app-desktop/gui/Sidebar/commands/focusElementSideBar.js:17
 msgid "Sidebar"
-msgstr "Nawigator"
+msgstr "Бічна панель"
 
 #: packages/app-desktop/gui/Sidebar/commands/focusElementSideBar.js:18
 #: packages/app-desktop/gui/NoteEditor/commands/focusElementNoteTitle.js:17
@@ -251,43 +250,43 @@ msgstr "Nawigator"
 #: packages/app-desktop/gui/MenuBar.js:614
 #: packages/app-desktop/gui/NoteList/commands/focusElementNoteList.js:18
 msgid "Focus"
-msgstr "Wyszczególnienie"
+msgstr "Фокус"
 
 #: packages/app-desktop/gui/StatusScreen/StatusScreen.js:26
 msgid "Please select where the sync status should be exported to"
-msgstr "Proszę wybrać gdzie powinen zostać eksportowany status synchronizacji"
+msgstr "Виберіть, куди слід експортувати статус синхронізації"
 
 #: packages/app-desktop/gui/StatusScreen/StatusScreen.js:61
 #: packages/app-mobile/components/screens/status.js:112
 msgid "Retry All"
-msgstr "Ponów wszystko"
+msgstr "Повторити всі"
 
 #: packages/app-desktop/gui/StatusScreen/StatusScreen.js:78
 #: packages/app-mobile/components/screens/status.js:118
 msgid "Retry"
-msgstr "Ponów"
+msgstr "Повторити"
 
 #: packages/app-desktop/gui/NoteEditor/NoteBody/CodeMirror/CodeMirror.js:178
 msgid "strong text"
-msgstr "pogrubienie"
+msgstr "жирний текст"
 
 #: packages/app-desktop/gui/NoteEditor/NoteBody/CodeMirror/CodeMirror.js:179
 msgid "emphasised text"
-msgstr "wyszczególnienie"
+msgstr "підкреслення"
 
 #: packages/app-desktop/gui/NoteEditor/NoteBody/CodeMirror/CodeMirror.js:181
 msgid "Insert Hyperlink"
-msgstr "Wstaw Hyperlink"
+msgstr "Вставити Посилання"
 
 #: packages/app-desktop/gui/NoteEditor/NoteBody/CodeMirror/CodeMirror.js:215
 #: packages/app-desktop/gui/NoteEditor/NoteBody/CodeMirror/CodeMirror.js:217
 #: packages/app-desktop/gui/NoteEditor/NoteBody/CodeMirror/CodeMirror.js:218
 msgid "List item"
-msgstr "Obiekt listy"
+msgstr "Елемент списку"
 
 #: packages/app-desktop/gui/NoteEditor/NoteBody/CodeMirror/CodeMirror.js:496
 msgid "Layout"
-msgstr "Układ"
+msgstr "Макет"
 
 #: packages/app-desktop/gui/NoteEditor/NoteBody/CodeMirror/CodeMirror.js:496
 #, javascript-format
@@ -295,64 +294,64 @@ msgid ""
 "This note has no content. Click on \"%s\" to toggle the editor and edit the "
 "note."
 msgstr ""
-"Notatka nie posiada zawartości. Naciśnik na \"%s\" aby przełączyć edytor i "
-"edytować notatkę."
+"Ця примітка не має вмісту. Клацніть на “%s”, щоб переключити редактор та "
+"редагувати нотатку."
 
 #: packages/app-desktop/gui/NoteEditor/NoteBody/CodeMirror/CodeMirror.js:605
 #: packages/app-desktop/gui/NoteEditor/utils/contextMenu.js:97
 #: packages/app-desktop/gui/NoteEditor/commands/editorCommandDeclarations.js:18
 msgid "Cut"
-msgstr "Wytnij"
+msgstr "Вирізати"
 
 #: packages/app-desktop/gui/NoteEditor/NoteBody/CodeMirror/CodeMirror.js:612
 #: packages/app-desktop/gui/NoteEditor/utils/contextMenu.js:105
 #: packages/app-desktop/gui/NoteEditor/commands/editorCommandDeclarations.js:13
 #: packages/app-desktop/gui/MenuBar.js:373
 msgid "Copy"
-msgstr "Kopiuj"
+msgstr "Копіювати"
 
 #: packages/app-desktop/gui/NoteEditor/NoteBody/CodeMirror/CodeMirror.js:619
 #: packages/app-desktop/gui/NoteEditor/utils/contextMenu.js:112
 #: packages/app-desktop/gui/NoteEditor/commands/editorCommandDeclarations.js:23
 msgid "Paste"
-msgstr "Wklej"
+msgstr "Вставити"
 
 #: packages/app-desktop/gui/NoteEditor/NoteBody/TinyMCE/plugins/lists.js:2151
 msgid "Checkbox list"
-msgstr "Lista checkboxów"
+msgstr "Маркований список"
 
 #: packages/app-desktop/gui/NoteEditor/NoteBody/TinyMCE/TinyMCE.js:530
 #: packages/app-desktop/gui/ConfigScreen/ConfigScreen.js:452
 #: packages/app-mobile/components/screens/Note.js:1013
 msgid "Edit"
-msgstr "Edytuj"
+msgstr "Редагувати"
 
 #: packages/app-desktop/gui/NoteEditor/NoteBody/TinyMCE/TinyMCE.js:586
 #: packages/app-desktop/gui/NoteEditor/commands/editorCommandDeclarations.js:53
 #: packages/app-mobile/components/screens/Note.js:771
 msgid "Attach file"
-msgstr "Załącz plik"
+msgstr "Прикріпити файл"
 
 #: packages/app-desktop/gui/NoteEditor/NoteBody/TinyMCE/TinyMCE.js:595
 msgid "Code Block"
-msgstr "Blok kodu"
+msgstr "Блок коду"
 
 #: packages/app-desktop/gui/NoteEditor/NoteBody/TinyMCE/TinyMCE.js:604
 msgid "Inline Code"
-msgstr "Kod w linii"
+msgstr "Вбудований код"
 
 #: packages/app-desktop/gui/NoteEditor/NoteBody/TinyMCE/TinyMCE.js:619
 #: packages/app-desktop/gui/NoteEditor/commands/editorCommandDeclarations.js:83
 msgid "Insert Date Time"
-msgstr "Wstaw stempel czasowy"
+msgstr "Вставити дату"
 
 #: packages/app-desktop/gui/NoteEditor/NoteBody/TinyMCE/TinyMCE.js:1013
 msgid "Drop notes or files here"
-msgstr "Upuść notatki lub pliki tutaj"
+msgstr "Перетягніть сюди нотатки або файли"
 
 #: packages/app-desktop/gui/NoteEditor/NoteBody/TinyMCE/TinyMCE.js:1013
 msgid "Code View"
-msgstr "Widok kodu"
+msgstr "Вбудований код"
 
 #: packages/app-desktop/gui/NoteEditor/NoteBody/TinyMCE/TinyMCE.js:1013
 #, javascript-format
@@ -360,173 +359,174 @@ msgid ""
 "Please wait for all attachments to be downloaded and decrypted. You may also "
 "switch to %s to edit the note."
 msgstr ""
-"Poczekaj na pobranie I odszyfrowanie wszystkich załączników. Możesz też "
-"przenieść się do %s żeby edytować notatkę."
+"Зачекайте, доки всі вкладення буде завантажено та розшифровено. Ви також "
+"можете перейти до %s, щоб відредагувати примітку."
 
 #: packages/app-desktop/gui/NoteEditor/utils/useMessageHandler.js:74
 msgid "There was an error downloading this attachment:"
-msgstr "Wystąpił błąd pobierania załącznika:"
+msgstr "Під час завантаження цього вкладення сталася помилка:"
 
 #: packages/app-desktop/gui/NoteEditor/utils/useMessageHandler.js:77
 #: packages/lib/services/ResourceEditWatcher/index.js:196
 msgid "This attachment is not downloaded or not decrypted yet"
-msgstr "Załącznik nie został jeszcze pobrany lub deszyfrowany"
+msgstr "Це вкладення ще не завантажено або ще не розшифроване"
 
 #: packages/app-desktop/gui/NoteEditor/utils/contextMenu.js:55
 msgid "Open..."
-msgstr "Otwórz..."
+msgstr "Відкрити..."
 
 #: packages/app-desktop/gui/NoteEditor/utils/contextMenu.js:68
 msgid "Save as..."
-msgstr "Zapisz jako..."
+msgstr "Зберегти як..."
 
 #: packages/app-desktop/gui/NoteEditor/utils/contextMenu.js:81
 msgid "Reveal file in folder"
-msgstr "Odkryj plik w folderze"
+msgstr "Показати файл у папці"
 
 #: packages/app-desktop/gui/NoteEditor/utils/contextMenu.js:89
 msgid "Copy path to clipboard"
-msgstr "Skopiuj ścieżkę do schowka"
+msgstr "Копіювати шлях до буфера обміну"
 
 #: packages/app-desktop/gui/NoteEditor/utils/contextMenu.js:120
 msgid "Copy Link Address"
-msgstr "Skopiuj adres odnośnika"
+msgstr "Копіювати адресу посилання"
 
 #: packages/app-desktop/gui/NoteEditor/NoteTitle/NoteTitleBar.js:79
 msgid "to-do"
-msgstr "zadanie"
+msgstr "справи"
 
 #: packages/app-desktop/gui/NoteEditor/NoteTitle/NoteTitleBar.js:79
 msgid "note"
-msgstr "notatka"
+msgstr "нотатка"
 
 #: packages/app-desktop/gui/NoteEditor/NoteTitle/NoteTitleBar.js:79
 #, javascript-format
 msgid "Creating new %s..."
-msgstr "Tworzenie nowego %s..."
+msgstr "Створення нового %s…"
 
 #: packages/app-desktop/gui/NoteEditor/NoteEditor.js:284
 msgid "Click to add tags..."
-msgstr "Kliknij aby dodać tagi..."
+msgstr "Клацніть, щоб додати теги..."
 
 #: packages/app-desktop/gui/NoteEditor/NoteEditor.js:337
 msgid ""
 "This Rich Text editor has a number of limitations and it is recommended to "
 "be aware of them before using it."
 msgstr ""
-"Ten edytor tekstu sformatowanego ma wiele ograniczeń i zaleca się, abyś był "
-"ich świadomy przed jego użyciem."
+"Цей редактор форматованого тексту має ряд обмежень, і рекомендується знати "
+"про них, перш ніж використовувати його."
 
 #: packages/app-desktop/gui/NoteEditor/NoteEditor.js:341
 msgid "Read more about it"
-msgstr "Czytaj więcej"
+msgstr "Дізнайтеся більше про це"
 
 #: packages/app-desktop/gui/NoteEditor/NoteEditor.js:346
 msgid "Dismiss"
-msgstr "Anuluj"
+msgstr "Відхилити"
 
 #: packages/app-desktop/gui/NoteEditor/NoteEditor.js:382
 msgid "The following attachments are being watched for changes:"
-msgstr "Następujące załączniki są obserwowane pod kątem zmian:"
+msgstr "Наступні вкладення переглядаються для змін:"
 
 #: packages/app-desktop/gui/NoteEditor/NoteEditor.js:385
 msgid ""
 "The attachments will no longer be watched when you switch to a different "
 "note."
-msgstr "Załączniki nie będą obserwowane gdy przejdziesz do innej notatki."
+msgstr ""
+"Вкладення більше не будуть переглядатись, коли ви перейдете на іншу нотатку."
 
 #: packages/app-desktop/gui/NoteEditor/NoteEditor.js:391
 #, javascript-format
 msgid "In: %s"
-msgstr "W: %s"
+msgstr "У: %s"
 
 #: packages/app-desktop/gui/NoteEditor/commands/editorCommandDeclarations.js:28
 msgid "Select all"
-msgstr "Wybierz wszystko"
+msgstr "Вибрати все"
 
 #: packages/app-desktop/gui/NoteEditor/commands/editorCommandDeclarations.js:33
 msgid "Bold"
-msgstr "Pogrubienie"
+msgstr "Жирний"
 
 #: packages/app-desktop/gui/NoteEditor/commands/editorCommandDeclarations.js:38
 msgid "Italic"
-msgstr "Kursywa"
+msgstr "Курсив"
 
 #: packages/app-desktop/gui/NoteEditor/commands/editorCommandDeclarations.js:43
 msgid "Hyperlink"
-msgstr "Hyperlink"
+msgstr "Посилання"
 
 #: packages/app-desktop/gui/NoteEditor/commands/editorCommandDeclarations.js:48
 msgid "Code"
-msgstr "Kod"
+msgstr "Код"
 
 #: packages/app-desktop/gui/NoteEditor/commands/editorCommandDeclarations.js:58
 msgid "Numbered List"
-msgstr "Lista numerowana"
+msgstr "Нумерований список"
 
 #: packages/app-desktop/gui/NoteEditor/commands/editorCommandDeclarations.js:63
 msgid "Bulleted List"
-msgstr "Lista punktowa"
+msgstr "Маркований список"
 
 #: packages/app-desktop/gui/NoteEditor/commands/editorCommandDeclarations.js:68
 msgid "Checkbox"
-msgstr "Pole wyboru"
+msgstr "Маркування"
 
 #: packages/app-desktop/gui/NoteEditor/commands/editorCommandDeclarations.js:73
 msgid "Heading"
-msgstr "Nagłówek"
+msgstr "Заголовок"
 
 #: packages/app-desktop/gui/NoteEditor/commands/editorCommandDeclarations.js:78
 msgid "Horizontal Rule"
-msgstr "Linia horyzontalna"
+msgstr "Горизонтальна лінія"
 
 #: packages/app-desktop/gui/NoteEditor/commands/editorCommandDeclarations.js:88
 msgid "Delete line"
-msgstr "Usuń wiersz"
+msgstr "Видалити лінію"
 
 #: packages/app-desktop/gui/NoteEditor/commands/editorCommandDeclarations.js:92
 msgid "Undo"
-msgstr "Cofnij"
+msgstr "Сказувати"
 
 #: packages/app-desktop/gui/NoteEditor/commands/editorCommandDeclarations.js:96
 msgid "Redo"
-msgstr "Przywróć"
+msgstr "Відмінити"
 
 #: packages/app-desktop/gui/NoteEditor/commands/editorCommandDeclarations.js:100
 msgid "Indent less"
-msgstr "Usuń akapit"
+msgstr "Зменшити відступ"
 
 #: packages/app-desktop/gui/NoteEditor/commands/editorCommandDeclarations.js:104
 msgid "Indent more"
-msgstr "Wstaw akapit"
+msgstr "Збільшити відступ"
 
 #: packages/app-desktop/gui/NoteEditor/commands/editorCommandDeclarations.js:108
 msgid "Toggle comment"
-msgstr "Wstaw komentarz"
+msgstr "Переключити коментар"
 
 #: packages/app-desktop/gui/NoteEditor/commands/editorCommandDeclarations.js:112
 msgid "Sort selected lines"
-msgstr "Sortuj zaznaczone linie"
+msgstr "Відсортувати вибрані рядки"
 
 #: packages/app-desktop/gui/NoteEditor/commands/editorCommandDeclarations.js:116
 msgid "Swap line up"
-msgstr "Zamień z linią powyżej"
+msgstr "Замінити місцями вгору"
 
 #: packages/app-desktop/gui/NoteEditor/commands/editorCommandDeclarations.js:120
 msgid "Swap line down"
-msgstr "Zamień z linią poniżej"
+msgstr "Замінити місцями до низу"
 
 #: packages/app-desktop/gui/NoteEditor/commands/focusElementNoteTitle.js:16
 msgid "Note title"
-msgstr "Tytuł notatki"
+msgstr "Заголовок нотатки"
 
 #: packages/app-desktop/gui/NoteEditor/commands/showLocalSearch.js:16
 msgid "Search in current note"
-msgstr "Wyszukaj w obecnej notatce"
+msgstr "Пошук в поточній нотатці"
 
 #: packages/app-desktop/gui/NoteEditor/commands/focusElementNoteBody.js:16
 msgid "Note body"
-msgstr "Zawartość notatki"
+msgstr "Тіло нотатки"
 
 #: packages/app-desktop/gui/NotePropertiesDialog.min.js:27
 #: packages/app-desktop/gui/EncryptionConfigScreen.min.js:164
@@ -539,31 +539,31 @@ msgstr "ID"
 #: packages/app-desktop/gui/NotePropertiesDialog.min.js:28
 #: packages/app-desktop/gui/EncryptionConfigScreen.min.js:319
 msgid "Created"
-msgstr "Utworzono"
+msgstr "Створено"
 
 #: packages/app-desktop/gui/NotePropertiesDialog.min.js:29
 #: packages/app-desktop/gui/EncryptionConfigScreen.min.js:324
 #: packages/app-desktop/gui/ConfigScreen/controls/plugins/PluginBox.js:141
 #: packages/app-desktop/gui/ConfigScreen/controls/plugins/PluginBox.js:143
 msgid "Updated"
-msgstr "Zaaktualizowano"
+msgstr "Оновлено"
 
 #: packages/app-desktop/gui/NotePropertiesDialog.min.js:30
 msgid "Completed"
-msgstr "Ukończono"
+msgstr "Закінчено"
 
 #: packages/app-desktop/gui/NotePropertiesDialog.min.js:31
 msgid "Location"
-msgstr "Lokacja"
+msgstr "Розташування"
 
 #: packages/app-desktop/gui/NotePropertiesDialog.min.js:32
 msgid "URL"
-msgstr "Odnośnik"
+msgstr "Посилання"
 
 #: packages/app-desktop/gui/NotePropertiesDialog.min.js:33
 #: packages/lib/models/Setting.js:1528
 msgid "Note History"
-msgstr "Historia notatek"
+msgstr "Історія нотатки"
 
 #: packages/app-desktop/gui/NotePropertiesDialog.min.js:34
 msgid "Markup"
@@ -571,105 +571,105 @@ msgstr "Markup"
 
 #: packages/app-desktop/gui/NotePropertiesDialog.min.js:306
 msgid "Previous versions of this note"
-msgstr "Poprzednie wersje notatki"
+msgstr "Попередні версії даної нотатки"
 
 #: packages/app-desktop/gui/NotePropertiesDialog.min.js:383
 #: packages/app-desktop/gui/MainScreen/commands/showNoteProperties.js:18
 msgid "Note properties"
-msgstr "Właściwośći notatki"
+msgstr "Властивості нотатки"
 
 #: packages/app-desktop/gui/KeymapConfig/KeymapConfigScreen.js:63
 #: packages/lib/services/KeymapService.js:176
 #, javascript-format
 msgid "Error: %s"
-msgstr "Błąd: %s"
+msgstr "Помилка: %s"
 
 #: packages/app-desktop/gui/KeymapConfig/KeymapConfigScreen.js:110
 #: packages/app-desktop/gui/EncryptionConfigScreen.min.js:443
 #: packages/app-mobile/components/screens/encryption-config.js:280
 #: packages/lib/models/Setting.js:750 packages/app-cli/app/command-e2ee.js:110
 msgid "Disabled"
-msgstr "Deaktywowano"
+msgstr "Відключено"
 
 #: packages/app-desktop/gui/KeymapConfig/KeymapConfigScreen.js:120
 #: packages/app-desktop/gui/NoteSearchBar.min.js:168
 #: packages/app-desktop/gui/lib/SearchInput/SearchInput.js:38
 msgid "Search..."
-msgstr "Wyszukaj..."
+msgstr "Пошук…"
 
 #: packages/app-desktop/gui/KeymapConfig/KeymapConfigScreen.js:121
 #: packages/app-desktop/gui/MenuBar.js:429
 #: packages/app-desktop/gui/MenuBar.js:476 packages/app-desktop/gui/Root.js:99
 msgid "Import"
-msgstr "Zaimportuj"
+msgstr "Імпорт"
 
 #: packages/app-desktop/gui/KeymapConfig/KeymapConfigScreen.js:126
 msgid "Command"
-msgstr "Komenda"
+msgstr "Команда"
 
 #: packages/app-desktop/gui/KeymapConfig/KeymapConfigScreen.js:127
 msgid "Keyboard Shortcut"
-msgstr "Skrót klawiszowy"
+msgstr "Комбінація клавіш"
 
 #: packages/app-desktop/gui/KeymapConfig/utils/getLabel.js:14
 #: packages/app-desktop/gui/MenuBar.js:212 packages/app-desktop/app.js:367
 msgid "Quit"
-msgstr "Wyjdź"
+msgstr "Вихід"
 
 #: packages/app-desktop/gui/KeymapConfig/utils/getLabel.js:16
 #: packages/app-desktop/gui/MenuBar.js:316
 msgid "Insert template"
-msgstr "Wstaw szablon"
+msgstr "Вставити шаблон"
 
 #: packages/app-desktop/gui/KeymapConfig/utils/getLabel.js:18
 #: packages/app-desktop/gui/MenuBar.js:575
 msgid "Actual Size"
-msgstr "Rozmiar rzeczywisty"
+msgstr "Фактичний розмір"
 
 #: packages/app-desktop/gui/KeymapConfig/utils/getLabel.js:22
 #: packages/app-desktop/gui/MenuBar.js:636
 msgid "Website and documentation"
-msgstr "Strona internetowa i dokumentacja"
+msgstr "Вебсайт та документація"
 
 #: packages/app-desktop/gui/KeymapConfig/utils/getLabel.js:24
 msgid "Hide Joplin"
-msgstr "Ukryj okno aplikacji"
+msgstr "Сховати Joplin"
 
 #: packages/app-desktop/gui/KeymapConfig/utils/getLabel.js:26
 #: packages/app-desktop/gui/MenuBar.js:464
 msgid "Close Window"
-msgstr "Zamknij okno"
+msgstr "Закрити вікно"
 
 #: packages/app-desktop/gui/KeymapConfig/utils/getLabel.js:30
 msgid "Preferences"
-msgstr "Ustawienia"
+msgstr "Налаштування"
 
 #: packages/app-desktop/gui/KeymapConfig/utils/getLabel.js:30
 #: packages/app-desktop/gui/MenuBar.js:340 packages/app-desktop/gui/Root.js:100
 msgid "Options"
-msgstr "Opcje"
+msgstr "Властивості"
 
 #: packages/app-desktop/gui/KeymapConfig/utils/getLabel.js:37
 msgid "Invalid"
-msgstr "Nieprawidłowy"
+msgstr "Хибний"
 
 #: packages/app-desktop/gui/KeymapConfig/ShortcutRecorder.js:49
 msgid "Press the shortcut"
-msgstr "Naciśnij skrót klawiszowy"
+msgstr "Натисніть комбінацію клавіш"
 
 #: packages/app-desktop/gui/KeymapConfig/ShortcutRecorder.js:49
 msgid ""
 "Press the shortcut and then press ENTER. Or, press BACKSPACE to clear the "
 "shortcut."
 msgstr ""
-"Naciśnij skrót klawiszowy, a następnie ENTER aby potwierdzić. Naciśnij "
-"BACKSPACE aby wyczyścić skrót."
+"Натисніть комбінацію клавіш і потім ENTER. Або натисніть BACKSPACE щоб "
+"очистити комбінацію."
 
 #: packages/app-desktop/gui/KeymapConfig/ShortcutRecorder.js:50
 #: packages/app-desktop/gui/EncryptionConfigScreen.min.js:96
 #: packages/app-mobile/components/screens/encryption-config.js:125
 msgid "Save"
-msgstr "Zapisz"
+msgstr "Зберегти"
 
 #: packages/app-desktop/gui/MainScreen/MainScreen.js:405
 msgid ""
@@ -677,166 +677,167 @@ msgid ""
 "may take a few minutes to complete and the app needs to be restarted. To "
 "proceed please click on the link."
 msgstr ""
-"Cel synchronizacji wymaga aktualizacji zanim Joplin może się "
-"zsynchronizować. Ta operacja może zająć kilka minut po czym aplikacja będzie "
-"wymagać ponownego uruchomienia. Kliknij w link aby kontynuować."
+"Цілі синхронізації потрібно оновити, перш ніж Joplin зможе синхронізувати. "
+"Завершення операції може зайняти кілька хвилин і програму потрібно "
+"перезапустити. Щоб продовжити, натисніть на посилання."
 
 #: packages/app-desktop/gui/MainScreen/MainScreen.js:407
 msgid "Restart and upgrade"
-msgstr "Uruchom ponownie i aktualizuj"
+msgstr "Перезапустити і оновити"
 
 #: packages/app-desktop/gui/MainScreen/MainScreen.js:411
 msgid "Some items cannot be synchronised."
-msgstr "Niektóre przedmioty nie mogą być zsynchornizowane."
+msgstr "Деякі елементи не можуть бути синхронізовані."
 
 #: packages/app-desktop/gui/MainScreen/MainScreen.js:413
 #: packages/app-desktop/gui/MainScreen/MainScreen.js:419
 #: packages/app-desktop/gui/MainScreen/MainScreen.js:431
 msgid "View them now"
-msgstr "Wyświetl je teraz"
+msgstr "Показати елемент зараз"
 
 #: packages/app-desktop/gui/MainScreen/MainScreen.js:417
 msgid "Some items cannot be decrypted."
-msgstr "Niektóre obiekty nie mogą być odszyfrowane."
+msgstr "Деякі елементи не можуть бути дешифровані."
 
 #: packages/app-desktop/gui/MainScreen/MainScreen.js:423
 msgid "One or more master keys need a password."
-msgstr "Jeden lub więcej master kluczy potrzebuję hasła."
+msgstr "Один або більше мастер-ключів потребують пароль."
 
 #: packages/app-desktop/gui/MainScreen/MainScreen.js:425
 msgid "Set the password"
-msgstr "Ustaw hasło"
+msgstr "Встановити пароль"
 
 #: packages/app-desktop/gui/MainScreen/MainScreen.js:429
 msgid "One of your master keys use an obsolete encryption method."
-msgstr "Jedno z twoich master kluczy ma przestarzałą metode szyfrowanie."
+msgstr "Один з ваших мастер-ключів використовує застарілий метод шифрування."
 
 #: packages/app-desktop/gui/MainScreen/MainScreen.js:435
 msgid ""
 "The default encryption method has been changed, you should re-encrypt your "
 "data."
 msgstr ""
-"Zmieniono domyślną metodę szyfrowania, należy ponownie zaszyfrować dane."
+"Метод шифрування за замовчуванням змінено, вам слід повторно зашифрувати "
+"дані."
 
 #: packages/app-desktop/gui/MainScreen/MainScreen.js:437
 msgid "More info"
-msgstr "Więcej informacji"
+msgstr "Більше інформації"
 
 #: packages/app-desktop/gui/MainScreen/MainScreen.js:559
 msgid "Use the arrows to move the layout items. Press \"Escape\" to exit."
 msgstr ""
-"Używaj strzałek aby poruszać elementami układu. Wciśnij \"Escape\" aby wyjść."
+"Використовуйте стрілки для переміщення елементів макета. Натисніть “Escape”, "
+"щоб вийти."
 
 #: packages/app-desktop/gui/MainScreen/commands/showNoteContentProperties.js:18
 msgid "Statistics..."
-msgstr "Statystyki…"
+msgstr "Статистика…"
 
 #: packages/app-desktop/gui/MainScreen/commands/renameFolder.js:18
 #: packages/app-desktop/gui/MainScreen/commands/renameTag.js:18
 #: packages/app-mobile/components/side-menu-content.js:129
 msgid "Rename"
-msgstr "Zmień nazwę"
+msgstr "Переіменувати"
 
 #: packages/app-desktop/gui/MainScreen/commands/renameFolder.js:28
 msgid "Rename notebook:"
-msgstr "Zmień nazwę notatnika:"
+msgstr "Переіменувати блокнот:"
 
 #: packages/app-desktop/gui/MainScreen/commands/newTodo.js:17
 #: packages/app-mobile/components/action-button.js:77
 #: packages/app-mobile/setUpQuickActions.js:15
 msgid "New to-do"
-msgstr "Nowe zadanie"
+msgstr "Нове завдання"
 
 #: packages/app-desktop/gui/MainScreen/commands/toggleNoteList.js:18
 msgid "Toggle note list"
-msgstr "Przełącz listę notatek"
+msgstr "Переключити список нотаток"
 
 #: packages/app-desktop/gui/MainScreen/commands/toggleSideBar.js:18
 msgid "Toggle sidebar"
-msgstr "Przełącz nawigator"
+msgstr "Переключити бокову панель"
 
 #: packages/app-desktop/gui/MainScreen/commands/editAlarm.js:20
 #: packages/app-mobile/components/SelectDateTimeDialog.js:84
 #: packages/app-mobile/components/screens/Note.js:789
 msgid "Set alarm"
-msgstr "Ustaw powiadomienie"
+msgstr "Налаштувати будильник"
 
 #: packages/app-desktop/gui/MainScreen/commands/editAlarm.js:33
 msgid "Set alarm:"
-msgstr "Ustaw powiadomienie:"
+msgstr "Налаштувати будильник:"
 
 #: packages/app-desktop/gui/MainScreen/commands/exportPdf.js:20
 #: packages/app-desktop/gui/MainScreen/commands/exportPdf.js:32
 msgid "PDF File"
-msgstr "Plik PDF"
+msgstr "PDF файл"
 
 #: packages/app-desktop/gui/MainScreen/commands/newNote.js:20
 #: packages/app-mobile/components/action-button.js:86
 #: packages/app-mobile/setUpQuickActions.js:14
 msgid "New note"
-msgstr "Nowa notatka"
+msgstr "Нова нотатка"
 
 #: packages/app-desktop/gui/MainScreen/commands/moveToFolder.js:18
 msgid "Move to notebook"
-msgstr "Przenieś do notatnika"
+msgstr "Перемістити в блокнот"
 
 #: packages/app-desktop/gui/MainScreen/commands/moveToFolder.js:38
 msgid "Move to notebook:"
-msgstr "Przenieś do notatnika:"
+msgstr "Перемістити в блокнот:"
 
 #: packages/app-desktop/gui/MainScreen/commands/toggleVisiblePanes.js:16
 msgid "Toggle editor layout"
-msgstr "Przełącz układ edytora"
+msgstr "Переключити макет редактора"
 
 #: packages/app-desktop/gui/MainScreen/commands/toggleEditors.js:18
 msgid "Toggle editors"
-msgstr "Włącz edytor"
+msgstr "Переключити редактори"
 
 #: packages/app-desktop/gui/MainScreen/commands/toggleLayoutMoveMode.js:16
 msgid "Change application layout"
-msgstr "Zmień układ aplikacji"
+msgstr "Змінити макет програми"
 
 #: packages/app-desktop/gui/MainScreen/commands/renameTag.js:30
 msgid "Rename tag:"
-msgstr "Zmień nazwę znacznika:"
+msgstr "Переіменувати тег:"
 
 #: packages/app-desktop/gui/MainScreen/commands/newFolder.js:18
 msgid "New notebook"
-msgstr "Nowy notatnik"
+msgstr "Новий блокнот"
 
 #: packages/app-desktop/gui/MainScreen/commands/newFolder.js:26
 msgid "Notebook title:"
-msgstr "Tytuł notatnika:"
+msgstr "Заголовок блокнота:"
 
 #: packages/app-desktop/gui/MainScreen/commands/showSpellCheckerMenu.js:19
 #: packages/lib/services/spellChecker/SpellCheckerService.js:180
 msgid "Spell checker"
-msgstr "Sprawdzanie pisowni"
+msgstr "Перевірка правопису"
 
 #: packages/app-desktop/gui/MainScreen/commands/showShareNoteDialog.js:16
 msgid "Share note..."
-msgstr "Udostępnij notatke..."
+msgstr "Поділитися нотаткою…"
 
 #: packages/app-desktop/gui/MainScreen/commands/newSubFolder.js:17
 msgid "New sub-notebook"
-msgstr "Nowy podnotatnik"
+msgstr "Повий вкладений блокнот"
 
 #: packages/app-desktop/gui/MainScreen/commands/selectTemplate.js:24
 msgid "Template file:"
-msgstr "Plik szablonu:"
+msgstr "Файл шаблону:"
 
 #: packages/app-desktop/gui/MainScreen/commands/setTags.js:45
 msgid "Add or remove tags:"
-msgstr "Dodaj lub usuń znaczniki:"
+msgstr "Додати або видалити теги:"
 
 #: packages/app-desktop/gui/MainScreen/commands/print.js:17
 msgid "Print"
-msgstr "Drukuj"
+msgstr "Друкувати"
 
-# Not sure about wydrukowana\drukowana here
 #: packages/app-desktop/gui/MainScreen/commands/print.js:26
 msgid "Only one note can be printed at a time."
-msgstr "Tylko jedna notatka może być wydrukowana w tym samym czasie."
+msgstr "Лише однв нотатка може бути роздрукована за раз."
 
 #: packages/app-desktop/gui/DropboxLoginScreen.js:29
 #: packages/app-mobile/components/screens/dropbox-login.js:58
@@ -844,72 +845,73 @@ msgstr "Tylko jedna notatka może być wydrukowana w tym samym czasie."
 msgid ""
 "To allow Joplin to synchronise with Dropbox, please follow the steps below:"
 msgstr ""
-"Aby pozwolić Joplin na synchronizację z Dropbox, proszę kieruj się krokami "
-"poniżej:"
+"Щоб дозволити Joplin синхронізуватися з Dropbox, виконайте наведені нижче "
+"дії:"
 
 #: packages/app-desktop/gui/DropboxLoginScreen.js:30
 #: packages/app-mobile/components/screens/dropbox-login.js:59
 #: packages/app-cli/app/command-sync.js:91
 msgid "Step 1: Open this URL in your browser to authorise the application:"
 msgstr ""
-"Krok 1: Otwórz odnośnik w swojej przeglądarce aby autoryzować aplikację:"
+"Крок 1: Відкрийте цю URL-адресу у своєму браузері, щоб авторизувати програму:"
 
 #: packages/app-desktop/gui/DropboxLoginScreen.js:32
 #: packages/app-mobile/components/screens/dropbox-login.js:65
 #: packages/app-cli/app/command-sync.js:93
 msgid "Step 2: Enter the code provided by Dropbox:"
-msgstr "Krok 2: Wpisz kod podany przez Dropbox:"
+msgstr "Крок 2: Введіть код, наданий Dropbox:"
 
 #: packages/app-desktop/gui/DropboxLoginScreen.js:35
 #: packages/app-mobile/components/screens/dropbox-login.js:68
 msgid "Submit"
-msgstr "Wyślij"
+msgstr "Підтвердити"
 
 #: packages/app-desktop/gui/ClipperConfigScreen.min.js:39
 msgid "Token has been copied to the clipboard!"
-msgstr "Token został skopiowany do schowka!"
+msgstr "Токен скопійовано в буфер обміну!"
 
 #: packages/app-desktop/gui/ClipperConfigScreen.min.js:71
 msgid "The web clipper service is enabled and set to auto-start."
-msgstr "Usługa Web Clipper musi być aktywna i ustawiona na autouruchamianie."
+msgstr "Сервіс web clipper увімкнено та встановлено на автоматичний запуск."
 
 #: packages/app-desktop/gui/ClipperConfigScreen.min.js:78
 #, javascript-format
 msgid "Status: Started on port %d"
-msgstr "Status: Uruchomiono w porcie %d"
+msgstr "Статус: Запущено з порту %d"
 
 #: packages/app-desktop/gui/ClipperConfigScreen.min.js:84
 #, javascript-format
 msgid "Status: %s"
-msgstr "Status: %s"
+msgstr "Статус: %s"
 
 #: packages/app-desktop/gui/ClipperConfigScreen.min.js:90
 msgid "Disable Web Clipper Service"
-msgstr "Deaktywuj usługę Web Clipper"
+msgstr "Відключити сервіс Web Clipper"
 
 #: packages/app-desktop/gui/ClipperConfigScreen.min.js:96
 msgid "The web clipper service is not enabled."
-msgstr "Usługa Web Clipper nie jest aktywowana."
+msgstr "Сервіс web clipper не ввімкнено."
 
 #: packages/app-desktop/gui/ClipperConfigScreen.min.js:101
 msgid "Enable Web Clipper Service"
-msgstr "Aktywuj usługę Web Clipper"
+msgstr "Ввімкнути Web Clipper сервіс"
 
 #: packages/app-desktop/gui/ClipperConfigScreen.min.js:124
 msgid ""
 "Joplin Web Clipper allows saving web pages and screenshots from your browser "
 "to Joplin."
 msgstr ""
-"Joplin Web Clipper umożliwia zapisywanie stron internetowych i zrzutów "
-"ekranu z Twojej przeglądarki do Joplin."
+"Joplin Web Clipper дозволяє зберігати веб-сторінки та знімки екрана з вашого "
+"браузера в Joplin."
 
 #: packages/app-desktop/gui/ClipperConfigScreen.min.js:129
 msgid "In order to use the web clipper, you need to do the following:"
-msgstr "Aby używać Web Clipper, należy wykonać następujące czynności:"
+msgstr ""
+"Для того, щоб використовувати web clipper, вам потрібно виконати наступне:"
 
 #: packages/app-desktop/gui/ClipperConfigScreen.min.js:137
 msgid "Step 1: Enable the clipper service"
-msgstr "Krok 1: Aktywuj usługę Clipper"
+msgstr "Крок 1: Увімкніть clipper сервіс"
 
 #: packages/app-desktop/gui/ClipperConfigScreen.min.js:142
 msgid ""
@@ -917,156 +919,156 @@ msgid ""
 "enabling it your firewall may ask you to give permission to Joplin to listen "
 "to a particular port."
 msgstr ""
-"Ta usługa umożliwia rozszerzeniu do przeglądarki komunikować się  z Joplin. "
-"Kiedy zostanie aktywowana, zapora systemowa może zapytać o uprawnienia dla "
-"Joplin w celu nasłuchiwania na określonym porcie."
+"Ця послуга дозволяє розширенню браузера спілкуватися з Joplin. Увімкнувши "
+"його, ваш брандмауер може попросити вас надати дозвіл Joplin прослуховувати "
+"певний порт."
 
 #: packages/app-desktop/gui/ClipperConfigScreen.min.js:156
 msgid "Step 2: Install the extension"
-msgstr "Krok 2: Zainstaluj rozszerzenie"
+msgstr "Крок 2: Встановіть розширення"
 
 #: packages/app-desktop/gui/ClipperConfigScreen.min.js:161
 msgid "Download and install the relevant extension for your browser:"
-msgstr "Pobierz i zainstaluj odpowiednie rozszerzenie dla Twojej przeglądarki:"
+msgstr "Завантажте та встановіть відповідне розширення для вашого браузера:"
 
 #: packages/app-desktop/gui/ClipperConfigScreen.min.js:176
 msgid "Advanced options"
-msgstr "Opcje zaawansowane"
+msgstr "Розширені опції"
 
 #: packages/app-desktop/gui/ClipperConfigScreen.min.js:181
 msgid "Authorisation token:"
-msgstr "Token uwierzytelniający:"
+msgstr "Токен авторизації:"
 
 #: packages/app-desktop/gui/ClipperConfigScreen.min.js:191
 msgid "Copy token"
-msgstr "Skopiuj token"
+msgstr "Скопіювати токен"
 
 #: packages/app-desktop/gui/ClipperConfigScreen.min.js:197
 msgid ""
 "This authorisation token is only needed to allow third-party applications to "
 "access Joplin."
 msgstr ""
-"Token uwierzytelniający jest potrzebny jedynie w celu pozwolenia aplikacjom "
-"firm trzecich na dostęp do Joplin."
+"Цей токен авторизації потрібен лише для того, щоб сторонні програми могли "
+"отримувати доступ до Joplin."
 
 #: packages/app-desktop/gui/MenuBar.js:166
 #, javascript-format
 msgid "Importing from \"%s\" as \"%s\" format. Please wait..."
-msgstr "Importowanie z \"%s\"  jako \"%s\". Proszę czekać..."
+msgstr "Імпортування з “%s” в форматі “%s”. Будь ласка, зачекайте…"
 
 #: packages/app-desktop/gui/MenuBar.js:287 packages/app-desktop/gui/Root.js:102
 msgid "Synchronisation Status"
-msgstr "Status synchronizacji"
+msgstr "Статус синхронізації"
 
 #: packages/app-desktop/gui/MenuBar.js:306
 msgid "Create note from template"
-msgstr "Stwórz notatkę z szablonu"
+msgstr "Створити нотатку з шаблону"
 
 #: packages/app-desktop/gui/MenuBar.js:311
 msgid "Create to-do from template"
-msgstr "Utwórz notatkę z szablonu"
+msgstr "Створити список справ з шаблону"
 
 #: packages/app-desktop/gui/MenuBar.js:322
 msgid "Open template directory"
-msgstr "Otwórz katalog szablonów"
+msgstr "Відкрити каталог шаблонів"
 
 #: packages/app-desktop/gui/MenuBar.js:327
 msgid "Refresh templates"
-msgstr "Odśwież szablony"
+msgstr "Оновити шаблони"
 
 #: packages/app-desktop/gui/MenuBar.js:353
 msgid "Note attachments..."
-msgstr "Załączniki notatek..."
+msgstr "Вкладення нотаток…"
 
 #: packages/app-desktop/gui/MenuBar.js:384
 #: packages/app-desktop/gui/MenuBar.js:456
 #: packages/app-desktop/gui/MenuBar.js:746
 msgid "&File"
-msgstr "&Plik"
+msgstr "&Файл"
 
 #: packages/app-desktop/gui/MenuBar.js:390
 #: packages/app-desktop/gui/MenuBar.js:668
 msgid "About Joplin"
-msgstr "O aplikacji Joplin"
+msgstr "Про Joplin"
 
 #: packages/app-desktop/gui/MenuBar.js:397
 msgid "Preferences..."
-msgstr "Preferencje..."
+msgstr "Налаштування…"
 
 #: packages/app-desktop/gui/MenuBar.js:407
 #: packages/app-desktop/gui/MenuBar.js:646
 msgid "Check for updates..."
-msgstr "Sprawdź dostępność aktualizacji..."
+msgstr "Перевірити наявність оновлень…"
 
 #: packages/app-desktop/gui/MenuBar.js:422
 #: packages/app-desktop/gui/MenuBar.js:471
 msgid "Templates"
-msgstr "Szablony"
+msgstr "Шаблони"
 
 #: packages/app-desktop/gui/MenuBar.js:433
 #: packages/app-desktop/gui/MenuBar.js:479
 msgid "Export all"
-msgstr "Eksportuj wszystko"
+msgstr "Експортувати все"
 
 #: packages/app-desktop/gui/MenuBar.js:445
 #, javascript-format
 msgid "Hide %s"
-msgstr "Schowaj %s"
+msgstr "Сховати %s"
 
 #: packages/app-desktop/gui/MenuBar.js:502
 #: packages/app-desktop/gui/MenuBar.js:750
 msgid "&Edit"
-msgstr "&Edytuj"
+msgstr "&Редактувати"
 
 #: packages/app-desktop/gui/MenuBar.js:533
 msgid "&View"
-msgstr "&Wyświetl"
+msgstr "&Перегляд"
 
 #: packages/app-desktop/gui/MenuBar.js:541
 msgid "Layout button sequence"
-msgstr "Układ przycisków"
+msgstr "Послідовність кнопок макета"
 
 #: packages/app-desktop/gui/MenuBar.js:586
 #: packages/app-desktop/gui/MenuBar.js:592
 msgid "Zoom In"
-msgstr "Powiększ"
+msgstr "Збільшити"
 
 #: packages/app-desktop/gui/MenuBar.js:599
 msgid "Zoom Out"
-msgstr "Pomniejsz"
+msgstr "Зменшити"
 
 #: packages/app-desktop/gui/MenuBar.js:608
 msgid "&Go"
-msgstr "&Go"
+msgstr "&Перейти"
 
 #: packages/app-desktop/gui/MenuBar.js:620
 msgid "&Note"
-msgstr "&Notatka"
+msgstr "&Нотатка"
 
 #: packages/app-desktop/gui/MenuBar.js:629
 msgid "&Tools"
-msgstr "N&arzędzia"
+msgstr "&Інструменти"
 
 #: packages/app-desktop/gui/MenuBar.js:633
 msgid "&Help"
-msgstr "&Pomoc"
+msgstr "&Допомога"
 
 #: packages/app-desktop/gui/MenuBar.js:640
 msgid "Joplin Forum"
-msgstr "Forum Joplin"
+msgstr "Форум Joplin"
 
 #: packages/app-desktop/gui/MenuBar.js:643
 #: packages/app-mobile/components/screens/config.js:495
 msgid "Make a donation"
-msgstr "Przekaż datek"
+msgstr "Зробити пожертву"
 
 #: packages/app-desktop/gui/MenuBar.js:655
 msgid "Toggle development tools"
-msgstr "Włącz/wyłącz narzędzia programistyczne"
+msgstr "Перемикач інструментів розробника"
 
 #: packages/app-desktop/gui/ExtensionBadge.min.js:10
 msgid "Firefox Extension"
-msgstr "Rozszerzenie Firefoxa"
+msgstr "Рощширення Firefox"
 
 #: packages/app-desktop/gui/ExtensionBadge.min.js:17
 msgid "Chrome Web Store"
@@ -1074,106 +1076,102 @@ msgstr "Chrome Web Store"
 
 #: packages/app-desktop/gui/ExtensionBadge.min.js:44
 msgid "Get it now:"
-msgstr "Pobierz teraz:"
+msgstr "Отримати зараз:"
 
 #: packages/app-desktop/gui/ImportScreen.min.js:61
 #, javascript-format
 msgid ""
 "New notebook \"%s\" will be created and file \"%s\" will be imported into it"
-msgstr ""
-"Nowy notatnik \"%s\" zostanie utworzony i plik \"%s\" zostanie do niego "
-"zaimportowany"
+msgstr "Новий блокнот “%s” буде створено і файл “%s” буде імпортовано в нього"
 
 #: packages/app-desktop/gui/ImportScreen.min.js:68
 #: packages/app-cli/app/command-import.js:47
 #, javascript-format
 msgid "Found: %d."
-msgstr "Znaleziono: %d."
+msgstr "Знайдено: %d."
 
 #: packages/app-desktop/gui/ImportScreen.min.js:69
 #: packages/app-cli/app/command-import.js:48
 #, javascript-format
 msgid "Created: %d."
-msgstr "Utworzono: %d."
+msgstr "Створено: %d."
 
 #: packages/app-desktop/gui/ImportScreen.min.js:70
 #: packages/app-cli/app/command-import.js:49
 #, javascript-format
 msgid "Updated: %d."
-msgstr "Zaaktualizowano: %d."
+msgstr "Оновлено: %d."
 
 #: packages/app-desktop/gui/ImportScreen.min.js:71
 #: packages/app-cli/app/command-import.js:50
 #, javascript-format
 msgid "Skipped: %d."
-msgstr "Pominięto: %d."
+msgstr "Пропущено: %d."
 
 #: packages/app-desktop/gui/ImportScreen.min.js:72
 #: packages/app-cli/app/command-import.js:51
 #, javascript-format
 msgid "Resources: %d."
-msgstr "Zasoby: %d."
+msgstr "Ресурси: %d."
 
 #: packages/app-desktop/gui/ImportScreen.min.js:73
 #: packages/app-cli/app/command-import.js:52
 #, javascript-format
 msgid "Tagged: %d."
-msgstr "Oznaczone: %d."
+msgstr "З тегами: %d."
 
 #: packages/app-desktop/gui/ImportScreen.min.js:88
 #: packages/app-cli/app/command-import.js:70
 #, javascript-format
 msgid "The notes have been imported: %s"
-msgstr "Notatki zostały zaimportowane: %s"
+msgstr "Імпортовано нотаток: %s"
 
 #: packages/app-desktop/gui/utils/NoteListUtils.js:44
 msgid "Duplicate"
-msgstr "Duplikuj"
+msgstr "Дублікат"
 
 #: packages/app-desktop/gui/utils/NoteListUtils.js:49
 #, javascript-format
 msgid "%s - Copy"
-msgstr "%s - Kopiuj"
+msgstr "%s - Копіювати"
 
 #: packages/app-desktop/gui/utils/NoteListUtils.js:60
 msgid "Switch between note and to-do type"
-msgstr "Przełącz pomiędzy notatką a zadaniem"
+msgstr "Переключення між нотаткою і списком справ"
 
 #: packages/app-desktop/gui/utils/NoteListUtils.js:88
 msgid "Switch to note type"
-msgstr "Przełącz na notatkę"
+msgstr "Переключити до нотатки"
 
 #: packages/app-desktop/gui/utils/NoteListUtils.js:94
 msgid "Switch to to-do type"
-msgstr "Przełącz na zadanie"
+msgstr "Переключити до списку справ"
 
 #: packages/app-desktop/gui/utils/NoteListUtils.js:101
 #: packages/app-mobile/components/screens/Note.js:817
 msgid "Copy Markdown link"
-msgstr "Skopiuj odnośnik Markdown"
+msgstr "Скопіювати Markdown посилання"
 
 #: packages/app-desktop/gui/utils/NoteListUtils.js:163
 #, javascript-format
 msgid "Delete note \"%s\"?"
-msgstr "Usunąć notatkę \"%s\"?"
+msgstr "Видалити нотатку “%s”?"
 
 #: packages/app-desktop/gui/utils/NoteListUtils.js:166
 #, javascript-format
 msgid "Delete these %d notes?"
-msgstr "Usunąć %d notatki?"
+msgstr "Видалити ці %d нотаток?"
 
 #: packages/app-desktop/gui/OneDriveLoginScreen.js:46
 #: packages/app-cli/app/command-sync.js:81
 #: packages/app-cli/app/command-sync.js:95
 msgid ""
 "Authentication was not completed (did not receive an authentication token)."
-msgstr ""
-"Uwierzytelnianie nie zostało ukończone (nie otrzymano tokena "
-"uwierzytalniającego)."
+msgstr "Автентифікація не була завершена (не отримано токен автентифікації)."
 
 #: packages/app-desktop/gui/EncryptionConfigScreen.min.js:145
 msgid "Master keys that need upgrading"
-msgstr "Klucze główne do aktualizacji"
+msgstr "Мастер ключі, які потребують оновлення"
 
 #: packages/app-desktop/gui/EncryptionConfigScreen.min.js:150
 msgid ""
@@ -1181,34 +1179,34 @@ msgid ""
 "recommended to upgrade them. The upgraded master key will still be able to "
 "decrypt and encrypt your data as usual."
 msgstr ""
-"Następujące klucze główne używają przestarzałego algorytmu szyfrowania i "
-"zaleca się ich aktualizację. Zaktualizowane klucze główne będą nadal mogły "
-"szyfrować i odszyfrować twoje dane."
+"Наступні мастер ключі використовують застарілий алгоритм шифрування, і "
+"рекомендується їх оновити. Оновлений мастер ключ все одно зможе розшифрувати "
+"та зашифрувати ваші дані, як зазвичай."
 
 #: packages/app-desktop/gui/EncryptionConfigScreen.min.js:169
 msgid "Upgrade"
-msgstr "Aktualizacja"
+msgstr "Оновлення"
 
 #: packages/app-desktop/gui/EncryptionConfigScreen.min.js:182
 msgid "Re-encrypt data"
-msgstr "Ponownie zaszyfruj dane"
+msgstr "Перезашифрувати дані"
 
 #: packages/app-desktop/gui/EncryptionConfigScreen.min.js:184
 msgid ""
 "The default encryption method has been changed to a more secure one and it "
 "is recommended that you apply it to your data."
 msgstr ""
-"Domyślna metoda szyfrowania została zmieniona na bezpieczniejszą i zaleca "
-"się zastosowanie jej do twoich danych."
+"Метод шифрування за замовчуванням змінено на більш безпечний, і "
+"рекомендується застосовувати його до своїх даних."
 
 #: packages/app-desktop/gui/EncryptionConfigScreen.min.js:184
 msgid ""
 "You may use the tool below to re-encrypt your data, for example if you know "
 "that some of your notes are encrypted with an obsolete encryption method."
 msgstr ""
-"Możesz skorzystać z narzędzia poniżej żeby ponownie zaszyfrować swoje dane, "
-"na przykład jeśli wiesz że część twoich notatek jest szyfrowana przestarzałą "
-"metodą."
+"Ви можете скористатися наведеним нижче інструментом для повторного "
+"шифрування даних, наприклад, якщо ви знаєте, що деякі ваші нотатки "
+"зашифровані застарілим методом шифрування."
 
 #: packages/app-desktop/gui/EncryptionConfigScreen.min.js:186
 #, javascript-format
@@ -1227,27 +1225,27 @@ msgid ""
 "\n"
 "Important: you only need to run this ONCE on one device."
 msgstr ""
-"Aby to zrobić należy zaszyfrować i zsynchronizować wszystkie twoje dane, "
-"więc najlepiej będzie zrobić to przez noc.\n"
+"Для цього весь ваш набір даних доведеться зашифрувати та синхронізувати, "
+"тому найкраще запустити його на ніч.\n"
 "\n"
-"Aby rozpocząć postępuj zgodnie z instrukcją:\n"
+"Для початку виконайте такі вказівки:\n"
 "\n"
-"1. Zsynchronizuj wszystkie swoje urządzenia.\n"
-"2. Naciśnij \"%s\".\n"
-"3. Poczekaj na zakończenie. W trakcie tego procesu postaraj się nie zmieniać "
-"żadnych notatek na swoich urządzeniach, aby uniknąć błędów.\n"
-"4. Kiedy synchronizacja się zakończy na tym urządzeniu, zsynchronizuj inne "
-"urządzenia.\n"
+"1. Синхронізуйте всі свої пристрої.\n"
+"2. Клацніть “% s”.\n"
+"3. Нехай він працює до кінця. Поки він працює, уникайте зміни будь-якої "
+"нотатки на інших пристроях, щоб уникнути конфліктів.\n"
+"4. Після завершення синхронізації на цьому пристрої синхронізуйте всі інші "
+"пристрої та дайте йому завершитися.\n"
 "\n"
-"Ważne: musisz wykonać powyższe kroki tylko RAZ na jednym urządzeniu."
+"Важливо: вам потрібно запустити ЦЕ ОДНАЗ на одному пристрої."
 
 #: packages/app-desktop/gui/EncryptionConfigScreen.min.js:198
 msgid "Re-encryption"
-msgstr "Ponowne szyfrowanie"
+msgstr "Перешифрування"
 
 #: packages/app-desktop/gui/EncryptionConfigScreen.min.js:213
 msgid "Ignore"
-msgstr "Ignoruj"
+msgstr "Ігнорувати"
 
 #: packages/app-desktop/gui/EncryptionConfigScreen.min.js:244
 #: packages/app-mobile/components/screens/encryption-config.js:215
@@ -1256,9 +1254,9 @@ msgid ""
 "re-synchronised and sent unencrypted to the sync target. Do you wish to "
 "continue?"
 msgstr ""
-"Deaktywowanie szyfrowania oznacza, że *wszystkie* Twoje notatki i załączniki "
-"będą resynchronizowane i wysłane niezabezpieczone do serwisu synchonizacji. "
-"Czy chcesz kontynuować?"
+"Вимкнення шифрування означає, що *всі* ваші нотатки та вкладення будуть "
+"повторно синхронізовані та відправлені незашифрованими до цілі "
+"синхронізації. Ви хочете продовжити?"
 
 #: packages/app-desktop/gui/EncryptionConfigScreen.min.js:246
 #: packages/app-mobile/components/screens/encryption-config.js:150
@@ -1268,41 +1266,40 @@ msgid ""
 "password as, for security purposes, this will be the *only* way to decrypt "
 "the data! To enable encryption, please enter your password below."
 msgstr ""
-"Aktywowanie szyfrowania oznacza, że *wszystkie* Twoje notatki i załączniki "
-"będą re-synchronizowane i wysłane zaszyfrowane do celu synchronizacji. Nie "
-"utrać hasła, jako że, w celu zapewnienia bezpieczeństwa, będzie to *jedyna* "
-"droga do deszyfrowania danych! Aby aktywować szyfrowanie, wprowadź hasło "
-"poniżej."
+"Увімкнення шифрування означає, що *всі* ваші нотатки та вкладення будуть "
+"повторно синхронізовані та відправлені зашифрованими до цілі синхронізації. "
+"Не втрачайте пароль, оскільки в цілях безпеки це буде *єдиний* спосіб "
+"розшифрувати дані! Щоб увімкнути шифрування, введіть нижче свій пароль."
 
 #: packages/app-desktop/gui/EncryptionConfigScreen.min.js:275
 #: packages/app-mobile/components/screens/encryption-config.js:258
 msgid "Disable encryption"
-msgstr "Dezaktywuj szyfrowanie"
+msgstr "Вимкнути шифрування"
 
 #: packages/app-desktop/gui/EncryptionConfigScreen.min.js:275
 #: packages/app-mobile/components/screens/encryption-config.js:258
 msgid "Enable encryption"
-msgstr "Aktywuj szyfrowanie"
+msgstr "Ввімкнути шифрування"
 
 #: packages/app-desktop/gui/EncryptionConfigScreen.min.js:290
 msgid "Master Keys"
-msgstr "Klucze główne"
+msgstr "Мастер ключ"
 
 #: packages/app-desktop/gui/EncryptionConfigScreen.min.js:304
 msgid "Active"
-msgstr "Aktywne"
+msgstr "Активний"
 
 #: packages/app-desktop/gui/EncryptionConfigScreen.min.js:314
 msgid "Source"
-msgstr "Źródło"
+msgstr "Джерело"
 
 #: packages/app-desktop/gui/EncryptionConfigScreen.min.js:329
 msgid "Password"
-msgstr "Hasło"
+msgstr "Пароль"
 
 #: packages/app-desktop/gui/EncryptionConfigScreen.min.js:334
 msgid "Password OK"
-msgstr "Hasło prawidłowe"
+msgstr "Пароль ОК"
 
 #: packages/app-desktop/gui/EncryptionConfigScreen.min.js:343
 msgid ""
@@ -1310,14 +1307,15 @@ msgid ""
 "as \"active\"). Any of the keys might be used for decryption, depending on "
 "how the notes or notebooks were originally encrypted."
 msgstr ""
-"Informacja: Jedynie jeden klucz główny będzie używany do szyfrowania "
-"(oznaczony jako \"aktywny\"). Każdy z kluczy może zostać użyty do "
-"deszyfrowania, w zależności od sposobu zaszyfrowania notatek lub notatników."
+"Примітка: Для шифрування буде використовуватися лише один головний ключ "
+"(той, що позначений як “активний”). Будь-яку клавішу можна використовувати "
+"для дешифрування залежно від того, як нотатки або блокноти були зашифровані "
+"спочатку."
 
 #: packages/app-desktop/gui/EncryptionConfigScreen.min.js:371
 #: packages/app-mobile/components/screens/encryption-config.js:248
 msgid "Missing Master Keys"
-msgstr "Brakujące Klucze Główne"
+msgstr "Не знайдено мастер ключ"
 
 #: packages/app-desktop/gui/EncryptionConfigScreen.min.js:376
 #: packages/app-mobile/components/screens/encryption-config.js:249
@@ -1326,9 +1324,9 @@ msgid ""
 "however the application does not currently have access to them. It is likely "
 "they will eventually be downloaded via synchronisation."
 msgstr ""
-"Klucze główne z tymi ID zostaną użyte do szyfrowania niektórych obiektów, "
-"jednakże aplikacja aktualnie nie ma do nich dostępu. Prawdopodobnie zostaną "
-"pobrane przy synchronizacji."
+"Мастер ключ з цими ідентифікаторами використовуються для шифрування деяких "
+"ваших елементів, однак програма наразі не має до них доступу. Цілком "
+"ймовірно, що вони з часом будуть завантажені за допомогою синхронізації."
 
 #: packages/app-desktop/gui/EncryptionConfigScreen.min.js:414
 #: packages/app-mobile/components/screens/encryption-config.js:268
@@ -1336,144 +1334,144 @@ msgid ""
 "For more information about End-To-End Encryption (E2EE) and advice on how to "
 "enable it please check the documentation:"
 msgstr ""
-"Aby uzyskać więcej informacje o szyfrowaniu po stronie klienta (E2EE) i "
-"wskazówki ułatwiające jego uruchomienie, proszę sprawdź dokumentację:"
+"Щоб отримати додаткову інформацію про наскрізне шифрування (E2EE) та поради "
+"щодо його ввімкнення, перегляньте документацію:"
 
 #: packages/app-desktop/gui/EncryptionConfigScreen.min.js:433
 #: packages/app-mobile/components/screens/encryption-config.js:279
 #: packages/app-mobile/components/screens/status.js:142
 msgid "Status"
-msgstr "Status"
+msgstr "Статус"
 
 #: packages/app-desktop/gui/EncryptionConfigScreen.min.js:438
 msgid "Encryption is:"
-msgstr "Szyfrowanie jest:"
+msgstr "Шифрування:"
 
 #: packages/app-desktop/gui/EncryptionConfigScreen.min.js:443
 #: packages/app-mobile/components/screens/encryption-config.js:280
 #: packages/app-cli/app/command-e2ee.js:110
 msgid "Enabled"
-msgstr "Aktywowano"
+msgstr "Включено"
 
 #: packages/app-desktop/gui/Root.js:97
 msgid "OneDrive Login"
-msgstr "Nazwa użytkownika OneDrive"
+msgstr "OneDrive логін"
 
 #: packages/app-desktop/gui/Root.js:98
 msgid "Dropbox Login"
-msgstr "Nazwa użytkownika Dropbox"
+msgstr "Dropbox логін"
 
 #: packages/app-desktop/gui/Root.js:101
 msgid "Note attachments"
-msgstr "Załączniki notatki"
+msgstr "Вкладення нотатки"
 
 #: packages/app-desktop/gui/ConfigScreen/ConfigScreen.js:105
 msgid "This will open a new screen. Save your current changes?"
-msgstr "Otworzy się nowy ekran. Zapisać zmiany?"
+msgstr "Це відкриє новий екран. Зберегти поточні зміни?"
 
 #: packages/app-desktop/gui/ConfigScreen/ConfigScreen.js:171
 #: packages/app-mobile/components/screens/config.js:307
 msgid "Check synchronisation configuration"
-msgstr "Sprawdź konfigurację synchronizacji"
+msgstr "Перевірте конфігурацію синхронізації"
 
 #: packages/app-desktop/gui/ConfigScreen/ConfigScreen.js:217
 msgid "Show Advanced Settings"
-msgstr "Pokaż opcje zaawansowane"
+msgstr "Показати розширені налаштування"
 
 #: packages/app-desktop/gui/ConfigScreen/ConfigScreen.js:406
 msgid "Path:"
-msgstr "Ścieżka:"
+msgstr "Шлях:"
 
 #: packages/app-desktop/gui/ConfigScreen/ConfigScreen.js:411
 msgid "Browse..."
-msgstr "Przeglądaj..."
+msgstr "Переглянути…"
 
 #: packages/app-desktop/gui/ConfigScreen/ConfigScreen.js:413
 msgid "Arguments:"
-msgstr "Argumenty:"
+msgstr "Параметри:"
 
 #: packages/app-desktop/gui/ConfigScreen/ConfigScreen.js:461
 msgid "The application must be restarted for these changes to take effect."
-msgstr "Ta aplikacja musi być zrestartowana, aby zastosować zmiany."
+msgstr "Потрібно перезапустити програму, щоб ці зміни набрали чинності."
 
 #: packages/app-desktop/gui/ConfigScreen/ConfigScreen.js:473
 #: packages/app-desktop/gui/NoteList/NoteList.js:163
 msgid "Do it now"
-msgstr "Zrób to teraz"
+msgstr "Зробити зараз"
 
 #: packages/app-desktop/gui/ConfigScreen/ConfigScreen.js:473
 msgid "Later"
-msgstr "Później"
+msgstr "Пізніше"
 
 #: packages/app-desktop/gui/ConfigScreen/ConfigScreen.js:526
 msgid "Restart now"
-msgstr "Zrestartuj teraz"
+msgstr "Перезапустити зараз"
 
 #: packages/app-desktop/gui/ConfigScreen/Sidebar.js:89
 #: packages/lib/models/Setting.js:1524
 msgid "Plugins"
-msgstr "Wtyczki"
+msgstr "Розширення"
 
 #: packages/app-desktop/gui/ConfigScreen/ButtonBar.js:27
 msgid "Apply"
-msgstr "Zastosuj"
+msgstr "Застосувати"
 
 #: packages/app-desktop/gui/ConfigScreen/controls/plugins/PluginsStates.js:113
 #, javascript-format
 msgid "Delete plugin \"%s\"?"
-msgstr "Usunąć wtyczkę \"%s\"?"
+msgstr "Видалити розширення “%s”?"
 
 #: packages/app-desktop/gui/ConfigScreen/controls/plugins/PluginsStates.js:155
 msgid "Browse all plugins"
-msgstr "Przeglądaj wszystkie wtyczki"
+msgstr "Переглянути всі розширення"
 
 #: packages/app-desktop/gui/ConfigScreen/controls/plugins/PluginsStates.js:159
 msgid "Install from file"
-msgstr "Zainstaluj z pliku"
+msgstr "Встановити з файла"
 
 #: packages/app-desktop/gui/ConfigScreen/controls/plugins/PluginsStates.js:193
 msgid "You do not have any installed plugin."
-msgstr "Nie masz zainstalowanej żadnej wtyczki."
+msgstr "У вас немає встановлених розширень."
 
 #: packages/app-desktop/gui/ConfigScreen/controls/plugins/PluginsStates.js:208
 msgid "Plugin tools"
-msgstr "Narzędzia wtyczek"
+msgstr "Інструменти розширень"
 
 #: packages/app-desktop/gui/ConfigScreen/controls/plugins/PluginsStates.js:209
 msgid "Manage your plugins"
-msgstr "Zarządzaj wtyczkami"
+msgstr "Керування розширеннями"
 
 #: packages/app-desktop/gui/ConfigScreen/controls/plugins/SearchPlugins.js:68
 msgid "No results"
-msgstr "Brak rezultatów"
+msgstr "Немає результатів"
 
 #: packages/app-desktop/gui/ConfigScreen/controls/plugins/SearchPlugins.js:80
 msgid "Search for plugins..."
-msgstr "Szukaj wtyczek..."
+msgstr "Пошук рощширень…"
 
 #: packages/app-desktop/gui/ConfigScreen/controls/plugins/PluginBox.js:127
 msgid "Install"
-msgstr "Zainstaluj"
+msgstr "Встановити"
 
 #: packages/app-desktop/gui/ConfigScreen/controls/plugins/PluginBox.js:129
 msgid "Installing..."
-msgstr "Instalowanie."
+msgstr "Встановлення…"
 
 #: packages/app-desktop/gui/ConfigScreen/controls/plugins/PluginBox.js:131
 msgid "Installed"
-msgstr "Zainstwalony"
+msgstr "Встановлено"
 
 #: packages/app-desktop/gui/ConfigScreen/controls/plugins/PluginBox.js:137
 msgid "Update"
-msgstr "Zaaktualizuj"
+msgstr "Оновити"
 
 #: packages/app-desktop/gui/ConfigScreen/controls/plugins/PluginBox.js:139
 msgid "Updating..."
-msgstr "Aktualizowanie..."
+msgstr "Оновлення…"
 
 #: packages/app-desktop/gui/ConfigScreen/controls/plugins/PluginBox.js:151
 msgid "Please upgrade Joplin to use this plugin"
-msgstr "Zaaktualizuj Joplin, aby używać tej wtyczki"
+msgstr "Будь ласка, оновіть Joplin для використання даного рощширення"
 
 #: packages/app-desktop/gui/ConfigScreen/controls/plugins/PluginBox.js:165
 #, javascript-format
@@ -1483,67 +1481,67 @@ msgstr "(%s)"
 #: packages/app-desktop/gui/ConfigScreen/controls/plugins/useOnInstallHandler.js:49
 #, javascript-format
 msgid "Could not install plugin: %s"
-msgstr "Nie udało się zainstalować wtyczki: %s"
+msgstr "Не можливо встановити розширення: %s"
 
 #: packages/app-desktop/gui/PromptDialog.min.js:249
 msgid "Clear"
-msgstr "Wyczyść"
+msgstr "Очистити"
 
 #: packages/app-desktop/gui/NoteContentPropertiesDialog.js:76
 msgid "Words"
-msgstr "Słowa"
+msgstr "Слова"
 
 #: packages/app-desktop/gui/NoteContentPropertiesDialog.js:77
 msgid "Characters"
-msgstr "Znaki"
+msgstr "Символи"
 
 #: packages/app-desktop/gui/NoteContentPropertiesDialog.js:78
 msgid "Characters excluding spaces"
-msgstr "Znaki bez spacji"
+msgstr "Символи виключаючи пробіли"
 
 #: packages/app-desktop/gui/NoteContentPropertiesDialog.js:79
 msgid "Lines"
-msgstr "Wiersze"
+msgstr "Стрічки"
 
 #: packages/app-desktop/gui/NoteContentPropertiesDialog.js:98
 #: packages/lib/models/Setting.js:484 packages/lib/models/Setting.js:485
 #: packages/lib/models/Setting.js:486
 msgid "Editor"
-msgstr "Edytor"
+msgstr "Редактор"
 
 #: packages/app-desktop/gui/NoteContentPropertiesDialog.js:99
 #: packages/lib/models/Setting.js:484 packages/lib/models/Setting.js:485
 #: packages/lib/models/Setting.js:487
 msgid "Viewer"
-msgstr "Wyświetlacz"
+msgstr "Переглядач"
 
 #: packages/app-desktop/gui/NoteContentPropertiesDialog.js:105
 #, javascript-format
 msgid "Read time: %s min"
-msgstr "Czas czytania: %s min"
+msgstr "Час читання: %s хв"
 
 #: packages/app-desktop/gui/NoteContentPropertiesDialog.js:108
 msgid "Statistics"
-msgstr "Statystyki"
+msgstr "Статистика"
 
 #: packages/app-desktop/gui/NoteContentPropertiesDialog.js:113
 #: packages/app-desktop/gui/ShareNoteDialog.js:186
 #: packages/app-desktop/services/plugins/UserWebviewDialogButtonBar.js:24
 msgid "Close"
-msgstr "Zamknij"
+msgstr "Закрити"
 
 #: packages/app-desktop/gui/NoteList/NoteList.js:162
 msgid "Custom order"
-msgstr "Własny kierunek sortowania"
+msgstr "Особливий порядок"
 
 #: packages/app-desktop/gui/NoteList/NoteList.js:162
 msgid "View"
-msgstr "Widok"
+msgstr "Переглянути"
 
 #: packages/app-desktop/gui/NoteList/NoteList.js:162
 #: packages/lib/models/Setting.js:500
 msgid "Sort notes by"
-msgstr "Sortuj notatki po"
+msgstr "Сортувати нотатки по"
 
 #: packages/app-desktop/gui/NoteList/NoteList.js:162
 #, javascript-format
@@ -1551,47 +1549,47 @@ msgid ""
 "To manually sort the notes, the sort order must be changed to \"%s\" in the "
 "menu \"%s\" > \"%s\""
 msgstr ""
-"Żeby posortować notatki ręcznie, kierunek sortowania musi zostać zmieniony "
-"na \"%s\" w menu \"%s\" > \"%s\""
+"Щоб вручну сортувати нотатки, порядок сортування потрібно змінити на “%s” в "
+"меню “%s”> “%s”"
 
 #: packages/app-desktop/gui/NoteList/NoteList.js:414
 msgid "No notes in here. Create one by clicking on \"New note\"."
-msgstr "Brak notatek. Utwórz nową, naciskając na \"Nowa notatka\"."
+msgstr "Тут немає нотаток. Створіть його, натиснувши “Нова нотатка”."
 
 #: packages/app-desktop/gui/NoteList/NoteList.js:414
 msgid ""
 "There is currently no notebook. Create one by clicking on \"New notebook\"."
-msgstr "Brak notatników. Utwórz nowy, naciskając na \"Nowy notatnik\"."
+msgstr "В даний час немає блокнота. Створіть його, натиснувши “Новий блокнот”."
 
 #: packages/app-desktop/gui/NoteList/commands/focusElementNoteList.js:17
 msgid "Note list"
-msgstr "Historia notatek"
+msgstr "Список нотаток"
 
 #: packages/app-desktop/gui/NoteListControls/commands/focusSearch.js:16
 msgid "Search in all the notes"
-msgstr "Wyszukaj we wszystkich notatkach"
+msgstr "Пошук по всіх нотатках"
 
 #: packages/app-desktop/gui/ResourceScreen.js:32
 msgid "Title"
-msgstr "Tytuł"
+msgstr "Заголовок"
 
 #: packages/app-desktop/gui/ResourceScreen.js:36
 msgid "Size"
-msgstr "Rozmiar"
+msgstr "Розмір"
 
 #: packages/app-desktop/gui/ResourceScreen.js:40
 msgid "Action"
-msgstr "Akcja"
+msgstr "Дія"
 
 #: packages/app-desktop/gui/ResourceScreen.js:43 packages/lib/path-utils.js:83
 #: packages/lib/path-utils.js:118 packages/lib/models/BaseItem.js:708
 msgid "Untitled"
-msgstr "Bez nazwy"
+msgstr "Без назви"
 
 #: packages/app-desktop/gui/ResourceScreen.js:95
 #, javascript-format
 msgid "Delete attachment \"%s\"?"
-msgstr "Usunąć załącznik \"%s\"?"
+msgstr "Видалити вкладення “%s”?"
 
 #: packages/app-desktop/gui/ResourceScreen.js:141
 msgid ""
@@ -1599,190 +1597,191 @@ msgid ""
 "notes. Please be careful when deleting one of them as they cannot be "
 "restored afterwards."
 msgstr ""
-"To zaawansowane narzędzie do wyświetlania załączników, które są powiązane z "
-"twoimi notatkami. Bądź ostrożny przy usuwaniu jednego z nich, ponieważ nie "
-"będzie on mógł zostać przywrócony."
+"Це вдосконалений інструмент для показу вкладених файлів, пов’язаних із "
+"вашими нотатками. Будьте обережні, видаляючи один із них, оскільки згодом їх "
+"неможливо відновити."
 
 #: packages/app-desktop/gui/ResourceScreen.js:142
 msgid "Please wait..."
-msgstr "Proszę czekać..."
+msgstr "Будь ласка, зачекайте…"
 
 #: packages/app-desktop/gui/ResourceScreen.js:144
 msgid "No resources!"
-msgstr "Brak zasobów!"
+msgstr "Немає ресурсів!"
 
 #: packages/app-desktop/gui/ResourceScreen.js:146
 #, javascript-format
 msgid "Warning: not all resources shown for performance reasons (limit: %s)."
 msgstr ""
-"Uwaga, aby zachować dobrą wydajność, nie wszystkie zasoby zostały "
-"wyświetlone (limit: %s)."
+"Попередження: не всі ресурси відображаються з міркувань продуктивності "
+"(ліміт: %s)."
 
 #: packages/app-desktop/gui/ShareNoteDialog.js:159
 msgid "Synchronising..."
-msgstr "Synchronizacja..."
+msgstr "Синхронізація…"
 
 #: packages/app-desktop/gui/ShareNoteDialog.js:161
 msgid "Generating link..."
 msgid_plural "Generating links..."
-msgstr[0] "Generowanie linku..."
-msgstr[1] "Generowanie linków..."
-msgstr[2] "Generowanie linków..."
+msgstr[0] "Генерування посиланя…"
+msgstr[1] "Генерування посилань…"
+msgstr[2] "Генерування посилань…"
 
 #: packages/app-desktop/gui/ShareNoteDialog.js:163
 msgid "Link has been copied to clipboard!"
 msgid_plural "Links have been copied to clipboard!"
-msgstr[0] "Link został skopiowany do schowka!"
-msgstr[1] "Linki zostały skopiowane do schowka!"
-msgstr[2] "Linki zostały skopiowane do schowka!"
+msgstr[0] "Посилання скопійовано в буфер обміну!"
+msgstr[1] "Посилання скопійовані в буфер обміну!"
+msgstr[2] "Посилання скопійовані в буфер обміну!"
 
 #: packages/app-desktop/gui/ShareNoteDialog.js:170
 msgid ""
 "Note: When a note is shared, it will no longer be encrypted on the server."
-msgstr "Uwaga: Po udostępnieniu notatka nie będzie już szyfrowana na serwerze."
+msgstr ""
+"Примітка. Коли нотатка надається спільно, вона більше не буде зашифрована на "
+"сервері."
 
 #: packages/app-desktop/gui/ShareNoteDialog.js:180
 msgid "Share Notes"
-msgstr "Udostępnij notatki"
+msgstr "Поділитися нотатками"
 
 #: packages/app-desktop/gui/ShareNoteDialog.js:182
 msgid "Copy Shareable Link"
 msgid_plural "Copy Shareable Links"
-msgstr[0] "Kopiuj udostępniony link"
-msgstr[1] "Kopiuj udostępnione linki"
-msgstr[2] "Kopiuj udostępnione linki"
+msgstr[0] "Скопіювати спільне посилання"
+msgstr[1] "Скопіювати спільні посилання"
+msgstr[2] "Скопіювати спільні посилання"
 
 #: packages/app-desktop/commands/toggleExternalEditing.js:18
 msgid "Toggle external editing"
-msgstr "Edytuj w programie zewnętrznym"
+msgstr "Переключити зовнішнє редагування"
 
 #: packages/app-desktop/commands/toggleExternalEditing.js:37
 msgid "Stop"
-msgstr "Zatrzymaj"
+msgstr "Зупинити"
 
 #: packages/app-desktop/commands/copyDevCommand.js:18
 msgid "Copy dev mode command to clipboard"
-msgstr "Skopiuj tryb dewelopera do schowka"
+msgstr "Скопіюйте команду режиму розробника в буфер обміну"
 
 #: packages/app-desktop/commands/stopExternalEditing.js:18
 msgid "Stop external editing"
-msgstr "Zakończ edytowanie w programie zewnętrznym"
+msgstr "Зупинити зовнішнє редагування"
 
 #: packages/app-desktop/commands/startExternalEditing.js:20
 msgid "Edit in external editor"
-msgstr "Edytuj w edytorze zewnętrznym"
+msgstr "Радктувати в зовнішньому редакторі"
 
 #: packages/app-desktop/commands/startExternalEditing.js:32
 #: packages/app-cli/app/command-edit.js:82
 #, javascript-format
 msgid "Error opening note in editor: %s"
-msgstr "Błąd przy otwieraniu notatki w edytorze: %s"
+msgstr "Помилка відкриття нотатки в редакторі: %s"
 
 #: packages/app-desktop/commands/openProfileDirectory.js:18
 msgid "Open profile directory"
-msgstr "Otwórz katalog profili"
+msgstr "Відкрити каталог профілю"
 
 #: packages/app-desktop/app.js:365
 #, javascript-format
 msgid "Open %s"
-msgstr "Otwórz %s"
+msgstr "Відкрити %s"
 
 #: packages/app-desktop/services/plugins/UserWebviewDialogButtonBar.js:22
 #: packages/app-mobile/components/screens/Note.js:504
 #: packages/lib/shim-init-node.js:148 packages/lib/versionInfo.js:25
 msgid "Yes"
-msgstr "Tak"
+msgstr "Так"
 
 #: packages/app-desktop/services/plugins/UserWebviewDialogButtonBar.js:23
 #: packages/app-mobile/components/screens/Note.js:505
 #: packages/lib/shim-init-node.js:148 packages/lib/versionInfo.js:25
 msgid "No"
-msgstr "Nie"
+msgstr "Ні"
 
 #: packages/app-mobile/components/SelectDateTimeDialog.js:78
 msgid "Clear alarm"
-msgstr "Wyczyść powiadomienie"
+msgstr "Очистити будильник"
 
 #: packages/app-mobile/components/SelectDateTimeDialog.js:80
 msgid "Save alarm"
-msgstr "Zapisz powiadomienie"
+msgstr "Зберегти будильник"
 
 #: packages/app-mobile/components/NoteBodyViewer/hooks/useOnResourceLongPress.js:28
 msgid "Open"
-msgstr "Otwórz"
+msgstr "Відкрити"
 
 #: packages/app-mobile/components/NoteBodyViewer/hooks/useOnResourceLongPress.js:29
 #: packages/app-mobile/components/screens/Note.js:796
 msgid "Share"
-msgstr "Udostępnij"
+msgstr "Поділитися"
 
 #: packages/app-mobile/components/CameraView.js:158
 msgid "Permission to use camera"
-msgstr "Uprawienie do użytkowania kamery"
+msgstr "Дозвіл на використання камери"
 
 #: packages/app-mobile/components/CameraView.js:159
 msgid "Your permission to use your camera is required."
-msgstr "Wymagane uprawnienie do użytkowania kamery."
+msgstr "Ваш дозвіл на використання камери є обов’язковим."
 
 #: packages/app-mobile/components/screen-header.js:185
 msgid "Delete these notes?"
-msgstr "Usunąć te notatki?"
+msgstr "Видалити ці нотатки?"
 
 #: packages/app-mobile/components/side-menu-content.js:126
 #, javascript-format
 msgid "Notebook: %s"
-msgstr "Notatnik: %s"
+msgstr "Блокнот: %s"
 
 #: packages/app-mobile/components/side-menu-content.js:132
 msgid "Encrypted notebooks cannot be renamed"
-msgstr "Nie można zmienić nazwy zaszyfrowanym notatnikom"
+msgstr "Зашифровані блокноти не модуть бути переіменовані"
 
 #: packages/app-mobile/components/side-menu-content.js:312
 msgid "New Notebook"
-msgstr "Nowy Notatnik"
+msgstr "Новий блокнот"
 
 #: packages/app-mobile/components/side-menu-content.js:316
 msgid "Configuration"
-msgstr "Konfiguracja"
+msgstr "Налаштування"
 
 #: packages/app-mobile/components/note-list.js:97
 msgid "You currently have no notebooks."
-msgstr "Brak aktywnych notatników."
+msgstr "У вас зараз немає блокнотів."
 
 #: packages/app-mobile/components/note-list.js:101
 msgid "Create a notebook"
-msgstr "Tworzy nowy notatnik"
+msgstr "Створити блокнот"
 
 #: packages/app-mobile/components/note-list.js:105
 msgid "There are currently no notes. Create one by clicking on the (+) button."
-msgstr "Brak notatek. Aby utworzyć, naciśnij przycisk (+)."
+msgstr "На даний момент немає нотаток. Створіть, натиснувши кнопку (+)."
 
 #: packages/app-mobile/components/screens/folder.js:87
 #, javascript-format
 msgid "The notebook could not be saved: %s"
-msgstr "Notatnik nie może zostać zapisany: %s"
+msgstr "Блокнот не може бути збережено: %s"
 
 #: packages/app-mobile/components/screens/folder.js:109
 msgid "Edit notebook"
-msgstr "Edytuj notatnik"
+msgstr "Редагувати блокнот"
 
 #: packages/app-mobile/components/screens/folder.js:110
 msgid "Enter notebook title"
-msgstr "Podaj tytuł notatnika"
+msgstr "Редагувати заголовок блокнота"
 
-# Longer version: Zaloguj się przy pomocy OneDrive
 #: packages/app-mobile/components/screens/onedrive-login.js:110
 msgid "Login with OneDrive"
-msgstr "Zaloguj się z OneDrive"
+msgstr "Ввійти з OneDrive"
 
 #: packages/app-mobile/components/screens/onedrive-login.js:121
 #: packages/app-mobile/components/screens/status.js:144
 msgid "Refresh"
-msgstr "Odśwież"
+msgstr "Оновити"
 
 #: packages/app-mobile/components/screens/UpgradeSyncTargetScreen.js:42
 msgid "Sync Target Upgrade"
-msgstr "Aktualizacja celu synchronizacji"
+msgstr "Оновлення цілі синхронизації"
 
 #: packages/app-mobile/components/screens/notes.js:154
 #: packages/app-cli/app/command-rmbook.js:26
@@ -1790,78 +1789,77 @@ msgid ""
 "Delete notebook? All notes and sub-notebooks within this notebook will also "
 "be deleted."
 msgstr ""
-"Usunąć notatnik? Wszystkie notatki i notatniki podrzędne zawarte w notatniku "
-"zostaną także usunięte."
+"Видалити блокнот? Усі нотатки та блокноти в цьому блокноті також будуть "
+"видалені."
 
 #: packages/app-mobile/components/screens/NoteTagsDialog.js:163
 msgid "New tags:"
-msgstr "Nowe znaczniki:"
+msgstr "Нові теги:"
 
 #: packages/app-mobile/components/screens/NoteTagsDialog.js:178
 msgid "Type new tags or select from list"
-msgstr "Wprowadź nowe znaczniki lub wybierz z listy"
+msgstr "Введіть нові теги або виберіть зі списку"
 
 #: packages/app-mobile/components/screens/dropbox-login.js:55
 msgid "Login with Dropbox"
-msgstr "Zaloguj się z Dropbox"
+msgstr "Ввійти з Dropbox"
 
 #: packages/app-mobile/components/screens/dropbox-login.js:66
 msgid "Enter code here"
-msgstr "Wprowadź kod tutaj"
+msgstr "Введіть код тут"
 
 #: packages/app-mobile/components/screens/encryption-config.js:119
 #, javascript-format
 msgid "Master Key %s"
-msgstr "Klucz główny %s"
+msgstr "Мастер ключ %s"
 
 #: packages/app-mobile/components/screens/encryption-config.js:120
 #: packages/app-mobile/components/screens/Note.js:724
 #, javascript-format
 msgid "Created: %s"
-msgstr "Utworzono: %s"
+msgstr "Створено: %s"
 
 #: packages/app-mobile/components/screens/encryption-config.js:122
 #: packages/app-mobile/components/screens/encryption-config.js:151
 msgid "Password:"
-msgstr "Hasło:"
+msgstr "Пароль:"
 
 #: packages/app-mobile/components/screens/encryption-config.js:137
 msgid "Password cannot be empty"
-msgstr "Hasło nie może być puste"
+msgstr "Пароль не може бути порожнім"
 
-# Was hard to grasp the context here
 #: packages/app-mobile/components/screens/encryption-config.js:139
 msgid "Confirm password cannot be empty"
-msgstr "Hasło potwierdzające nie może być puste"
+msgstr "Підтвердження паролю не може бути порожнім"
 
 #: packages/app-mobile/components/screens/encryption-config.js:140
 #: packages/app-cli/app/command-e2ee.js:85
 msgid "Passwords do not match!"
-msgstr "Hasła się nie zgadzają!"
+msgstr "Паролі не співпадають!"
 
 #: packages/app-mobile/components/screens/encryption-config.js:163
 #: packages/app-cli/app/command-e2ee.js:79
 msgid "Confirm password:"
-msgstr "Powtórz hasło:"
+msgstr "Підтвердіть пароль:"
 
 #: packages/app-mobile/components/screens/encryption-config.js:177
 msgid "Enable"
-msgstr "Aktywuj"
+msgstr "Ввімкнути"
 
 #: packages/app-mobile/components/screens/encryption-config.js:264
 #: packages/app-mobile/components/screens/config.js:316
 msgid "Encryption Config"
-msgstr "Konfiguracja szyfrowania"
+msgstr "Налаштування шифрування"
 
 #: packages/app-mobile/components/screens/encryption-config.js:280
 #: packages/app-cli/app/command-e2ee.js:110
 #, javascript-format
 msgid "Encryption is: %s"
-msgstr "Szyfrowanie jest: %s"
+msgstr "Шифрування: %s"
 
 #: packages/app-mobile/components/screens/config.js:50
 msgid "Warning"
-msgstr "Uwaga"
+msgstr "Попередження"
 
 #: packages/app-mobile/components/screens/config.js:50
 #: packages/app-mobile/components/screens/config.js:147
@@ -1869,132 +1867,129 @@ msgid ""
 "In order to use file system synchronisation your permission to write to "
 "external storage is required."
 msgstr ""
-"Aby użyć synchronizacji z systemem plików, musisz wyrazić zgodę na zapis na "
-"zewnętrznym urządzeniu."
+"Для використання синхронізації файлової системи потрібен ваш дозвіл на запис "
+"у зовнішню пам’ять."
 
 #: packages/app-mobile/components/screens/config.js:146
 msgid "Information"
-msgstr "Informacja"
+msgstr "Інформація"
 
 #: packages/app-mobile/components/screens/config.js:436
 msgid "Tools"
-msgstr "Narzędzia"
+msgstr "Інструменти"
 
 #: packages/app-mobile/components/screens/config.js:438
 msgid "Sync Status"
-msgstr "Status synchronizacji"
+msgstr "Статус синхронізації"
 
 #: packages/app-mobile/components/screens/config.js:439
 msgid "Log"
-msgstr "Dziennik"
+msgstr "Логи"
 
 #: packages/app-mobile/components/screens/config.js:441
 msgid "Creating report..."
-msgstr "Tworzenie raportu..."
+msgstr "Створення звіту…"
 
 #: packages/app-mobile/components/screens/config.js:441
 msgid "Export Debug Report"
-msgstr "Raport odpluskwiania eksportu"
+msgstr "Експортувати розширений звіт"
 
 #: packages/app-mobile/components/screens/config.js:443
 msgid "Fixing search index..."
-msgstr "Naprawa indeksu wyszukiwania..."
+msgstr "Виправлення індексу пошуку…"
 
 #: packages/app-mobile/components/screens/config.js:443
 msgid "Fix search index"
-msgstr "Napraw indeks wyszukiwania"
+msgstr "Виправлення індексу пошуку"
 
 #: packages/app-mobile/components/screens/config.js:443
 msgid ""
 "Use this to rebuild the search index if there is a problem with search. It "
 "may take a long time depending on the number of notes."
 msgstr ""
-"Skorzystaj aby przebudować indeks wyszukiwania jeśli występują problemy. "
-"Może to zająć trochę czasu jeśli masz dużo notatek."
+"Використовуйте це, щоб відновити індекс пошуку, якщо проблема з пошуком. Це "
+"може зайняти багато часу, залежно від кількості нотаток."
 
 #: packages/app-mobile/components/screens/config.js:446
 msgid "Exporting profile..."
-msgstr "Eksportowanie profilu..."
+msgstr "Експортування профілю…"
 
 #: packages/app-mobile/components/screens/config.js:446
 msgid "Export profile"
-msgstr "Eksportuj profil"
+msgstr "Експорт профілю"
 
 #: packages/app-mobile/components/screens/config.js:446
 msgid "For debugging purpose only: export your profile to an external SD card."
-msgstr "Tylko w celu debugowania: eksportuj profil na zewnętrzną kartę SD."
+msgstr ""
+"Тільки для налагодження: експортуйте свій профіль на зовнішню SD-карту."
 
 #: packages/app-mobile/components/screens/config.js:461
 msgid "More information"
-msgstr "Więcej informacji"
+msgstr "Більше інформації"
 
 #: packages/app-mobile/components/screens/config.js:471
 msgid ""
 "To work correctly, the app needs the following permissions. Please enable "
 "them in your phone settings, in Apps > Joplin > Permissions"
 msgstr ""
-"Aby pracować prawidłowo, aplikacja potrzebuje następujących uprawnień. "
-"Proszę je aktywować w ustawieniach telefonu, w Aplikacje > Joplin > "
-"Uprawnienia"
+"Для коректної роботи додатку потрібні такі дозволи. Будь-ласка, увімкніть їх "
+"у налаштуваннях телефону, у Додатки> Joplin> Дозволи"
 
 #: packages/app-mobile/components/screens/config.js:474
 msgid ""
 "- Storage: to allow attaching files to notes and to enable filesystem "
 "synchronisation."
 msgstr ""
-"- Pamięć: aby pozwolić na załączanie plików do notatek i aktywowania "
-"synchronizacji systemu plików."
+"- Зберігання: для дозволу приєднання файлів до нотаток та для синхронізації "
+"файлової системи."
 
 #: packages/app-mobile/components/screens/config.js:477
 msgid "- Camera: to allow taking a picture and attaching it to a note."
-msgstr ""
-"- Kamera: aby pozwolić na wykonywanie zdjęć i załączanie ich do notatek."
+msgstr "- Камера: щоб дозволити фотографувати та додавати його до нотатки."
 
 #: packages/app-mobile/components/screens/config.js:480
 msgid "- Location: to allow attaching geo-location information to a note."
 msgstr ""
-"- Lokacja: aby pozwolić załączać informację o lokacji geograficznej do "
-"notatki."
+"- Розташування: щоб дозволити додавати інформацію до геолокації до нотатки."
 
 #: packages/app-mobile/components/screens/config.js:509
 msgid "Joplin website"
-msgstr "Strona internetowa Joplin"
+msgstr "Веб-сайт Joplin"
 
 #: packages/app-mobile/components/screens/config.js:523
 msgid "Privacy Policy"
-msgstr "Polityka Prywatności"
+msgstr "Політика конфіденційності"
 
 #: packages/app-mobile/components/screens/Note.js:98
 msgid "This note has been modified:"
-msgstr "Notatka została zmodyfikowana:"
+msgstr "Ця нотатка була модифікована:"
 
 #: packages/app-mobile/components/screens/Note.js:98
 msgid "Save changes"
-msgstr "Zapisz zmiany"
+msgstr "Зберегти зміни"
 
 #: packages/app-mobile/components/screens/Note.js:98
 msgid "Discard changes"
-msgstr "Odrzuć zmiany"
+msgstr "Скасувати зміни"
 
 #: packages/app-mobile/components/screens/Note.js:150
 #, javascript-format
 msgid "No item with ID %s"
-msgstr "Brak przedmiotu z ID %s"
+msgstr "Не знайдено елемент з ID %s"
 
 #: packages/app-mobile/components/screens/Note.js:168
 msgid "This attachment is not downloaded or not decrypted yet."
-msgstr "Załącznik nie został jeszcze pobrany lub odszyfrowany."
+msgstr "Це вкладення ще не завантажено або ще не розшифровано."
 
 #: packages/app-mobile/components/screens/Note.js:173
 #, javascript-format
 msgid "The Joplin mobile app does not currently support this type of link: %s"
-msgstr ""
-"Aplikacja mobilna Joplin nie wspiera aktualnie odnośników tego typu: %s"
+msgstr "Мобільний додаток Joplin наразі не підтримує такий тип посилань: %s"
 
 #: packages/app-mobile/components/screens/Note.js:178
 #, javascript-format
 msgid "Links with protocol \"%s\" are not supported"
-msgstr "Odnośniki protokołu \"%s\" nie są wspierane"
+msgstr "Посилання з протоколом “%s” не підтримуються"
 
 #: packages/app-mobile/components/screens/Note.js:342
 msgid ""
@@ -2003,19 +1998,19 @@ msgid ""
 "\n"
 "You may turn off this option at any time in the Configuration screen."
 msgstr ""
-"Aby powiązać lokalizację geograficzną z notatką, aplikacja potrzebuje "
-"Twojego pozwolenia na dostęp do lokalizacji.\n"
+"Для того, щоб пов’язати геолокацію з приміткою, додатку потрібен ваш дозвіл "
+"на доступ до вашого місцезнаходження.\n"
 "\n"
-"Możesz wyłączyć tę opcję w dowolnym momencie na ekranie konfiguracji."
+"Ви можете будь-коли вимкнути цю опцію на екрані конфігурації."
 
 #: packages/app-mobile/components/screens/Note.js:343
 msgid "Permission needed"
-msgstr "Wymagane permisje"
+msgstr "Потрібен дозвіл"
 
 #: packages/app-mobile/components/screens/Note.js:449
 #: packages/app-cli/app/command-rmnote.js:27
 msgid "Delete note?"
-msgstr "Usunąć notatkę?"
+msgstr "Видалити нотатку?"
 
 #: packages/app-mobile/components/screens/Note.js:503
 #: packages/lib/shim-init-node.js:147
@@ -2024,66 +2019,66 @@ msgid ""
 "You are about to attach a large image (%dx%d pixels). Would you like to "
 "resize it down to %d pixels before attaching it?"
 msgstr ""
-"Jesteś w trakcie załączenia dużego zdjęcia (%dx%d pikseli). Chciałbyś "
-"zmniejszyć rozmiar do %d pikseli przed załączeniem?"
+"Ви збираєтеся вкласти велике зображення (%dx%d пікселів). Хочете зменшити "
+"розмір до %d пікселів, перш ніж приєднувати?"
 
 #: packages/app-mobile/components/screens/Note.js:585
 #, javascript-format
 msgid "Unsupported image type: %s"
-msgstr "Niewspierany typ obrazu: %s"
+msgstr "Непідтримуваний тип зображення: %s"
 
 #: packages/app-mobile/components/screens/Note.js:725
 #, javascript-format
 msgid "Updated: %s"
-msgstr "Zaktualizowano: %s"
+msgstr "Оновлено: %s"
 
 #: packages/app-mobile/components/screens/Note.js:728
 msgid "View on map"
-msgstr "Pokaż na mapie"
+msgstr "Показати на карті"
 
 #: packages/app-mobile/components/screens/Note.js:735
 msgid "Go to source URL"
-msgstr "Idź do adresu źródłowego odnośnika"
+msgstr "Перейти до посилання"
 
 #: packages/app-mobile/components/screens/Note.js:764
 msgid "Attach..."
-msgstr "Załącz..."
+msgstr "Прикріпити…"
 
 #: packages/app-mobile/components/screens/Note.js:775
 msgid "Attach photo"
-msgstr "Załącz zdjęcie"
+msgstr "Прикріпити фото"
 
 #: packages/app-mobile/components/screens/Note.js:776
 msgid "Take photo"
-msgstr "Wykonaj zdjęcie"
+msgstr "Зробити фото"
 
 #: packages/app-mobile/components/screens/Note.js:777
 msgid "Choose an option"
-msgstr "Wybierz opcję"
+msgstr "Виберіть варіант"
 
 #: packages/app-mobile/components/screens/Note.js:810
 msgid "Convert to note"
-msgstr "Przekonwertuj do notatki"
+msgstr "Перетворити на нотатку"
 
 #: packages/app-mobile/components/screens/Note.js:810
 msgid "Convert to todo"
-msgstr "Przekonwertuj do zadania"
+msgstr "Перетворити на список справ"
 
 #: packages/app-mobile/components/screens/Note.js:824
 msgid "Properties"
-msgstr "Właściwości"
+msgstr "Властивості"
 
 #: packages/app-mobile/components/screens/Note.js:1008
 msgid "Add body"
-msgstr "Dodaj tekst"
+msgstr "Додати тіло"
 
 #: packages/app-mobile/components/screens/Note.js:1034
 msgid "Add title"
-msgstr "Dodaj tytuł"
+msgstr "Додати заголовок"
 
 #: packages/app-mobile/components/screens/search.js:160
 msgid "Search"
-msgstr "Wyszukaj"
+msgstr "Пошук"
 
 #: packages/server/dist/middleware/notificationHandler.js:26
 #, javascript-format
@@ -2091,22 +2086,22 @@ msgid ""
 "The default admin password is insecure and has not been changed! [Change it "
 "now](%s)"
 msgstr ""
-"Domyślne hasło administratora jest niebezpiecznie i nie zostało zmienione! "
-"[Zmień je teraz](%s)"
+"Пароль адміністратора за замовчуванням небезпечний і його не змінювали! "
+"[Змінити зараз](%s)"
 
 #: packages/lib/onedrive-api-node-utils.js:46
 #, javascript-format
 msgid "All potential ports are in use - please report the issue at %s"
-msgstr "Wszystkie możliwe porty są w użyciu - proszę zgłosić błąd na %s"
+msgstr "Усі потенційні порти використовуються - повідомте про проблему на %s"
 
 #: packages/lib/onedrive-api-node-utils.js:86
 msgid ""
 "The application has been authorised - you may now close this browser tab."
-msgstr "Aplikacja została uwierzytelniona - możesz zamknąć kartę przeglądarki."
+msgstr "Додаток авторизовано - тепер ви можете закрити цю вкладку браузера."
 
 #: packages/lib/onedrive-api-node-utils.js:88
 msgid "The application has been successfully authorised."
-msgstr "Aplikacja została uwierzytelniona pomyślnie."
+msgstr "Додаток успішно авторизовано."
 
 #: packages/lib/onedrive-api-node-utils.js:116
 msgid ""
@@ -2116,12 +2111,11 @@ msgid ""
 "any files outside this directory nor to any other personal data. No data "
 "will be shared with any third party."
 msgstr ""
-"Proszę otworzyć następujący odnośnik w swojej przeglądarce, aby "
-"uwierzytelnić aplikację. Aplikacja utworzy katalog w lokalizacji \"Apps/"
-"Joplin\" i będzie jedynie odczytywać i zapisywać pliki w tej lokalizacji. "
-"Nie będzie ona miała dostępu do plików spoza tej lokalizacji, jak i innych "
-"danych osobowych. Dane nie zostaną udostępnione jakiejkolwiek firmie/"
-"organizacji."
+"Будь ласка, відкрийте наступну URL-адресу у своєму браузері, щоб "
+"автентифікувати програму. Додаток створить каталог у “Apps/Joplin” і буде "
+"лише читати та записувати файли в цьому каталозі. Він не матиме доступу до "
+"будь-яких файлів поза цим каталогом, а також до будь-яких інших особистих "
+"даних. Ніякі дані не передаватимуться третім особам."
 
 #: packages/lib/SyncTargetAmazonS3.js:28
 msgid "AWS S3"
@@ -2133,38 +2127,37 @@ msgstr "Dropbox"
 
 #: packages/lib/SyncTargetJoplinServer.js:30
 msgid "Joplin Server"
-msgstr "Serwer Joplin"
+msgstr "Joplin Server"
 
 #: packages/lib/shim-init-node.js:212
 #, javascript-format
 msgid "Cannot access %s"
-msgstr "Brak dostępu %s"
+msgstr "Помилка доступу %s"
 
 #: packages/lib/models/Folder.js:34 packages/lib/models/Note.js:35
 msgid "title"
-msgstr "tytuł"
+msgstr "заголовок"
 
 #: packages/lib/models/Folder.js:35 packages/lib/models/Note.js:36
 msgid "updated date"
-msgstr "data aktualizacji"
+msgstr "оновлена дата"
 
 #: packages/lib/models/Folder.js:102
 msgid "Conflicts"
-msgstr "Konflikty"
+msgstr "Конфлікти"
 
 #: packages/lib/models/Folder.js:393
 msgid "Cannot move notebook to this location"
-msgstr "Nie można przenieść notatnika do tej lokacji"
+msgstr "Не можливо перемістити блокнот в дану локацію"
 
 #: packages/lib/models/Folder.js:445
 #, javascript-format
 msgid "Notebooks cannot be named \"%s\", which is a reserved title."
-msgstr ""
-"Notatniki nie mogą być nazwane \"%s\", ponieważ jest to nazwa zastrzeżona."
+msgstr "Блокноти не можна назвати “%s”, що є зарезервованою назвою."
 
 #: packages/lib/models/Setting.js:92
 msgid "yes"
-msgstr "tak"
+msgstr "так"
 
 #: packages/lib/models/Setting.js:92 packages/lib/models/Setting.js:93
 #, javascript-format
@@ -2173,7 +2166,7 @@ msgstr "(wysiwyg: %s)"
 
 #: packages/lib/models/Setting.js:93
 msgid "no"
-msgstr "nie"
+msgstr "ні"
 
 #: packages/lib/models/Setting.js:95
 #, javascript-format
@@ -2182,18 +2175,17 @@ msgid ""
 "to it before syncing, otherwise all files will be removed! See the FAQ for "
 "more details: %s"
 msgstr ""
-"Uwaga: Jeżeli lokalizacja zostanie zmieniona, proszę się upewnić, że "
-"wszystkie dane zostaną skopiowane do jej lokacji przed synchronizacją, w "
-"innym wypadku wszystkie pliki będą usunięte! Sprawdź FAQ w celu uzyskania "
-"informacji: %s"
+"Увага: Якщо ви змінили це розташування, перед синхронізацією скопіюйте до "
+"нього весь вміст, інакше всі файли буде видалено! Докладнішу інформацію див. "
+"У розділі поширених запитань: %s"
 
 #: packages/lib/models/Setting.js:101
 msgid "Light"
-msgstr "Jasny"
+msgstr "Light"
 
 #: packages/lib/models/Setting.js:102
 msgid "Dark"
-msgstr "Ciemny"
+msgstr "Dark"
 
 #: packages/lib/models/Setting.js:103
 msgid "Dracula"
@@ -2201,11 +2193,11 @@ msgstr "Dracula"
 
 #: packages/lib/models/Setting.js:104
 msgid "Solarised Light"
-msgstr "Solaryzacja - jasny"
+msgstr "Solarised Light"
 
 #: packages/lib/models/Setting.js:105
 msgid "Solarised Dark"
-msgstr "Solaryzacja - ciemny"
+msgstr "Solarised Dark"
 
 #: packages/lib/models/Setting.js:106
 msgid "Nord"
@@ -2213,87 +2205,87 @@ msgstr "Nord"
 
 #: packages/lib/models/Setting.js:107
 msgid "Aritim Dark"
-msgstr "Aritim ciemny"
+msgstr "Aritim Dark"
 
 #: packages/lib/models/Setting.js:108
 msgid "OLED Dark"
-msgstr "OLED ciemny"
+msgstr "OLED Dark"
 
 #: packages/lib/models/Setting.js:130
 msgid "Synchronisation target"
-msgstr "Serwis synchronizacji"
+msgstr "Ціль синхронізації"
 
 #: packages/lib/models/Setting.js:132
 msgid ""
 "The target to synchronise to. Each sync target may have additional "
 "parameters which are named as `sync.NUM.NAME` (all documented below)."
 msgstr ""
-"Serwis z którym nastąpi synchronizacja. Każdy serwis może zawierać dodatkowe "
-"parametry, które są nazwane jako `sync.NUM.NAME` (udokumentowane poniżej)."
+"Ціль синхронізації. Кожна ціль може мати додаткові параметри іменовані `sync."
+"NUM.NAME` (задокументовані нижче)."
 
 #: packages/lib/models/Setting.js:160
 msgid "Directory to synchronise with (absolute path)"
-msgstr "Katalog z którym nastąpi synchronizacja (ścieżka absolutna)"
+msgstr "Каталог для синхронізації (абсолютний шлях)"
 
 #: packages/lib/models/Setting.js:172
 msgid "Nextcloud WebDAV URL"
-msgstr "Odnośnik WebDAV Nextcloud"
+msgstr "Nextcloud WebDAV посилання"
 
 #: packages/lib/models/Setting.js:184
 msgid "Nextcloud username"
-msgstr "Nazwa użytkownika Nextcloud"
+msgstr "Nextcloud користувач"
 
 #: packages/lib/models/Setting.js:195
 msgid "Nextcloud password"
-msgstr "Hasło użytkownika Nextcloud"
+msgstr "Nextcloud пароль"
 
 #: packages/lib/models/Setting.js:206
 msgid "WebDAV URL"
-msgstr "Odnośnik WebDAV"
+msgstr "WebDAV посилання"
 
 #: packages/lib/models/Setting.js:218
 msgid "WebDAV username"
-msgstr "Nazwa użytkownika WebDAV"
+msgstr "WebDAV користувач"
 
 #: packages/lib/models/Setting.js:229
 msgid "WebDAV password"
-msgstr "Hasło użytkownika WebDAV"
+msgstr "WebDAV пароль"
 
 #: packages/lib/models/Setting.js:248
 msgid "AWS S3 bucket"
-msgstr "Bucket AWS S3"
+msgstr "AWS S3 bucket"
 
 #: packages/lib/models/Setting.js:260
 msgid "AWS S3 URL"
-msgstr "URL AWS S3"
+msgstr "AWS S3 посилання"
 
 #: packages/lib/models/Setting.js:271
 msgid "AWS key"
-msgstr "Klucz AWS"
+msgstr "AWS key"
 
 #: packages/lib/models/Setting.js:282
 msgid "AWS secret"
-msgstr "Tajny klucz AWS"
+msgstr "AWS secret"
 
 #: packages/lib/models/Setting.js:293
 msgid "Joplin Server URL"
-msgstr "URL serwera Joplin"
+msgstr "Joplin Server посилання"
 
 #: packages/lib/models/Setting.js:308
 msgid "Joplin Server Directory"
-msgstr "Katalog serwera Joplin"
+msgstr "Joplin Server каталог"
 
 #: packages/lib/models/Setting.js:319
 msgid "Joplin Server username"
-msgstr "Nażwa użytkownika serwera Joplin"
+msgstr "Joplin Server користувач"
 
 #: packages/lib/models/Setting.js:330
 msgid "Joplin Server password"
-msgstr "Hasło serwera Joplin"
+msgstr "Joplin Server пароль"
 
 #: packages/lib/models/Setting.js:342
 msgid "Attachment download behaviour"
-msgstr "Zachowanie przy pobieraniu załączników"
+msgstr "Поведінка завантаження вкладення"
 
 #: packages/lib/models/Setting.js:343
 msgid ""
@@ -2301,63 +2293,63 @@ msgid ""
 "In \"Auto\", they are downloaded when you open the note. In \"Always\", all "
 "the attachments are downloaded whether you open the note or not."
 msgstr ""
-"W trybie \"Ręczny\", załączniki zostaną pobrane po naciśnięciu.W trybie "
-"\"Automatyczny\", załączniki zostaną pobrane przy otwieraniu notatki. W "
-"trybie \"Zawsze\", wszystkie załączniki zostaną pobrane bez względu na "
-"otwarcie notatki."
+"У режимі “Вручну” вкладення завантажуються лише при натисканні на них. У "
+"розділі “Авто” вони завантажуються, коли ви відкриваєте примітку. У розділі "
+"“Завжди” всі вкладення завантажуються незалежно від того, відкриваєте ви "
+"примітку чи ні."
 
 #: packages/lib/models/Setting.js:346
 msgid "Always"
-msgstr "Zawsze"
+msgstr "Завжди"
 
 #: packages/lib/models/Setting.js:347
 msgid "Manual"
-msgstr "Ręczny"
+msgstr "Вручну"
 
 #: packages/lib/models/Setting.js:348
 msgid "Auto"
-msgstr "Automatyczny"
+msgstr "Авто"
 
 #: packages/lib/models/Setting.js:366
 msgid "Max concurrent connections"
-msgstr "Maksymalne połączenia jednoczesne"
+msgstr "Максимальна кількість одночасних з’єднань"
 
 #: packages/lib/models/Setting.js:379
 msgid "Language"
-msgstr "Język"
+msgstr "Мова"
 
 #: packages/lib/models/Setting.js:390
 msgid "Date format"
-msgstr "Format daty"
+msgstr "Формат дати"
 
 #: packages/lib/models/Setting.js:410
 msgid "Time format"
-msgstr "Format czasu"
+msgstr "Формат часу"
 
 #: packages/lib/models/Setting.js:429
 msgid "Theme"
-msgstr "Motyw"
+msgstr "Тема"
 
 #: packages/lib/models/Setting.js:440
 msgid "Automatically switch theme to match system theme"
-msgstr "Automatycznie dopasuj motyw do motywu systemowego"
+msgstr "Автоматично перемикати тему на відповідність системній темі"
 
 #: packages/lib/models/Setting.js:452
 msgid "Preferred light theme"
-msgstr "Preferuj jasny motyw"
+msgstr "Улюблена світла тема"
 
 #: packages/lib/models/Setting.js:466
 msgid "Preferred dark theme"
-msgstr "Preferuj ciemny motyw"
+msgstr "Улюблена темна тема"
 
 #: packages/lib/models/Setting.js:476
 msgid "Show note counts"
-msgstr "Pokaż liczbę notatek"
+msgstr "Показати лічильники нотатки"
 
 #: packages/lib/models/Setting.js:484 packages/lib/models/Setting.js:486
 #: packages/lib/models/Setting.js:487
 msgid "Split View"
-msgstr "Podzielony podgląd"
+msgstr "Розділений показ"
 
 #: packages/lib/models/Setting.js:484
 #, javascript-format
@@ -2372,127 +2364,127 @@ msgstr "%s / %s"
 
 #: packages/lib/models/Setting.js:491
 msgid "Uncompleted to-dos on top"
-msgstr "Nieukończone zadania na górze"
+msgstr "Незавершені списки справ на горі"
 
 #: packages/lib/models/Setting.js:492
 msgid "Show completed to-dos"
-msgstr "Wyświetl ukończone zadania"
+msgstr "Показувати завершені списки справ"
 
 #: packages/lib/models/Setting.js:518
 msgid "Auto-pair braces, parenthesis, quotations, etc."
-msgstr "Zamykaj klamry, nawiasy, cudzysłowy itd."
+msgstr "Автоматичне закриття дужок, лапок тощо."
 
 #: packages/lib/models/Setting.js:521 packages/lib/models/Setting.js:540
 msgid "Reverse sort order"
-msgstr "Odwróć kierunek sortowania"
+msgstr "Зворотній порядок сортування"
 
 #: packages/lib/models/Setting.js:528
 msgid "Sort notebooks by"
-msgstr "Sortuj notatniki po"
+msgstr "Сортувати блокноти за"
 
 #: packages/lib/models/Setting.js:541
 msgid "Save geo-location with notes"
-msgstr "Zapisz lokalizację geograficzną z notatkami"
+msgstr "Збережіть геолокацію з нотатками"
 
 #: packages/lib/models/Setting.js:563
 msgid "When creating a new to-do:"
-msgstr "Podczas tworzenia nowego zadania:"
+msgstr "Коли створюжться новий список справ:"
 
 #: packages/lib/models/Setting.js:566 packages/lib/models/Setting.js:582
 msgid "Focus title"
-msgstr "Przejdź do tytułu"
+msgstr "Фокус на залоговку"
 
 #: packages/lib/models/Setting.js:567 packages/lib/models/Setting.js:583
 msgid "Focus body"
-msgstr "Przejdź do zawartości"
+msgstr "Фокус на тілі"
 
 #: packages/lib/models/Setting.js:579
 msgid "When creating a new note:"
-msgstr "Podczas tworzenia nowej notatki:"
+msgstr "Коли створюжться нова нотатка:"
 
 #: packages/lib/models/Setting.js:612
 msgid "Enable soft breaks"
-msgstr "Aktywuj miękkie łamanie linii"
+msgstr "Увімкнути м’які переходи"
 
 #: packages/lib/models/Setting.js:613
 msgid "Enable typographer support"
-msgstr "Aktywuj składnię typografu"
+msgstr "Увімкнути підтримку типографічних символів"
 
 #: packages/lib/models/Setting.js:614
 msgid "Enable Linkify"
-msgstr "Aktywuj Linkify"
+msgstr "Увімкнути Linkify"
 
 #: packages/lib/models/Setting.js:615
 msgid "Enable math expressions"
-msgstr "Aktywuj wyrażenia matematyczne"
+msgstr "Увімкнути математичні вирази"
 
 #: packages/lib/models/Setting.js:616
 msgid "Enable Fountain syntax support"
-msgstr "Aktywuj składnię Fountain"
+msgstr "Увімкнути підтримку Fountain синтаксису"
 
 #: packages/lib/models/Setting.js:617
 msgid "Enable Mermaid diagrams support"
-msgstr "Aktywuj składnię Mermaid"
+msgstr "Увімкнути підтримку Mermaid діаграм"
 
 #: packages/lib/models/Setting.js:618
 msgid "Enable audio player"
-msgstr "Aktywuj odtwarzacz muzyki"
+msgstr "Увімкнути аудіо-плеєр"
 
 #: packages/lib/models/Setting.js:619
 msgid "Enable video player"
-msgstr "Aktywuj odtwarzacz wideo"
+msgstr "Увімкнути відео-плеєр"
 
 #: packages/lib/models/Setting.js:620
 msgid "Enable PDF viewer"
-msgstr "Aktywuj wyświetlacz PDF"
+msgstr "Увімкнути переглядач PDF"
 
 #: packages/lib/models/Setting.js:621
 msgid "Enable ==mark== syntax"
-msgstr "Aktywuj składnię ==mark=="
+msgstr "Увімкнути ==mark== синтаксис"
 
 #: packages/lib/models/Setting.js:622
 msgid "Enable footnotes"
-msgstr "Aktywuj stopki"
+msgstr "Увімкнути виноски"
 
 #: packages/lib/models/Setting.js:623
 msgid "Enable table of contents extension"
-msgstr "Aktywuj rozszerzenie dla tabeli zawartości"
+msgstr "Увімкнути розширення змісту"
 
 #: packages/lib/models/Setting.js:624
 msgid "Enable ~sub~ syntax"
-msgstr "Aktywuj składnię ~sub~"
+msgstr "Увімкнути ~sub~ синтаксис"
 
 #: packages/lib/models/Setting.js:625
 msgid "Enable ^sup^ syntax"
-msgstr "Aktywuj składnię ^sup^"
+msgstr "Увімкнути ^sup^ синтаксис"
 
 #: packages/lib/models/Setting.js:626
 msgid "Enable deflist syntax"
-msgstr "Aktywuj składnię składnię deflist"
+msgstr "Увімкнути синтаксис “визначень”"
 
 #: packages/lib/models/Setting.js:627
 msgid "Enable abbreviation syntax"
-msgstr "Aktywuj składnię skrótów"
+msgstr "Уімвнути синтаксис абревіатур"
 
 #: packages/lib/models/Setting.js:628
 msgid "Enable markdown emoji"
-msgstr "Aktywuj emotikony markdown"
+msgstr "Увімкнути підтримку емодзі"
 
 #: packages/lib/models/Setting.js:629
 msgid "Enable ++insert++ syntax"
-msgstr "Aktywuj składnię ++instert++"
+msgstr "Увімкнути ++insert++ синтаксис"
 
 #: packages/lib/models/Setting.js:630
 msgid "Enable multimarkdown table extension"
-msgstr "Aktywuj rozszerzenie dla tabeli multimarkdown"
+msgstr "Увімкнути розширені таблиці"
 
 #: packages/lib/models/Setting.js:641
 msgid "Show tray icon"
-msgstr "Pokaż ikonę w zasobniku systemowym"
+msgstr "Показувати значок в меню"
 
 #: packages/lib/models/Setting.js:643
 msgid "Note: Does not work in all desktop environments."
-msgstr "Informacja: Nie działa na wszystkich środowiskach sprzętowych."
+msgstr "Примітка: Не працює у всіх робочих середовищах."
 
 #: packages/lib/models/Setting.js:643
 msgid ""
@@ -2500,30 +2492,30 @@ msgid ""
 "this setting so that your notes are constantly being synchronised, thus "
 "reducing the number of conflicts."
 msgstr ""
-"Pozwala Joplin pracować w tle. Rekomendowanym jest, aby aktywować to "
-"ustawienie, przez co notatki będę stale synchronizowane, redukując liczbę "
-"błędów."
+"Це дозволить Joplin працювати у фоновому режимі. Рекомендується ввімкнути "
+"цей параметр, щоб ваші нотатки постійно синхронізувались, таким чином "
+"зменшуючи кількість конфліктів."
 
 #: packages/lib/models/Setting.js:647
 msgid "Start application minimised in the tray icon"
-msgstr "Uruchom aplikację zminimalizowaną w zasobniku systemowym"
+msgstr "Запускати додаток мінімізований у значок"
 
 #: packages/lib/models/Setting.js:662
 msgid "Editor font size"
-msgstr "Wielkość czcionki edytora"
+msgstr "Розмір шрифту редактора"
 
 #: packages/lib/models/Setting.js:669
 msgid "Editor font"
-msgstr "Rodzaj czcionki edytora"
+msgstr "Шрифт редактора"
 
 #: packages/lib/models/Setting.js:676 packages/lib/models/Setting.js:683
 #: packages/lib/models/Setting.js:791
 msgid "Default"
-msgstr "Domyślne"
+msgstr "За замовчуванням"
 
 #: packages/lib/models/Setting.js:694
 msgid "Editor font family"
-msgstr "Rodzina czcionek edytora"
+msgstr "Сімейство шрифтів редактора"
 
 #: packages/lib/models/Setting.js:695
 msgid ""
@@ -2531,69 +2523,67 @@ msgid ""
 "If the font is incorrect or empty, it will default to a generic monospace "
 "font."
 msgstr ""
-"Czcionka musi być z rodziny *monospace* w innym wypadku może działać ona "
-"działać niepoprawnie. Jeżeli czcionka jest nieprawidłowa lub pusta, zostanie "
-"zastąpiona standardową czcionką monospace."
+"Це повинен бути шрифт *monospace*, інакше деякі елементи відображатимуться "
+"неправильно. Якщо шрифт неправильний або порожній, він буде встановлений за "
+"замовчуванням на загальний шрифт монопростору."
 
 #: packages/lib/models/Setting.js:717
 msgid "Custom stylesheet for rendered Markdown"
-msgstr "Własny arkusz stylów dla wyrenderowanego markdownu"
+msgstr "Спеціальна таблиця стилів для Markdown"
 
 #: packages/lib/models/Setting.js:733
 msgid "Custom stylesheet for Joplin-wide app styles"
-msgstr "Własny arkusz stylów dla całej aplikacji Joplin"
+msgstr "Спеціальна таблиця стилів для стилів додатків у всьому Joplin"
 
 #: packages/lib/models/Setting.js:738
 msgid "Automatically update the application"
-msgstr "Automatycznie aktualizuj aplikację"
+msgstr "Автоматично оновлювати програму"
 
 #: packages/lib/models/Setting.js:739
 msgid "Get pre-releases when checking for updates"
-msgstr "Uwzględniaj wersje przedpremierowe podczas sprawdzania aktualizacji"
+msgstr "Отримуйте ntcnjdb випуски, перевіряючи наявність оновлень"
 
 #: packages/lib/models/Setting.js:739
 #, javascript-format
 msgid "See the pre-release page for more details: %s"
-msgstr ""
-"Sprawdź stronę wydań przedpremierowych w celu uzyskania większości "
-"informacji: %s"
+msgstr "Докладніше про тестову версію: %s"
 
 #: packages/lib/models/Setting.js:747
 msgid "Synchronisation interval"
-msgstr "Interwał synchronizacji"
+msgstr "Інтервал синхронізації"
 
 #: packages/lib/models/Setting.js:751 packages/lib/models/Setting.js:752
 #: packages/lib/models/Setting.js:753
 #, javascript-format
 msgid "%d minutes"
-msgstr "%d minut"
+msgstr "%d хвилин"
 
 #: packages/lib/models/Setting.js:754
 #, javascript-format
 msgid "%d hour"
-msgstr "%d godzina"
+msgstr "%d година"
 
 #: packages/lib/models/Setting.js:755 packages/lib/models/Setting.js:756
 #, javascript-format
 msgid "%d hours"
-msgstr "%d godzin"
+msgstr "%d годин"
 
 #: packages/lib/models/Setting.js:764
 msgid "Text editor command"
-msgstr "Ścieżka edytora tekstu"
+msgstr "Команда текстового редактора"
 
 #: packages/lib/models/Setting.js:764
 msgid ""
 "The editor command (may include arguments) that will be used to open a note. "
 "If none is provided it will try to auto-detect the default editor."
 msgstr ""
-"Ścieżka edytora tekstu (może zawierać wiele argumentów) która zostanie użyta "
-"aby otwierać notatkę. Jeżeli nie zostanie podana, program spróbuje wykryć "
-"domyślny edytor."
+"Команда редактора (може містити аргументи), яка буде використана для "
+"відкриття нотатки. Якщо нічого не вказано, він спробує автоматично визначити "
+"редактор за замовчуванням."
 
 #: packages/lib/models/Setting.js:765
 msgid "Page size for PDF export"
-msgstr "Wielkość strony do eksportu PDF"
+msgstr "Розмір сторінки для експорту в PDF"
 
 #: packages/lib/models/Setting.js:767
 msgid "A4"
@@ -2601,7 +2591,7 @@ msgstr "A4"
 
 #: packages/lib/models/Setting.js:768
 msgid "Letter"
-msgstr "List"
+msgstr "Letter"
 
 #: packages/lib/models/Setting.js:769
 msgid "A3"
@@ -2621,19 +2611,19 @@ msgstr "Legal"
 
 #: packages/lib/models/Setting.js:775
 msgid "Page orientation for PDF export"
-msgstr "Orientacja strony do eksportu PDF"
+msgstr "Орієнтація сторінки для експорту PDF"
 
 #: packages/lib/models/Setting.js:777
 msgid "Portrait"
-msgstr "Pionowo"
+msgstr "Вертикально"
 
 #: packages/lib/models/Setting.js:778
 msgid "Landscape"
-msgstr "Poziomo"
+msgstr "Горизонтально"
 
 #: packages/lib/models/Setting.js:788
 msgid "Keyboard Mode"
-msgstr "Tryb klawiatury"
+msgstr "Режим клавіатури"
 
 #: packages/lib/models/Setting.js:792
 msgid "Emacs"
@@ -2645,7 +2635,7 @@ msgstr "Vim"
 
 #: packages/lib/models/Setting.js:816
 msgid "Custom TLS certificates"
-msgstr "Niestandardowe certyfikaty TLS"
+msgstr "Спеціальні сертифікати TLS"
 
 #: packages/lib/models/Setting.js:817
 msgid ""
@@ -2654,55 +2644,56 @@ msgid ""
 "pem. Note that if you make changes to the TLS settings, you must save your "
 "changes before clicking on \"Check synchronisation configuration\"."
 msgstr ""
-"Wykaz ścieżek katalogów podzielony przecinkami z których będą ładowane "
-"certyfikaty, lub ścieżka do odrębnych plików certyfikatów. Na przykład: /my/"
-"cert_dir, /other/custom.pem. Jeżeli zostaną zmienione ustawienia TLS, będzie "
-"wymagane zapisanie zmian przez naciśnięciem na \"Sprawdź konfigurację "
-"synchronizacji\"."
+"Розділений комами список шляхів до каталогів, з яких завантажуються "
+"сертифікати, або шлях до окремих файлів сертифіката. Наприклад: /my/"
+"cert_dir, /other/custom.pem. Зверніть увагу, що якщо ви вносите зміни до "
+"налаштувань TLS, потрібно зберегти зміни, перш ніж натискати “Перевірити "
+"конфігурацію синхронізації”."
 
 #: packages/lib/models/Setting.js:830
 msgid "Ignore TLS certificate errors"
-msgstr "Ignoruj błędy certyfikatu TLS"
+msgstr "Ігнорувати помилки сертифіката TLS"
 
 #: packages/lib/models/Setting.js:839
 msgid "Fail-safe"
-msgstr "Bezpieczny"
+msgstr "Безаварійність"
 
 #: packages/lib/models/Setting.js:840
 msgid ""
 "Fail-safe: Do not wipe out local data when sync target is empty (often the "
 "result of a misconfiguration or bug)"
 msgstr ""
-"Bezpieczny: nie usuwaj lokalnych danych kiedy cel synchronizacji jest pusty "
-"(często w wyniku nieprawidłowej konfiguracji lub błędu)"
+"Безаварійність: не видаляйти локальні дані, коли ціль синхронізації порожня "
+"(часто результат неправильної конфігурації або помилки)"
 
 #: packages/lib/models/Setting.js:844
 msgid ""
 "Specify the port that should be used by the API server. If not set, a "
 "default will be used."
 msgstr ""
-"Jeśli nie określisz portu używany przez serwer API, użyty zostanie domyślny."
+"Вкажіть порт, який повинен використовувати сервер API. Якщо не встановлено, "
+"використовуватиметься за замовчуванням."
 
 #: packages/lib/models/Setting.js:849
 msgid "Enable note history"
-msgstr "Aktywuj historię notatek"
+msgstr "Увімкнути історію нотаток"
 
 #: packages/lib/models/Setting.js:859
 msgid "days"
-msgstr "dni"
+msgstr "днів"
 
 #: packages/lib/models/Setting.js:859
 #, javascript-format
 msgid "%d days"
-msgstr "%d dni"
+msgstr "%d днів"
 
 #: packages/lib/models/Setting.js:861
 msgid "Keep note history for"
-msgstr "Zachowuj historię przez"
+msgstr "Зберігайте історію нотаток протягом"
 
 #: packages/lib/models/Setting.js:888
 msgid "Notebook list growth factor"
-msgstr "Czynnik rośnięcia listy notatników"
+msgstr "Фактор зростання списку блокнотів"
 
 #: packages/lib/models/Setting.js:889 packages/lib/models/Setting.js:902
 #: packages/lib/models/Setting.js:915
@@ -2712,39 +2703,39 @@ msgid ""
 "item with a factor of 2 will take twice as much space as an item with a "
 "factor of 1.Restart app to see changes."
 msgstr ""
-"Wartość czynnika ustala jak element będzie rósł, bądź zmniejszał się w "
-"odniesieniu do sąsiadujących elementów w kontenerze. Przykładowo, element z "
-"czynnikiem 2 będzie zajmował 2 razy więcej, niż ten z czynnikiem 1,. "
-"Zrestartuj aplikację, aby zobaczyć zmiany."
+"Властивість фактору встановлює, як елемент буде рости або зменшуватися, щоб "
+"розмістити вільний простір у своєму контейнері щодо інших предметів. Таким "
+"чином, предмет із коефіцієнтом 2 займе вдвічі більше місця, ніж предмет із "
+"коефіцієнтом 1. Перезапустіть програму, щоб побачити зміни."
 
 #: packages/lib/models/Setting.js:901
 msgid "Note list growth factor"
-msgstr "Czynnik rośnięcia listy notatek"
+msgstr "Фатор зростання списку нотаток"
 
 #: packages/lib/models/Setting.js:914
 msgid "Note area growth factor"
-msgstr "Czynnik rośnięcia pola notatek"
+msgstr "Фатор зростання зони нотаток"
 
 #: packages/lib/models/Setting.js:1115
 #, javascript-format
 msgid "Invalid option value: \"%s\". Possible values are: %s."
-msgstr "Nieznana wartość opcji: \"%s\". Możliwa wartość opcji: %s."
+msgstr "Недійсне значення параметра: “%s”. Можливі значення: %s."
 
 #: packages/lib/models/Setting.js:1514
 msgid "General"
-msgstr "Ogólne"
+msgstr "Загальні"
 
 #: packages/lib/models/Setting.js:1516
 msgid "Synchronisation"
-msgstr "Synchronizacja"
+msgstr "Синхронізація"
 
 #: packages/lib/models/Setting.js:1518
 msgid "Appearance"
-msgstr "Wygląd"
+msgstr "Зовнішній вигляд"
 
 #: packages/lib/models/Setting.js:1520
 msgid "Note"
-msgstr "Notatka"
+msgstr "Нотатка"
 
 #: packages/lib/models/Setting.js:1522
 #: packages/lib/services/interop/InteropService.js:49
@@ -2754,19 +2745,19 @@ msgstr "Markdown"
 
 #: packages/lib/models/Setting.js:1526
 msgid "Application"
-msgstr "Aplikacja"
+msgstr "Застосунок"
 
 #: packages/lib/models/Setting.js:1530
 msgid "Encryption"
-msgstr "Szyfrowanie"
+msgstr "Шифрування"
 
 #: packages/lib/models/Setting.js:1532
 msgid "Web Clipper"
-msgstr "Web clipper"
+msgstr "Web Clipper"
 
 #: packages/lib/models/Setting.js:1534
 msgid "Keyboard Shortcuts"
-msgstr "Skróty klawiaturowe"
+msgstr "Скорочення клавіатури"
 
 #: packages/lib/models/Setting.js:1541
 msgid ""
@@ -2778,39 +2769,39 @@ msgid ""
 "formatting. It is indicated below which plugins are compatible or not with "
 "the WYSIWYG editor."
 msgstr ""
-"Te wtyczki usprawniają wyświetlanie Markdownu. Miej na uwadze, że mimo, że "
-"te znaczniki mogą być przydatne, to nie są one częścią standardowego "
-"Markdownu i z uwagi na to większość z nich będzie działała wyłącznie w "
-"Joplinie. Dodatkowo, część z nich jest *niekompatybilna* z edytorem WYSIWYG. "
-"Jeśli otworzysz notatkę używającą tego formatowania w tym edytorze, utracisz "
-"to formatowanie. Poniżej jest widoczne które pluginy są kompatybilne z "
-"edytorem WYSIWYG."
+"Ці плагіни покращують візуалізатор Markdown додатковими функціями. Зверніть "
+"увагу, що, хоча ці функції можуть бути корисними, вони не є стандартними "
+"Markdown, тому більшість із них працюватимуть лише в Joplin. Крім того, "
+"деякі з них *несумісні* з редактором WYSIWYG. Якщо ви відкриєте нотатку, яка "
+"використовує один із цих плагінів у цьому редакторі, ви втратите "
+"форматування плагіна. Внизу вказано, які плагіни сумісні чи ні з редактором "
+"WYSIWYG."
 
 #: packages/lib/models/Setting.js:1543
 #, javascript-format
 msgid "Notes and settings are stored in: %s"
-msgstr "Notatki i ustawienia są przechowywane w: %s"
+msgstr "Нотатки та налаштування зберігаються у: %s"
 
 #: packages/lib/models/Resource.js:352
 msgid "Not downloaded"
-msgstr "Nie pobrano"
+msgstr "Не завантажено"
 
 #: packages/lib/models/Resource.js:354
 msgid "Downloading"
-msgstr "Pobieranie"
+msgstr "Завантаження"
 
 #: packages/lib/models/Resource.js:356
 msgid "Downloaded"
-msgstr "Pobrano"
+msgstr "Завантажено"
 
 #: packages/lib/models/Resource.js:358
 msgid "Error"
-msgstr "Błąd"
+msgstr "Помилка"
 
 #: packages/lib/models/Resource.js:403
 #, javascript-format
 msgid "Attachment conflict: \"%s\""
-msgstr "Konflikt załącznika: \"%s\""
+msgstr "Конфлікт вкладення: “%s”"
 
 #: packages/lib/models/Resource.js:404
 #, javascript-format
@@ -2819,55 +2810,55 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
-"Wystąpił [konflikt](%s) w załączniku poniżej.\n"
+"[конфлікт](%s) oу вкладеннях нижче.\n"
 "\n"
 "%s"
 
 #: packages/lib/models/Tag.js:223
 #, javascript-format
 msgid "The tag \"%s\" already exists. Please choose a different name."
-msgstr "Znacznik \"%s\" istnieje. Proszę wybrać inną nazwę."
+msgstr "Тег “%s” уже існує. Будь ласка, виберіть інше ім’я."
 
 #: packages/lib/models/Note.js:37
 msgid "created date"
-msgstr "data utworzenia"
+msgstr "дата створення"
 
 #: packages/lib/models/Note.js:38
 msgid "custom order"
-msgstr "własny kierunek sortowania"
+msgstr "індивідуальний порядок"
 
 #: packages/lib/models/Note.js:116
 msgid "This note does not have geolocation information."
-msgstr "Notatka nie zawiera informacji o lokalizacji geograficznej."
+msgstr "Ця нотатка не містить інформації про геолокацію."
 
 #: packages/lib/models/Note.js:524
 #, javascript-format
 msgid "Cannot copy note to \"%s\" notebook"
-msgstr "Nie można skopiować notatki do notatnika \"%s\""
+msgstr "Не можливо скопіювати нотатку до “%s” блокнота"
 
 #: packages/lib/models/Note.js:536
 #, javascript-format
 msgid "Cannot move note to \"%s\" notebook"
-msgstr "Nie można przenieść notatki do notatnika \"%s\""
+msgstr "Не можливо перемістити нотатку до “%s” блокнота"
 
 #: packages/lib/models/BaseItem.js:707
 msgid "Encrypted"
-msgstr "Zaszyfrowane"
+msgstr "Зашифровано"
 
 #: packages/lib/models/BaseItem.js:768
 msgid "Encrypted items cannot be modified"
-msgstr "Zaszyfrowanie obiekty nie mogą być modyfikowane"
+msgstr "Зашифровані елементи не можуть бути змінені"
 
 #: packages/lib/BaseApplication.js:149 packages/lib/BaseApplication.js:161
 #: packages/lib/BaseApplication.js:193
 #, javascript-format
 msgid "Usage: %s"
-msgstr "Przykłady: %s"
+msgstr "Використання: %s"
 
 #: packages/lib/BaseApplication.js:228
 #, javascript-format
 msgid "Unknown flag: %s"
-msgstr "Nieznana flaga: %s"
+msgstr "Невідомий прапорець: %s"
 
 #: packages/lib/SyncTargetOneDrive.js:32
 msgid "OneDrive"
@@ -2875,23 +2866,23 @@ msgstr "OneDrive"
 
 #: packages/lib/components/shared/config-shared.js:45
 msgid "Checking... Please wait."
-msgstr "Sprawdzanie... Proszę czekać."
+msgstr "Перевірка… Будь ласка, зачекайте."
 
 #: packages/lib/components/shared/config-shared.js:47
 msgid "Success! Synchronisation configuration appears to be correct."
-msgstr "Sukces! Konfiguracja synchronizacji wydaje się być prawidłowa."
+msgstr "Успіх! Конфігурація синхронізації видається правильною."
 
 #: packages/lib/components/shared/config-shared.js:49
 msgid ""
 "Error. Please check that URL, username, password, etc. are correct and that "
 "the sync target is accessible. The reported error was:"
 msgstr ""
-"Błąd. Proszę sprawdzić czy odnośnik, nazwę użytkownika, hasło i inne są "
-"poprawne oraz serwis synchronizacji dostępny. Raportowany błąd to:"
+"Помилка. Переконайтесь, що URL-адреса, ім’я користувача, пароль тощо є "
+"правильними та ціль синхронізації доступна. Повідомлення про помилку:"
 
 #: packages/lib/components/shared/dropbox-login-shared.js:39
 msgid "The application has been authorised!"
-msgstr "Aplikacja została uwierzytelniona!"
+msgstr "Додаток авторизовано!"
 
 #: packages/lib/components/shared/dropbox-login-shared.js:43
 #, javascript-format
@@ -2902,113 +2893,113 @@ msgid ""
 "\n"
 "Please try again."
 msgstr ""
-"Nie można uwierzytelnić aplikacji:\n"
+"Не вдалося авторизувати додаток:\n"
 "\n"
 "%s\n"
 "\n"
-"Proszę spróbować ponownie."
+"Будь ласка, спробуйте ще раз."
 
 #: packages/lib/components/shared/encryption-config-shared.js:33
 msgid ""
 "Please confirm that you would like to re-encrypt your complete database."
-msgstr "Potwierdź, że chcesz ponownie zaszyfrować całą bazę danych."
+msgstr "Підтвердьте, що хочете повторно зашифрувати повну базу даних."
 
 #: packages/lib/components/shared/encryption-config-shared.js:39
 msgid "Your data is going to be re-encrypted and synced again."
-msgstr "Twoje dane zostaną ponownie zaszyfrowane i zsynchronizowane."
+msgstr "Ваші дані будуть повторно зашифровані та знову синхронізовані."
 
 #: packages/lib/components/shared/encryption-config-shared.js:49
 msgid ""
 "Please enter your password in the master key list below before upgrading the "
 "key."
 msgstr ""
-"Podaj hasło w liście kluczy głównych poniżej przed aktualizacją klucza."
+"Будь ласка, введіть свій пароль у списку мастер ключів нижче перед "
+"оновленням ключа."
 
 #: packages/lib/components/shared/encryption-config-shared.js:58
 msgid "The master key has been upgraded successfully!"
-msgstr "Klucz główny został pomyślnie zaktualizowany!"
+msgstr "Головний ключ успішно оновлений!"
 
 #: packages/lib/components/shared/encryption-config-shared.js:60
 #, javascript-format
 msgid "Could not upgrade master key: %s"
-msgstr "Nie udało się zaktualizować klucza głównego: %s"
+msgstr "Не вдалося оновити головний ключ: %s"
 
 #: packages/lib/components/shared/encryption-config-shared.js:116
 #, javascript-format
 msgid "Decrypted items: %s / %s"
-msgstr "Deszyfrowane obiekty: %s / %s"
+msgstr "Розшифровано елементів: %s / %s"
 
 #: packages/lib/onedrive-api.js:392
 msgid ""
 "Cannot refresh token: authentication data is missing. Starting the "
 "synchronisation again may fix the problem."
 msgstr ""
-"Nie można odświeżyć tokena: brak danych uwierzytelniających. Uruchomienie "
-"synchronizacji ponownie powinno rozwiązać ten problem."
+"Не вдається оновити токен: дані автентифікації відсутні. Повторний запуск "
+"синхронізації може вирішити проблему."
 
 #: packages/lib/Synchronizer.js:119
 #, javascript-format
 msgid "Created local items: %d."
-msgstr "Utworzono lokalne obiekty: %d."
+msgstr "Створено локальних елементів: %d."
 
 #: packages/lib/Synchronizer.js:121
 #, javascript-format
 msgid "Updated local items: %d."
-msgstr "Zaktualizowano lokalne obiekty: %d."
+msgstr "Оновлено локальних елементів: %d."
 
 #: packages/lib/Synchronizer.js:123
 #, javascript-format
 msgid "Created remote items: %d."
-msgstr "Utworzono zdalne obiekty: %d."
+msgstr "Створено віддалених елементів: %d."
 
 #: packages/lib/Synchronizer.js:125
 #, javascript-format
 msgid "Updated remote items: %d."
-msgstr "Zaktualizowano zdalne obiekty: %d."
+msgstr "Оновлено віддалених елементів: %d."
 
 #: packages/lib/Synchronizer.js:127
 #, javascript-format
 msgid "Deleted local items: %d."
-msgstr "Usunięto lokalne obiekty: %d."
+msgstr "Видалено локальних елементів: %d."
 
 #: packages/lib/Synchronizer.js:129
 #, javascript-format
 msgid "Deleted remote items: %d."
-msgstr "Usunięto zdalne obiekty: %d."
+msgstr "Видалено віддалених елементів: %d."
 
 #: packages/lib/Synchronizer.js:131
 #, javascript-format
 msgid "Fetched items: %d/%d."
-msgstr "Pobieranie obiektów %d/%d."
+msgstr "Отримано елементів: %d/%d."
 
 #: packages/lib/Synchronizer.js:133
 msgid "Cancelling..."
-msgstr "Anulowanie..."
+msgstr "Скасування…"
 
 #: packages/lib/Synchronizer.js:135
 #, javascript-format
 msgid "Completed: %s"
-msgstr "Ukończono: %s"
+msgstr "Завершено: %s"
 
 #: packages/lib/Synchronizer.js:137
 #, javascript-format
 msgid "Last error: %s"
-msgstr "Ostatni błąd: %s"
+msgstr "Остання помилка: %s"
 
 #: packages/lib/Synchronizer.js:244
 msgid "Idle"
-msgstr "Spoczynek"
+msgstr "Бездіяльність"
 
 #: packages/lib/Synchronizer.js:246
 msgid "In progress"
-msgstr "W trakcie"
+msgstr "В процесі"
 
 #: packages/lib/Synchronizer.js:844
 msgid ""
 "Unknown item type downloaded - please upgrade Joplin to the latest version"
 msgstr ""
-"Pobrano nieznany typ pliku - proszę zaaktualizować Joplin do najnowszej "
-"wersji"
+"Завантажено невідомий тип елементу - оновіть Joplin до останньої версії"
 
 #: packages/lib/JoplinServerApi.js:63
 #, javascript-format
@@ -3018,8 +3009,8 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
-"Nie udało się połączyć z serwerem Joplin. Proszę sprawdzić ustawienia na "
-"ekranie Synchronizacji. Pełny błąd to:\n"
+"Не вдалося підключитися до сервера Joplin. Будь ласка, перевірте параметри "
+"синхронізації на екрані налаштування. Повна помилка:\n"
 "\n"
 "%s"
 
@@ -3033,16 +3024,16 @@ msgstr "WebDAV"
 
 #: packages/lib/SyncTargetFilesystem.js:18
 msgid "File system"
-msgstr "System plików"
+msgstr "Файлова система"
 
 #: packages/lib/commands/historyForward.js:17
 msgid "Forward"
-msgstr "Ponów"
+msgstr "Вперед"
 
 #: packages/lib/versionInfo.js:10
 #, javascript-format
 msgid "Revision: %s (%s)"
-msgstr "Rewizja: %s (%s)"
+msgstr "Ревізія: %s (%s)"
 
 #: packages/lib/versionInfo.js:20
 #, javascript-format
@@ -3052,78 +3043,78 @@ msgstr "%s %s (%s, %s)"
 #: packages/lib/versionInfo.js:22
 #, javascript-format
 msgid "Client ID: %s"
-msgstr "ID klienta: %s"
+msgstr "ID клієнта: %s"
 
 #: packages/lib/versionInfo.js:23
 #, javascript-format
 msgid "Sync Version: %s"
-msgstr "Wersja synchronizacji: %s"
+msgstr "Версія синхронізації: %s"
 
 #: packages/lib/versionInfo.js:24
 #, javascript-format
 msgid "Profile Version: %s"
-msgstr "Wersja profilu: %s"
+msgstr "Версія профайлу: %s"
 
 #: packages/lib/versionInfo.js:25
 #, javascript-format
 msgid "Keychain Supported: %s"
-msgstr "Wspierany menadżer kluczy: %s"
+msgstr "Підтримка Keychain: %s"
 
 #: packages/lib/services/RevisionService.js:217
 msgid "Restored Notes"
-msgstr "Przywrócone notatki"
+msgstr "Відновлені нотатки"
 
 #: packages/lib/services/interop/InteropService_Exporter_Jex.js:43
 msgid "There is no data to export."
-msgstr "Brak danych do eksportu."
+msgstr "Немає даних для експорту."
 
 #: packages/lib/services/interop/types.js:23
 msgid "File"
-msgstr "Plik"
+msgstr "Файл"
 
 #: packages/lib/services/interop/types.js:23
 msgid "Directory"
-msgstr "Katalog"
+msgstr "Каталог"
 
 #: packages/lib/services/interop/InteropService_Importer_Md.js:41
 msgid "Please specify the notebook where the notes should be imported to."
-msgstr "Proszę określić notatnik do którego będą zaimportowane notatki."
+msgstr "Будь ласка, вкажіть блокнот, куди слід імпортувати нотатки."
 
 #: packages/lib/services/interop/InteropService.js:48
 #: packages/lib/services/interop/InteropService.js:57
 msgid "Joplin Export File"
-msgstr "Plik Joplin Export"
+msgstr "Joplin Export File"
 
 #: packages/lib/services/interop/InteropService.js:50
 #: packages/lib/services/interop/InteropService.js:58
 msgid "Joplin Export Directory"
-msgstr "Katalog Joplin Export"
+msgstr "Joplin Export Directory"
 
 #: packages/lib/services/interop/InteropService.js:51
 msgid "Evernote Export File (as Markdown)"
-msgstr "Plik eksportu Evernote (jako Markdown)"
+msgstr "Evernote Export File (as Markdown)"
 
 #: packages/lib/services/interop/InteropService.js:52
 msgid "Evernote Export File (as HTML)"
-msgstr "Plik eksportu Evernote (jako HTML)"
+msgstr "Evernote Export File (as HTML)"
 
 #: packages/lib/services/interop/InteropService.js:60
 msgid "HTML File"
-msgstr "Plik HTML"
+msgstr "HTML File"
 
 #: packages/lib/services/interop/InteropService.js:61
 msgid "HTML Directory"
-msgstr "Katalog HTML"
+msgstr "HTML Directory"
 
 #: packages/lib/services/interop/InteropService.js:127
 #, javascript-format
 msgid "Cannot load \"%s\" module for format \"%s\" and output \"%s\""
-msgstr "Nie można załadować modułu \"%s\" dla formatu \"%s\" i wyjścia \"%s\""
+msgstr "Не вдається завантажити модуль “%s” для формату “%s” і вивести “%s”"
 
 #: packages/lib/services/interop/InteropService.js:150
 #, javascript-format
 msgid "Cannot load \"%s\" module for format \"%s\" and target \"%s\""
-msgstr "Nie można załadować modułu \"%s\" dla formatu \"%s\" i celu \"%s\""
+msgstr "Не вдається завантажити модуль “%s” для формату “%s” і цілі “%s”"
 
 #: packages/lib/services/interop/InteropService.js:194
 #: packages/lib/services/interop/InteropService.js:206
@@ -3152,32 +3143,32 @@ msgstr "Nie można załadować modułu \"%s\" dla formatu \"%s\" i celu \"%s\""
 #: packages/app-cli/app/command-done.js:20
 #, javascript-format
 msgid "Cannot find \"%s\"."
-msgstr "Nie można znaleźć \"%s\"."
+msgstr "Не вдається знайти “%s”."
 
 #: packages/lib/services/interop/InteropService.js:199
 #, javascript-format
 msgid "Please specify import format for %s"
-msgstr "Proszę określić format importu dla %s"
+msgstr "Вкажіть формат імпорту для %s"
 
 #: packages/lib/services/KeymapService.js:273
 msgid "command"
-msgstr "komenda"
+msgstr "команда"
 
 #: packages/lib/services/KeymapService.js:273
 #: packages/lib/services/KeymapService.js:278
 #, javascript-format
 msgid "\"%s\" is missing the required \"%s\" property."
-msgstr "\"%s\" nie posiada wymaganej właściwości \"%s\""
+msgstr "У “%s” відсутня необхідна властивість “%s”."
 
 #: packages/lib/services/KeymapService.js:278
 #: packages/lib/services/KeymapService.js:285
 msgid "accelerator"
-msgstr "akcelerator"
+msgstr "прискорювач"
 
 #: packages/lib/services/KeymapService.js:285
 #, javascript-format
 msgid "Invalid %s: %s."
-msgstr "Nieprawidłowy %s: %s."
+msgstr "Хибний %s: %s."
 
 #: packages/lib/services/KeymapService.js:303
 #, javascript-format
@@ -3185,17 +3176,17 @@ msgid ""
 "Accelerator \"%s\" is used for \"%s\" and \"%s\" commands. This may lead to "
 "unexpected behaviour."
 msgstr ""
-"Skrót klawiszowy \"%s\" jest już używany w komendach \"%s\" i \"%s\". Może "
-"to powodować nieoczekiwane zachowanie."
+"Прискорювач “%s” використовується для команд “%s” та “%s”. Це може призвести "
+"до несподіваної поведінки."
 
 #: packages/lib/services/KeymapService.js:328
 #, javascript-format
 msgid "Accelerator \"%s\" is not valid."
-msgstr "Skrót klawiszowy \"%s\" nie jest prawidłowy."
+msgstr "Прискорювач “%s” хибний."
 
 #: packages/lib/services/ReportService.js:123
 msgid "Items that cannot be synchronised"
-msgstr "Obiekty nie mogą być zsynchronizowane"
+msgstr "Елементи, які неможливо синхронізувати"
 
 #: packages/lib/services/ReportService.js:124
 msgid ""
@@ -3203,23 +3194,23 @@ msgid ""
 "target. In order to find these items, either search for the title or the ID "
 "(which is displayed in brackets above)."
 msgstr ""
-"Obiekty pozostaną na urządzeniu, jednakże nie zostaną wysłane na serwis "
-"synchronizacji. W celu wyszukania tych obiektów, proszę szukać po tytule lub "
-"po ID (które jest wyświetlane w klamrach poniżej)."
+"Ці елементи залишаться на пристрої, але не будуть завантажені до цілі "
+"синхронізації. Для того, щоб знайти ці елементи, знайдіть заголовок або "
+"ідентифікатор (який відображається в дужках вище)."
 
 #: packages/lib/services/ReportService.js:129
 #, javascript-format
 msgid "%s (%s) could not be uploaded: %s"
-msgstr "%s (%s) nie może być wysłany: %s"
+msgstr "Не вдалося завантажити %s (%s): %s"
 
 #: packages/lib/services/ReportService.js:132
 #, javascript-format
 msgid "Item \"%s\" could not be downloaded: %s"
-msgstr "Obiekt \"%s\" nie może być pobrany: %s"
+msgstr "Не вдалося завантажити елемент “%s”: %s"
 
 #: packages/lib/services/ReportService.js:139
 msgid "Items that cannot be decrypted"
-msgstr "Obiekty nie mogą być odszyfrowane"
+msgstr "Елементи, які неможливо розшифрувати"
 
 #: packages/lib/services/ReportService.js:140
 msgid ""
@@ -3227,9 +3218,9 @@ msgid ""
 "are corrupted or too large. These items will remain on the device but Joplin "
 "will no longer attempt to decrypt them."
 msgstr ""
-"Joplin nie udało się odszyfrować wielu obiektów ponieważ są uszkodzone albo "
-"za duże. Pozostaną na urządzeniu ale Joplin nie będzie już próbować ich "
-"odszyfrować."
+"Joplin не зміг розшифрувати ці елементи кілька разів, можливо, тому, що вони "
+"пошкоджені або занадто великі. Ці елементи залишаться на пристрої, але "
+"Joplin більше не намагатиметься їх розшифрувати."
 
 #: packages/lib/services/ReportService.js:145
 #: packages/app-cli/app/cli-utils.js:140
@@ -3239,11 +3230,11 @@ msgstr "%s: %s"
 
 #: packages/lib/services/ReportService.js:171
 msgid "Attachments"
-msgstr "Załączniki"
+msgstr "Вкладення"
 
 #: packages/lib/services/ReportService.js:178
 msgid "Downloaded and decrypted"
-msgstr "Pobrane i odszyfrowane"
+msgstr "Завантажено і розшифровано"
 
 #: packages/lib/services/ReportService.js:178
 #: packages/lib/services/ReportService.js:179
@@ -3255,15 +3246,15 @@ msgstr "%s: %d"
 
 #: packages/lib/services/ReportService.js:179
 msgid "Downloaded and encrypted"
-msgstr "Pobrane i zaszyfrowane"
+msgstr "Завантадено і зашифровано"
 
 #: packages/lib/services/ReportService.js:180
 msgid "Created locally"
-msgstr "Utworzono lokalnie"
+msgstr "Створено локально"
 
 #: packages/lib/services/ReportService.js:191
 msgid "Attachments that could not be downloaded"
-msgstr "Załączniki nie mogą zostać pobrane"
+msgstr "Вкладення, що не можуть бути завантадені"
 
 #: packages/lib/services/ReportService.js:195
 #, javascript-format
@@ -3272,7 +3263,7 @@ msgstr "%s (%s): %s"
 
 #: packages/lib/services/ReportService.js:206
 msgid "Sync status (synced items / total items)"
-msgstr "Status synchronizacji (obiekty zsynchronizowane / obiekty ogółem)"
+msgstr "Статус синзронізації (синзронізовані елементи / всього елементів)"
 
 #: packages/lib/services/ReportService.js:210
 #, javascript-format
@@ -3282,80 +3273,81 @@ msgstr "%s: %d/%d"
 #: packages/lib/services/ReportService.js:212
 #, javascript-format
 msgid "Total: %d/%d"
-msgstr "Ogółem: %d/%d"
+msgstr "Всього: %d/%d"
 
 #: packages/lib/services/ReportService.js:214
 #, javascript-format
 msgid "Conflicted: %d"
-msgstr "Skonfliktowane: %d"
+msgstr "Конфліктів: %d"
 
 #: packages/lib/services/ReportService.js:215
 #, javascript-format
 msgid "To delete: %d"
-msgstr "Do usunięcia: %d"
+msgstr "До видалення: %d"
 
 #: packages/lib/services/ReportService.js:217
 msgid "Folders"
-msgstr "Foldery"
+msgstr "Каталоги"
 
 #: packages/lib/services/ReportService.js:223
 #, javascript-format
 msgid "%s: %d notes"
-msgstr "%s: %d notatek"
+msgstr "%s: %d нотаток"
 
 #: packages/lib/services/ReportService.js:228
 msgid "Coming alarms"
-msgstr "Przychodzące powiadomienia"
+msgstr "Найближчі будильники"
 
 #: packages/lib/services/ReportService.js:232
 #, javascript-format
 msgid "On %s: %s"
-msgstr "Na %s: %s"
+msgstr "%s: %s"
 
 #: packages/lib/services/spellChecker/SpellCheckerService.js:107
 msgid "No suggestions"
-msgstr "Brak sugestii"
+msgstr "Немає пропозицій"
 
 #: packages/lib/services/spellChecker/SpellCheckerService.js:114
 msgid "Add to dictionary"
-msgstr "Dodaj do słownika"
+msgstr "Додати до словника"
 
 #: packages/lib/services/spellChecker/SpellCheckerService.js:153
 msgid "Use spell checker"
-msgstr "Sprawdzaj pisownię"
+msgstr "Використовуйте перевірку правопису"
 
 #: packages/lib/services/spellChecker/SpellCheckerService.js:173
 msgid "Change language"
-msgstr "Zmień język"
+msgstr "Змінити мову"
 
 #: packages/app-cli/app/command-cp.js:13
 msgid ""
 "Duplicates the notes matching <note> to [notebook]. If no notebook is "
 "specified the note is duplicated in the current notebook."
 msgstr ""
-"Duplikuje notatki określone <note> do [notatnik]. Jeżeli notatnik nie "
-"zostanie określony, notatki zostaną zduplikowane w obecnym notatniku."
+"Дублює нотатки, що відповідають <note> на [notebook]. Якщо блокнот не "
+"вказаний, нотатка дублюється в поточному блокноті."
 
 #: packages/app-cli/app/command-ls.js:18
 msgid ""
 "Displays the notes in the current notebook. Use `ls /` to display the list "
 "of notebooks."
 msgstr ""
-"Wyświetla notatki w obecnym notatniku. Użyj `ls /` aby wyświetlić listę "
-"notatników."
+"Відображає нотатки в поточному блокноті. Використовуйте `ls /`, щоб "
+"відобразити список блокнотів."
 
 #: packages/app-cli/app/command-ls.js:27
 msgid "Displays only the first top <num> notes."
-msgstr "Wyświetla jedynie pierwsze <num> notatek."
+msgstr "Відображає лише перші <num> нотаток."
 
 #: packages/app-cli/app/command-ls.js:28
 msgid "Sorts the item by <field> (eg. title, updated_time, created_time)."
 msgstr ""
-"Sortuje obiekty po <field> (np. tytuł, data_aktualizacji, data_utworzenia)."
+"Сортувати елементи за <field> (заголовок, час оновлення, час створення, "
+"тощо)."
 
 #: packages/app-cli/app/command-ls.js:29
 msgid "Reverses the sorting order."
-msgstr "Odwraca kierunek sortowania."
+msgstr "Зворотній порядок сортування."
 
 #: packages/app-cli/app/command-ls.js:30
 msgid ""
@@ -3363,70 +3355,70 @@ msgid ""
 "for to-dos, or `nt` for notes and to-dos (eg. `-tt` would display only the "
 "to-dos, while `-tnt` would display notes and to-dos."
 msgstr ""
-"Wyświetla jedynie obiekty określonego typu(ów). Mogą być to `n` dla notatek, "
-"`t` dla zadań, `nt` dla notatek i zadań (np. `-tt` wyświetli jedynie "
-"zadania, podczas gdy `-tnt` wyświetli zarówno notatki, jak i zadania."
+"Відображає лише елементи певного типу. Може бути `n` для нотаток,`t` для "
+"завдань або `nt` для приміток і завдань (наприклад,`-tt` відображатиме лише "
+"завдання, тоді як `-tnt` відображатиме нотатки та завдання."
 
 #: packages/app-cli/app/command-ls.js:31
 msgid "Either \"text\" or \"json\""
-msgstr "Zarówno \"text\" jak i \"json\""
+msgstr "Або “текст”, або “json”"
 
 #: packages/app-cli/app/command-ls.js:32 packages/app-cli/app/command-tag.js:18
 msgid ""
 "Use long list format. Format is ID, NOTE_COUNT (for notebook), DATE, "
 "TODO_CHECKED (for to-dos), TITLE"
 msgstr ""
-"Użyj długiego formatu listy. Format to ID, LICZNIK_NOTATEK (dla notatników), "
-"DATA, ZADANIA_WYKONANE (dla zadań), TYTUŁ"
+"Використовуйте формат довгого списку. Формат - ID, NOTE_COUNT (для "
+"блокнота), DATE, TODO_CHECKED (для завдань), TITLE"
 
 #: packages/app-cli/app/command-ls.js:63
 msgid "Please select a notebook first."
-msgstr "Na początku wybierz notatnik."
+msgstr "Спочатку виберіть блокнот."
 
 #: packages/app-cli/app/command-import.js:14
 msgid "Imports data into Joplin."
-msgstr "Importuje dane do Joplin."
+msgstr "Імпортує дані в Joplin."
 
 #: packages/app-cli/app/command-import.js:25
 #, javascript-format
 msgid "Source format: %s"
-msgstr "Format źródłowy: %s"
+msgstr "Формат джерела: %s"
 
 #: packages/app-cli/app/command-import.js:26
 msgid "Do not ask for confirmation."
-msgstr "Nie pytaj o potwierdzenie."
+msgstr "Не питати підтвердження."
 
 #: packages/app-cli/app/command-import.js:27
 #, javascript-format
 msgid "Output format: %s"
-msgstr "Format docelowy: %s"
+msgstr "Вихідний формат: %s"
 
 #: packages/app-cli/app/command-import.js:65
 msgid "Importing notes..."
-msgstr "Importowanie notatek..."
+msgstr "Імпортування нотаток…"
 
 #: packages/app-cli/app/help-utils.js:56
 msgid "Enum"
-msgstr "Wyliczanie"
+msgstr "Enum"
 
 #: packages/app-cli/app/help-utils.js:56
 #, javascript-format
 msgid "Type: %s."
-msgstr "Typ: %s."
+msgstr "Тип: %s."
 
 #: packages/app-cli/app/help-utils.js:57
 #, javascript-format
 msgid "Possible values: %s."
-msgstr "Możliwe wartośći: %s."
+msgstr "Можливі значення: %s."
 
 #: packages/app-cli/app/help-utils.js:71
 #, javascript-format
 msgid "Default: %s"
-msgstr "Domyślne: %s"
+msgstr "За замовчуванням: %s"
 
 #: packages/app-cli/app/help-utils.js:77
 msgid "Possible keys/values:"
-msgstr "Dostępne klucze/wartości:"
+msgstr "Можливі ключі/значення:"
 
 #: packages/app-cli/app/command-server.js:14
 #, javascript-format
@@ -3434,75 +3426,75 @@ msgid ""
 "Start, stop or check the API server. To specify on which port it should run, "
 "set the api.port config variable. Commands are (%s)."
 msgstr ""
-"Uruchom, zatrzymaj lub sprawdź serwer API. Aby określić port, na którym "
-"powinien działać ustaw zmienną api.port w konfiguracji. Polecenia to (%s)"
+"Запустіть, зупиніть або перевірте сервер API. Щоб вказати, на якому порту "
+"він повинен працювати, встановіть конфігураційну змінну api.port. Команди "
+"(%s)."
 
 #: packages/app-cli/app/command-server.js:38
 #, javascript-format
 msgid "Server is already running on port %d"
-msgstr "Serwer jest już uruchomiony na porcie %d"
+msgstr "Сервер вже працює на порту %d"
 
 #: packages/app-cli/app/command-server.js:44
 #, javascript-format
 msgid "Server is running on port %d"
-msgstr "Serwer działa na porcie %d"
+msgstr "Сервер працює на порту %d"
 
 #: packages/app-cli/app/command-server.js:44
 #: packages/app-cli/app/command-server.js:47
 msgid "Server is not running."
-msgstr "Serwer nie został uruchomiony."
+msgstr "Сервер не працює."
 
 #: packages/app-cli/app/command-e2ee.js:18
 msgid ""
 "Manages E2EE configuration. Commands are `enable`, `disable`, `decrypt`, "
 "`status`, `decrypt-file` and `target-status`."
 msgstr ""
-"Zarządza konfiguracją E2EE (szyfrowanie po stronie klienta). Dostępne "
-"komendy to `enable`, `disable`, `decrypt`,`status`,`decrypt-file`,`target-"
-"status`."
+"Керує конфігурацією E2EE. Команди: `enable`,` disable`, `decrypt`,` status`, "
+"`decrypt-file` і` target-status`."
 
 #: packages/app-cli/app/command-e2ee.js:36
 #: packages/app-cli/app/command-e2ee.js:74
 msgid "Enter master password:"
-msgstr "Wprowadź hasło główne:"
+msgstr "Введіть головний пароль:"
 
 #: packages/app-cli/app/command-e2ee.js:38
 #: packages/app-cli/app/command-e2ee.js:76
 #: packages/app-cli/app/command-e2ee.js:81
 msgid "Operation cancelled"
-msgstr "Operacja anulowana"
+msgstr "Операцію скасовано"
 
 #: packages/app-cli/app/command-e2ee.js:47
 msgid ""
 "Starting decryption... Please wait as it may take several minutes depending "
 "on how much there is to decrypt."
 msgstr ""
-"Rozpoczynanie deszyfrowania...Proszę czekać, może to zająć kilkanaście minut "
-"w zależności od ilości danych."
+"Початок дешифрування … Зачекайте, оскільки це може зайняти кілька хвилин, "
+"залежно від того, скільки потрібно розшифрувати."
 
 #: packages/app-cli/app/command-e2ee.js:55
 #, javascript-format
 msgid "Decrypted items: %d"
-msgstr "Deszyfrowane obiekty: %d"
+msgstr "Розшифровано елементів: %d"
 
 #: packages/app-cli/app/command-e2ee.js:56
 #, javascript-format
 msgid "Skipped items: %d (use --retry-failed-items to retry decrypting them)"
 msgstr ""
-"Pominięte obiekty: %d (użyj --retry-failed-items żeby ponownie spróbować je "
-"odszyfrować)"
+"Пропущені елементи: %d (використовуйте —retry-failed-items, щоб спробувати "
+"їх дешифрувати)"
 
 #: packages/app-cli/app/command-e2ee.js:70
 msgid "Completed decryption."
-msgstr "Deszyfrowywanie zakończone."
+msgstr "Завершено розшифрування."
 
 #: packages/app-cli/app/command-mkbook.js:12
 msgid "Creates a new notebook."
-msgstr "Tworzy nowy notatnik."
+msgstr "Створює новий блокнот."
 
 #: packages/app-cli/app/command-mv.js:14
 msgid "Moves the notes matching <note> to [notebook]."
-msgstr "Przenosi notatki określone <note> do [notatnik]."
+msgstr "Переміщує нотатки, що відповідають <note>, у [блокнот]."
 
 #: packages/app-cli/app/command-config.js:13
 msgid ""
@@ -3510,14 +3502,13 @@ msgid ""
 "value of [name]. If neither [name] nor [value] is provided, it will list the "
 "current configuration."
 msgstr ""
-"Pobiera lub ustawia wartość pliku konfiguracyjnego. Jeżeli [wartość] nie "
-"jest podana, zostanie wyświetlona wartość [nazwa]. Jeżeli zarówno [nazwa], "
-"jak i [wartość] nie zostanie podana, wyświetlona zostanie lista z obecną "
-"konfiguracją."
+"Отримує або встановлює значення конфігурації. Якщо значення [value] не "
+"вказано, воно буде відображати значення [name]. Якщо не вказано ні [ім’я], "
+"ні [значення], у ньому буде вказано поточну конфігурацію."
 
 #: packages/app-cli/app/command-config.js:18
 msgid "Also displays unset and hidden config variables."
-msgstr "Wyświetla także nieustawione i ukryte zmienne konfiguracyjne."
+msgstr "Також відображає невстановлені та приховані змінні конфігурації."
 
 #: packages/app-cli/app/command-config.js:79
 #, javascript-format
@@ -3534,31 +3525,32 @@ msgid ""
 "Switches to [notebook] - all further operations will happen within this "
 "notebook."
 msgstr ""
-"Przełącza na [Notatnik] - wszystkie przyszłe operacje zostaną wykonane w tym "
-"notatniku."
+"Перемикається на [блокнот] - усі подальші операції відбуватимуться в цьому "
+"блокноті."
 
 #: packages/app-cli/app/command-sync.js:29
 msgid "Synchronises with remote storage."
-msgstr "Synchronizuje z dyskiem zdalnym."
+msgstr "Синхронізується з віддаленим сховищем."
 
 #: packages/app-cli/app/command-sync.js:34
 msgid "Sync to provided target (defaults to sync.target config value)"
 msgstr ""
-"Synchronizuje z określonym serwisem (domyślnie z wartością konfiguracji sync."
-"target)"
+"Синхронізуватись із вказаною ціллю (за замовчуванням значення конфігурації "
+"sync.target)"
 
 #: packages/app-cli/app/command-sync.js:35
 msgid "Upgrade the sync target to the latest version."
-msgstr "Aktualizuj cel synchronizacji do najnowszej wersji."
+msgstr "Оновіть ціль синхронізації до останньої версії."
 
 #: packages/app-cli/app/command-sync.js:105
 #, javascript-format
 msgid "Not authentified with %s. Please provide any missing credentials."
-msgstr "Nie uwierzytelniono z %s. Proszę uzupełnij brakujące dane."
+msgstr ""
+"Не аутентифіковано за допомогою %s. Надайте будь-які відсутні облікові дані."
 
 #: packages/app-cli/app/command-sync.js:128
 msgid "Synchronisation is already in progress."
-msgstr "Synchronizacja w toku."
+msgstr "Синхронізація вже триває."
 
 #: packages/app-cli/app/command-sync.js:133
 #, javascript-format
@@ -3567,127 +3559,127 @@ msgid ""
 "taking place, you may delete the lock file at \"%s\" and resume the "
 "operation."
 msgstr ""
-"Plik blokady jest aktualnie w użyciu. Jeżeli wiesz, że synchronizacja nie "
-"odbywa się, możesz usunąć plik blokady w \"%s\" i wznowić operację."
+"Файл блокування вже утримується. Якщо ви знаєте, що синхронізація не "
+"відбувається, ви можете видалити файл блокування “%s” і продовжити роботу."
 
 #: packages/app-cli/app/command-sync.js:175
 #, javascript-format
 msgid "Synchronisation target: %s (%s)"
-msgstr "Serwis synchronizacji: %s (%s)"
+msgstr "Ціль синхронізації: %s (%s)"
 
 #: packages/app-cli/app/command-sync.js:177
 msgid "Cannot initialise synchroniser."
-msgstr "Nie można zainicjalizować synchronizatora."
+msgstr "Не вдається ініціалізувати синхронізатор."
 
 #: packages/app-cli/app/command-sync.js:207
 msgid "Starting synchronisation..."
-msgstr "Rozpoczynanie synchronizacji..."
+msgstr "Запуск синхронізації …"
 
 #: packages/app-cli/app/command-sync.js:230
 msgid "Downloading resources..."
-msgstr "Pobieranie zasobów..."
+msgstr "Завантаження ресурсів…"
 
 #: packages/app-cli/app/command-sync.js:242
 #, javascript-format
 msgid "Sync target must be upgraded! Run `%s` to proceed."
-msgstr "Cel synchronizacji wymaga aktualizacji. Uruchom '%s' aby kontynuować."
+msgstr "Потрібно оновити ціль синхронізації! Запустіть `%s`, щоб продовжити."
 
 #: packages/app-cli/app/command-sync.js:260
 msgid "Cancelling... Please wait."
-msgstr "Anulowanie... Proszę czekać."
+msgstr "Скасування… Будь ласка, почекайте."
 
 #: packages/app-cli/app/command-ren.js:14
 msgid "Renames the given <item> (note or notebook) to <name>."
-msgstr "Zmienia nazwę dla wskazanego <item> (notatka lub notatnik) na <name>."
+msgstr "Перейменовує даний <item> (нотатку або блокнот) на <name>."
 
 #: packages/app-cli/app/command-rmbook.js:13
 msgid "Deletes the given notebook."
-msgstr "Usuwa wybrany notatnik."
+msgstr "Видаляє даний блокнот."
 
 #: packages/app-cli/app/command-rmbook.js:17
 msgid "Deletes the notebook without asking for confirmation."
-msgstr "Usuwa notatnik bez pytania o potwierdzenie."
+msgstr "Видаляє блокнот, не запитуючи підтвердження."
 
 #: packages/app-cli/app/command-mktodo.js:12
 msgid "Creates a new to-do."
-msgstr "Tworzy nowe zadanie."
+msgstr "Створює нове завдання."
 
 #: packages/app-cli/app/command-mktodo.js:16
 #: packages/app-cli/app/command-mknote.js:16
 msgid "Notes can only be created within a notebook."
-msgstr "Notatki mogą być tworzone jedynie w notatniku."
+msgstr "Нотатки можна створювати лише в блокноті."
 
 #: packages/app-cli/app/command-cat.js:14
 msgid "Displays the given note."
-msgstr "Wyświetla wskazaną notatkę."
+msgstr "Відображає дану нотатку."
 
 #: packages/app-cli/app/command-cat.js:18
 msgid "Displays the complete information about note."
-msgstr "Wyświetla wszystkie informacje o notatce."
+msgstr "Відображає повну інформацію про нотатку."
 
 #: packages/app-cli/app/command-edit.js:17
 msgid "Edit note."
-msgstr "Edytuj notatkę."
+msgstr "Редагувати примітку."
 
 #: packages/app-cli/app/command-edit.js:30
 msgid ""
 "No text editor is defined. Please set it using `config editor <editor-path>`"
 msgstr ""
-"Nie wybrano edytora tekstu. Proszę ustawić go za pomocą komendy  `confg "
-"editor <ścieżka-do-programu>`"
+"Не визначено жодного текстового редактора. Будь ласка, встановіть його за "
+"допомогою `config editor <editor-path>`"
 
 #: packages/app-cli/app/command-edit.js:40
 msgid "No active notebook."
-msgstr "Brak aktywnego notatnika."
+msgstr "Немає активного блокнота."
 
 #: packages/app-cli/app/command-edit.js:46
 #, javascript-format
 msgid "Note does not exist: \"%s\". Create it?"
-msgstr "Notatka nie istnieje: \"%s\". Utworzyć?"
+msgstr "Нотатка не існує: “%s”. Створити?"
 
 #: packages/app-cli/app/command-edit.js:75
 msgid "Starting to edit note. Close the editor to get back to the prompt."
 msgstr ""
-"Rozpoczynanie edycji notatki. Zamknij edytor, aby powrócić do wiersza "
-"poleceń."
+"Починається редагування примітки. Закрийте редактор, щоб повернутися до "
+"запиту."
 
 #: packages/app-cli/app/command-edit.js:97
 msgid "Note has been saved."
-msgstr "Notatka została zapisana."
+msgstr "Примітку збережено."
 
 #: packages/app-cli/app/app-gui.js:452
 msgid "To delete a tag, untag the associated notes."
-msgstr "Aby usunąć znacznik, należy usunąć powiązane znaczniki z notatek."
+msgstr "Щоб видалити тег, зніміть позначки з відповідних нотаток."
 
 #: packages/app-cli/app/app-gui.js:462
 msgid "Please select the note or notebook to be deleted first."
 msgstr ""
-"Proszę wybrać notatkę lub notatnik który ma zostać usunięty jako pierwszy."
+"Будь ласка, виберіть примітку або блокнот, який потрібно спершу видалити."
 
 #: packages/app-cli/app/app-gui.js:750
 msgid "Press Ctrl+D or type \"exit\" to exit the application"
-msgstr "Naciśnij Ctrl+D lub wpisz \"exit\" aby wyjść z aplikacji"
+msgstr "Натисніть Ctrl + D або введіть “exit”, щоб вийти з програми"
 
 #: packages/app-cli/app/command-rmnote.js:13
 msgid "Deletes the notes matching <note-pattern>."
-msgstr "Usuwa notatki spełniające <note-pattern>."
+msgstr "Видаляє нотатки, що відповідають <note-pattern>."
 
 #: packages/app-cli/app/command-rmnote.js:17
 msgid "Deletes the notes without asking for confirmation."
-msgstr "Usuwa notatki bez pytania o potwierdzenie."
+msgstr "Видаляє нотатки, не вимагаючи підтвердження."
 
 #: packages/app-cli/app/command-rmnote.js:27
 #, javascript-format
 msgid "%d notes match this pattern. Delete them?"
-msgstr "%d notatki spełniają wzór. Usunąć je?"
+msgstr "%d нотаток відповідають цьому шаблону. Видалити їх?"
 
 #: packages/app-cli/app/command-attach.js:13
 msgid "Attaches the given file to the note."
-msgstr "Dołącza wskazany plik do notatki."
+msgstr "Додає даний файл до нотатки."
 
 #: packages/app-cli/app/command-version.js:11
 msgid "Displays version information"
-msgstr "Wyświetla informacje o wersji"
+msgstr "Відображає інформацію про версію"
 
 #: packages/app-cli/app/command-version.js:16
 #, javascript-format
@@ -3696,45 +3688,44 @@ msgstr "%s %s (%s)"
 
 #: packages/app-cli/app/command-undone.js:12
 msgid "Marks a to-do as non-completed."
-msgstr "Oznacza zadanie jako nieukończone."
+msgstr "Позначає завдання як невиконане."
 
 #: packages/app-cli/app/command-export.js:13
 msgid ""
 "Exports Joplin data to the given path. By default, it will export the "
 "complete database including notebooks, notes, tags and resources."
 msgstr ""
-"Eksportuje dane Joplin do wskazanej ścieżki. W trybie domyślnym eksportowana "
-"zostanie pełna baza danych zawierająca notatniki, notatki, znaczniki i "
-"zasoby."
+"Експортує дані Joplin за вказаним шляхом. За замовчуванням експортує всю "
+"базу даних, включаючи блокноти, нотатки, теги та ресурси."
 
 #: packages/app-cli/app/command-export.js:23
 #, javascript-format
 msgid "Destination format: %s"
-msgstr "Format docelowy: %s"
+msgstr "Формат призначення: %s"
 
 #: packages/app-cli/app/command-export.js:23
 msgid "Exports only the given note."
-msgstr "Eksportuje jedynie wybraną notatkę."
+msgstr "Експортує лише дану примітку."
 
 #: packages/app-cli/app/command-export.js:23
 msgid "Exports only the given notebook."
-msgstr "Eksportuje jedynie wybrany notatnik."
+msgstr "Експортує лише даний блокнот."
 
 #: packages/app-cli/app/command-mknote.js:12
 msgid "Creates a new note."
-msgstr "Tworzy nową notatkę."
+msgstr "Створює нову нотатку."
 
 #: packages/app-cli/app/main.js:87
 msgid "Type `joplin help` for usage information."
-msgstr "Wpisz `joplin help` dla informacji o użytkowaniu."
+msgstr "Введіть `joplin help` для отримання інформації про використання."
 
 #: packages/app-cli/app/main.js:89
 msgid "Fatal error:"
-msgstr "Błąd krytyczny:"
+msgstr "Критична помилка:"
 
 #: packages/app-cli/app/command-geoloc.js:13
 msgid "Displays a geolocation URL for the note."
-msgstr "Wyświetla odnośnik z lokacją geograficzną dla notatki."
+msgstr "Відображає URL-адресу геолокації для примітки."
 
 #: packages/app-cli/app/gui/NoteWidget.js:36
 msgid ""
@@ -3745,13 +3736,13 @@ msgid ""
 "\n"
 "For example, to create a notebook press `mb`; to create a note press `mn`."
 msgstr ""
-"Witaj w Joplin!\n"
+"Ласкаво просимо до Ощздшт!\n"
 "\n"
-"Wpisz: `:help shortcuts` aby uzyskać listę skrótów klawiaturowych lub `help` "
-"aby uzyskać informacje o użytkowaniu.\n"
+"Введіть `:help shortcuts` для списку комбінацій клавіш або просто `:help` "
+"для інформації про використання.\n"
 "\n"
-"Na przykład, aby utworzyć notatnik, naciśnij `mb`; aby utworzyć notatkę, "
-"naciśnij `mn`."
+"Наприклад, для створення блокнота натисніть `mb`; щоб створити нотатку, "
+"натисніть “mn”."
 
 #: packages/app-cli/app/gui/NoteWidget.js:48
 msgid ""
@@ -3760,22 +3751,22 @@ msgid ""
 "supplied the password, the encrypted items are being decrypted in the "
 "background and will be available soon."
 msgstr ""
-"Jeden lub więcej obiektów jest aktualnie zaszyfrowane, w związku z czym "
-"zachodzi potrzeba podania hasła głównego. Aby to wykonać, proszę wpisać "
-"`e2ee decrypt`. Jeżeli hasło zostało już podane, zaszyfrowane obiekty są "
-"deszyfrowane w tle i będą dostępne wkrótce."
+"На даний момент один або кілька елементів зашифровані, і вам може "
+"знадобитися надати головний пароль. Для цього введіть `e2ee decrypt`. Якщо "
+"ви вже надали пароль, зашифровані елементи розшифровуються у фоновому режимі "
+"і незабаром будуть доступні."
 
 #: packages/app-cli/app/gui/NoteWidget.js:50
 msgid "You may also type `status` for more information."
-msgstr "Możesz też wpisać `status` po więcej informacji."
+msgstr "Ви також можете ввести `status` для отримання додаткової інформації."
 
 #: packages/app-cli/app/gui/FolderListWidget.js:31
 msgid "Search:"
-msgstr "Wyszukaj:"
+msgstr "Пошук:"
 
 #: packages/app-cli/app/command-search.js:13
 msgid "Searches for the given <pattern> in all the notes."
-msgstr "Wyszukuje wskazany <pattern> we wszystkich notatkach."
+msgstr "Шукає заданий <pattern> у всіх примітках."
 
 #: packages/app-cli/app/command-set.js:22
 #, javascript-format
@@ -3785,63 +3776,63 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
-"Ustawia własność <name> z wskazanej <note> do wskazanej [wartość]. Możliwe "
-"własności: \n"
+"Встановлює властивість <name> даного <note> до заданого [значення]. Можливі "
+"властивості:\n"
 "\n"
 "%s"
 
 #: packages/app-cli/app/cli-utils.js:109
 #, javascript-format
 msgid "Missing required argument: %s"
-msgstr "Brakujący wymagany argument: %s"
+msgstr "Відсутній обов’язковий аргумент: %s"
 
 #: packages/app-cli/app/cli-utils.js:144
 msgid "Your choice: "
-msgstr "Twój wybór: "
+msgstr "Ваш вибір: "
 
 #: packages/app-cli/app/cli-utils.js:151
 #, javascript-format
 msgid "Invalid answer: %s"
-msgstr "Nieprawidłowa odpowiedź: %s"
+msgstr "Хибна відповідь: %s"
 
 #: packages/app-cli/app/cli-utils.js:161 packages/app-cli/app/app.js:137
 msgid "Y"
-msgstr "T"
+msgstr "Так"
 
 #: packages/app-cli/app/cli-utils.js:161 packages/app-cli/app/app.js:137
 msgid "n"
-msgstr "n"
+msgstr "ні"
 
 #: packages/app-cli/app/base-command.js:15
 msgid "Cannot change encrypted item"
-msgstr "Nie można zmienić zaszyfrowanego obiektu"
+msgstr "Не вдається змінити зашифрований елемент"
 
 #: packages/app-cli/app/command-help.js:13
 msgid "Displays usage information."
-msgstr "Wyświetla informacje na temat funkcji."
+msgstr "Відображає інформацію про використання."
 
 #: packages/app-cli/app/command-help.js:36
 #, javascript-format
 msgid "For information on how to customise the shortcuts please visit %s"
 msgstr ""
-"Aby uzyskać informację o dopasowaniu skrótów klawiszowych, proszę odwiedzić "
-"%s"
+"Щоб отримати інформацію про те, як налаштувати скорочення клавіатури, "
+"відвідайте %s"
 
 #: packages/app-cli/app/command-help.js:44
 msgid "Shortcuts are not available in CLI mode."
-msgstr "Skróty nie dostępne w wierszu poleceń (tryb CLI)."
+msgstr "Скорочення клавіатури недоступні в режимі CLI."
 
 #: packages/app-cli/app/command-help.js:71
 msgid ""
 "Type `help [command]` for more information about a command; or type `help "
 "all` for the complete usage information."
 msgstr ""
-"Wpisz `help [komenda]` aby uzyskać więcej informacji o komendzie; lub wpisz "
-"`help all` aby uzyskać wszystkie  informacje na temat funkcji programu."
+"Введіть `help [command]` для отримання додаткової інформації про команду; "
+"або введіть `help all` для отримання повної інформації про використання."
 
 #: packages/app-cli/app/command-help.js:73
 msgid "The possible commands are:"
-msgstr "Dostępne komendy:"
+msgstr "Можливі команди:"
 
 #: packages/app-cli/app/command-help.js:77
 msgid ""
@@ -3849,41 +3840,40 @@ msgid ""
 "using the shortcuts `$n` or `$b` for, respectively, the currently selected "
 "note or notebook. `$c` can be used to refer to the currently selected item."
 msgstr ""
-"W każdej komendzie do notatki lub notatnika można odnieść się poprzez tytuł "
-"lub identyfikator (ID), lub używając skrótów `$n` lub `$b`, odpowiednio, dla "
-"obecnie wybranej notatki lub notatnika. `$c` może zostać użyty jako odnośnik "
-"do obecnie wybranego obiektu."
+"У будь-якій команді, нотатці або блокноті можна посилатись за назвою чи "
+"ідентифікатором або за допомогою комбінацій клавіш `$n` або`$b` для "
+"відповідно обраної в даний час нотатки чи блокнота. `$c` може "
+"використовуватися для посилання на поточно вибраний елемент."
 
 #: packages/app-cli/app/command-help.js:79
 msgid "To move from one pane to another, press Tab or Shift+Tab."
-msgstr "Aby przenieść z jednej zakładki do innej, naciśnij Tab lub Shift+Tab."
+msgstr "Щоб перейти з однієї панелі на іншу, натисніть Tab або Shift+Tab."
 
 #: packages/app-cli/app/command-help.js:80
 msgid ""
 "Use the arrows and page up/down to scroll the lists and text areas "
 "(including this console)."
 msgstr ""
-"Użyj klawiszy kierunkowych i klawiszy page up/down aby przesunąć listę i "
-"obszary tekstowe (włącznie z konsolą)."
+"За допомогою стрілок та page up/down прокручуйте списки та текстові області "
+"(включаючи цю консоль)."
 
 #: packages/app-cli/app/command-help.js:81
 msgid "To maximise/minimise the console, press \"tc\"."
-msgstr "Aby zmaksymalizować/zminimalizować konsolę, naciśnij \"tc\"."
+msgstr "Щоб розгорнути / згорнути консоль, натисніть “tc”."
 
 #: packages/app-cli/app/command-help.js:82
 msgid "To enter command line mode, press \":\""
-msgstr "Aby wejść do wiersza poleceń, naciśnij \":\""
+msgstr "Щоб увійти в режим командного рядка, натисніть “:”"
 
 #: packages/app-cli/app/command-help.js:83
 msgid "To exit command line mode, press ESCAPE"
-msgstr "Aby wyjść z wiersza poleceń, naciśnij ESCAPE"
+msgstr "Щоб вийти з режиму командного рядка, натисніть ESCAPE"
 
 #: packages/app-cli/app/command-help.js:84
 msgid ""
 "For the list of keyboard shortcuts and config options, type `help keymap`"
 msgstr ""
-"Aby zobaczyć listę ze skrótami klawiaturowymi i opcjami konfiguracji, wpisz "
-"`help keymap`"
+"Для списку комбінацій клавіш та параметрів конфігурації введіть `help keymap`"
 
 #: packages/app-cli/app/command-todo.js:14
 msgid ""
@@ -3892,63 +3882,61 @@ msgid ""
 "target is a regular note it will be converted to a to-do). Use \"clear\" to "
 "convert the to-do back to a regular note."
 msgstr ""
-"<todo-command> może zarówno być \"toggle\" lub \"clear\". Użyj \"toggle\" "
-"aby przełączyć wskazane zadanie pomiędzy stanem ukończonym a nieukończonym "
-"(Jeżeli celem jest regularna notatka, zostanie ona przekonwertowana na "
-"zadanie. Użyj \"clear\" aby przekonwertować zadanie z powrotem do regularnej "
-"notatki."
+"<todo-command> може бути “toggle” або “clear”. Використовуйте “toggle”, щоб "
+"переключити дане завдання між завершеним та незавершеним станом (якщо ціль - "
+"звичайна нотатка, вона буде перетворена на завдання). Використовуйте "
+"“clear”, щоб перетворити завдання назад на звичайну нотатку."
 
 #: packages/app-cli/app/command-exit.js:11
 msgid "Exits the application."
-msgstr "Wychodzi z aplikacji."
+msgstr "Вийти із програми."
 
 #: packages/app-cli/app/app.js:62
 #, javascript-format
 msgid "More than one item match \"%s\". Please narrow down your query."
 msgstr ""
-"Więcej niż jeden wynik spełnia zapytanie \"%s\". Proszę zawęzić wyszukiwanie."
+"Більше одного елемента відповідає “%s”. Будь ласка, звузьте свій запит."
 
 #: packages/app-cli/app/app.js:92
 msgid "No notebook selected."
-msgstr "Nie wybrano notatnika."
+msgstr "Не вибрано жодного блокнота."
 
 #: packages/app-cli/app/app.js:98
 msgid "No notebook has been specified."
-msgstr "Notatnik nie został określony."
+msgstr "Жоден блокнот не вказано."
 
 #: packages/app-cli/app/app.js:137
 msgid "N"
-msgstr "N"
+msgstr "Ні"
 
 #: packages/app-cli/app/app.js:137
 msgid "y"
-msgstr "t"
+msgstr "так"
 
 #: packages/app-cli/app/app.js:170
 msgid "Cancelling background synchronisation... Please wait."
-msgstr "Anulowanie synchronizacji w tle... Proszę czekać."
+msgstr "Скасування фонової синхронізації … Зачекайте."
 
 #: packages/app-cli/app/app.js:255
 #, javascript-format
 msgid "No such command: %s"
-msgstr "Nie znaleziono komedy: %s"
+msgstr "Немає такої команди: %s"
 
 #: packages/app-cli/app/app.js:303
 #, javascript-format
 msgid "The command \"%s\" is only available in GUI mode"
-msgstr ""
-"Komenda \"%s\" jest dostępna tylko i wyłącznie w trybie graficznym (GUI)"
+msgstr "Команда “%s” доступна лише в режимі графічного інтерфейсу"
 
 #: packages/app-cli/app/command-status.js:13
 msgid "Displays summary about the notes and notebooks."
-msgstr "Wyświetla podsumowanie o notatkach i notatnikach."
+msgstr "Відображає зведення про нотатки та блокноти."
 
 #: packages/app-cli/app/command-status.js:44
 msgid ""
 "To retry decryption of these items. Run `e2ee decrypt --retry-failed-items`"
 msgstr ""
-"Żeby spróbować ponownie odszyfrować te obiekty, uruchom `e2ee decrypt --"
-"retry-failed-items`"
+"Повторити спробу дешифрування цих елементів. Запустіть `e2ee decrypt —retry-"
+"failed-items`"
 
 #: packages/app-cli/app/command-tag.js:14
 msgid ""
@@ -3957,289 +3945,22 @@ msgid ""
 "to list tags associated with [note]. The command `tag list` can be used to "
 "list all the tags (use -l for long option)."
 msgstr ""
-"<tag-command> może być \"add\", \"remove\" lub \"list\" aby przypisać lub "
-"usunąć [tag] z [note], wyświetlić listę notatek połączonych z [tag], lub "
-"wyświetlić znaczniki powiązane z [note]. Komenda `tag list` może zostać "
-"użyta do wyświetlenia wszystkich znaczników (użyj -l dla długiego wypisania)."
+"<tag-command> може бути “add”, “remove”, “list” або “notetags”, щоб "
+"призначити або видалити [тег] з [нотатки], перелічити нотатки, пов’язані з "
+"[тегом], або перелічити теги, пов’язані з [нотаткою]. Команда `tag list` "
+"може використовуватися для переліку всіх тегів (використовуйте -l для довгої "
+"опції)."
 
 #: packages/app-cli/app/command-tag.js:90
 #, javascript-format
 msgid "Invalid command: \"%s\""
-msgstr "Nieprawidłowa komenda: \"%s\""
+msgstr "Хибна команда: “%s”"
 
 #: packages/app-cli/app/command-done.js:14
 msgid "Marks a to-do as done."
-msgstr "Oznacz zadanie jako wykonane."
+msgstr "Позначити завдання як виконане."
 
 #: packages/app-cli/app/command-done.js:21
 #, javascript-format
 msgid "Note is not a to-do: \"%s\""
-msgstr "Notatka nie jest zadaniem: \"%s\""
-
-#~ msgid "Unknown"
-#~ msgstr "Nieznany"
-
-#~ msgid "Checking..."
-#~ msgstr "Sprawdzanie..."
-
-#~ msgid ""
-#~ "The Joplin Nextcloud App is either not installed or misconfigured. Please "
-#~ "see the full error message below:"
-#~ msgstr ""
-#~ "Joplin Nextcloud App jest niezainstalowana albo źle skonfigurowana. "
-#~ "Zobacz pełny opis błędu poniżej:"
-
-#~ msgid "Show Log"
-#~ msgstr "Pokaż dziennik"
-
-#~ msgid "Joplin Nextcloud App status:"
-#~ msgstr "Status Joplin Nextcloud App:"
-
-#~ msgid "Check Status"
-#~ msgstr "Sprawdź status"
-
-#~ msgid "Help"
-#~ msgstr "Pomoc"
-
-#~ msgid "OneDrive Dev (For testing only)"
-#~ msgstr "Deweloperski OneDrive (jedynie w celu testów)"
-
-#~ msgid ""
-#~ "Type a note title or part of its content to jump to it. Or type # "
-#~ "followed by a tag name, or @ followed by a notebook name."
-#~ msgstr ""
-#~ "Wpisz tytuł notatki lub jej fragment, aby do niej przejść. Lub wpisz # i "
-#~ "następnie nazwę tagu, lub @ i następnie nazwę notatnika."
-
-#~ msgid "Name"
-#~ msgstr "Nazwa"
-
-#~ msgid "Icon"
-#~ msgstr "Ikona"
-
-#~ msgid "Notebook properties"
-#~ msgstr "Właściwości notatnika"
-
-#, javascript-format
-#~ msgid "This file could not be opened: %s"
-#~ msgstr "Plik nie może zostać otwarty: %s"
-
-#~ msgid "emphasized text"
-#~ msgstr "podkreślenie"
-
-#~ msgid "Click to stop external editing"
-#~ msgstr "Naciśnij aby skończyć edytowanie w programie zewnętrznym"
-
-#~ msgid "Content Properties"
-#~ msgstr "Właściwości zawartości"
-
-#~ msgid "Please create a notebook first."
-#~ msgstr "Na początku utwórz notatnik."
-
-#~ msgid "Please create a notebook first"
-#~ msgstr "Na początku proszę utworzyć notatnik"
-
-#~ msgid "Usage"
-#~ msgstr "Przykłady"
-
-#~ msgid "Move to notebook..."
-#~ msgstr "Przenieś do notatnika..."
-
-#, javascript-format
-#~ msgid "Move %d notes to notebook \"%s\"?"
-#~ msgstr "Przenieść %d notatek do notatnika \"%s\"?"
-
-#~ msgid "Press to set the decryption password."
-#~ msgstr "Naciśnij, aby ustawić hasło szyfrowania."
-
-#~ msgid "Some items cannot be synchronised. Press for more info."
-#~ msgstr "Niektóre przedmioty nie mogą zostać zsynchronizowane."
-
-#~ msgid "Show all"
-#~ msgstr "Pokaż wszystko"
-
-#~ msgid "Errors only"
-#~ msgstr "Tylko błędy"
-
-#, javascript-format
-#~ msgid "Database v%s"
-#~ msgstr "Baza danych v%s"
-
-#, javascript-format
-#~ msgid "FTS enabled: %d"
-#~ msgstr "FTS aktywowano: %d"
-
-#~ msgid "Exit"
-#~ msgstr "Wyjdź"
-
-#~ msgid "Select date"
-#~ msgstr "Wybierz datę"
-
-#~ msgid "Confirm"
-#~ msgstr "Potwierdź"
-
-#~ msgid "Attach any file"
-#~ msgstr "Załącz plik"
-
-#~ msgid "An unexpected error occured while importing the keymap!"
-#~ msgstr "Wystąpił nieznany błąd podczas importu mapy klawiszy!"
-
-#~ msgid "Unknown log level: %s"
-#~ msgstr "Nieznany poziom dziennika: %s"
-
-#~ msgid "Unknown level ID: %s"
-#~ msgstr "Nieznany poziom ID: %s"
-
-#~ msgid "Synchronize"
-#~ msgstr "Synchronizuj"
-
-#~ msgid "Error loading the keymap from file: %s"
-#~ msgstr "Błąd podczas ładowania mapy klawiszy z pliku: %s"
-
-#~ msgid "Error saving the keymap to file: %s"
-#~ msgstr "Błąd podczas zapisu mapy klawiszy do pliku: %s"
-
-#~ msgid "Keymap item %s is invalid because %s is not a valid command."
-#~ msgstr ""
-#~ "Element skrótu klawiszowego %s jest niepoprawny ponieważ %s nie jest "
-#~ "prawidłową komendą."
-
-#~ msgid "Keymap item %s is missing the required \"accelerator\" property."
-#~ msgstr ""
-#~ "Element skrótu klawiszowego %s nie zawiera wymaganego pola: \"accelerator"
-#~ "\"."
-
-#~ msgid "Keymap item %s is invalid because %s is not a valid accelerator."
-#~ msgstr ""
-#~ "Element skrótu klawiszowego %s jest niepoprawny ponieważ %s nie jest "
-#~ "prawidłową kombinacją klawiszy."
-
-#~ msgid "Json Export Directory"
-#~ msgstr "Katalog eksportu JSON"
-
-#~ msgid ""
-#~ "This item is currently encrypted: %s \"%s\". Please wait for all items to "
-#~ "be decrypted and try again."
-#~ msgstr ""
-#~ "Obiekt jest aktualnie zaszyfrowany: %s \"%s\". Proszę czekać, aż "
-#~ "wszystkie obiekty zostaną deszyfrowane i spróbować ponownie."
-
-#~ msgid "Remove tag \"%s\" and its descendant tags from all notes?"
-#~ msgstr "Usunąć znacznik \"%s\" i jemu pokrewne ze wszystkich notatek?"
-
-#~ msgid ""
-#~ "Could not synchronise with OneDrive.\n"
-#~ "\n"
-#~ "This error often happens when using OneDrive for Business, which "
-#~ "unfortunately cannot be supported.\n"
-#~ "\n"
-#~ "Please consider using a regular OneDrive account."
-#~ msgstr ""
-#~ "Nie można zsynchronizować z OneDrive.\n"
-#~ "\n"
-#~ "Ten błąd często występuje podczas korzystania z OneDrive dla Biznesu, "
-#~ "który niestety nie może być wspierany.\n"
-#~ "\n"
-#~ "Rozważ korzystanie ze standardowego konta OneDrive."
-
-#~ msgid "Use CodeMirror as the code editor (WARNING: BETA)."
-#~ msgstr "Użyj CodeMirror jako edytora kodu (UWAGA: BETA)"
-
-#~ msgid "Cannot move tag to this location."
-#~ msgstr "Nie można przenieść tagu do tej lokacji."
-
-#~ msgid "Tag name cannot start or end with a `/`."
-#~ msgstr "Nazwa tagu nie może rozpoczynać ani kończyć się na `/`."
-
-#~ msgid "Tag name cannot contain `//`."
-#~ msgstr "Nazwa tagu nie może zawierać `//`."
-
-#~ msgid "Add or remove tags"
-#~ msgstr "Dodaj lub usuń znaczniki"
-
-#~ msgid "Link"
-#~ msgstr "Odnośnik"
-
-#~ msgid "Front"
-#~ msgstr "Front"
-
-#, fuzzy
-#~ msgid "Content properties"
-#~ msgstr "Właściwości notatki"
-
-#~ msgid "Split"
-#~ msgstr "Podziel"
-
-#, fuzzy
-#~ msgid "Resources"
-#~ msgstr "Zasoby: %d."
-
-#, fuzzy
-#~ msgid "marked text"
-#~ msgstr "podkreślenie"
-
-#~ msgid "Global zoom percentage"
-#~ msgstr "Powiększenie globalne w procentach"
-
-#~ msgid "Synchronisation is already in progress. State: %s"
-#~ msgstr "Synchronizacja w toku. Stan: %s"
-
-#, fuzzy
-#~ msgid "Confirm master password:"
-#~ msgstr "Wprowadź hasło główne:"
-
-#, fuzzy
-#~ msgid "Confirm password"
-#~ msgstr "Wprowadź hasło główne:"
-
-#, fuzzy
-#~ msgid "Missing required argument: note"
-#~ msgstr "Brakujący wymagany argument: %s"
-
-#~ msgid "Synchronisation status"
-#~ msgstr "Status synchronizacji"
-
-#~ msgid "General Options"
-#~ msgstr "Opcje główne"
-
-#~ msgid "Encryption options"
-#~ msgstr "Opcje szyfrowania"
-
-#~ msgid "Encryption Options"
-#~ msgstr "Opcje szyfrowania"
-
-#~ msgid "Clipper Options"
-#~ msgstr "Opcje funkcji Clipper"
-
-#, fuzzy
-#~ msgid "Permission to write to external storage"
-#~ msgstr "Uprawnienie do użytkowania kamery"
-
-#~ msgid "Cancel synchronisation"
-#~ msgstr "Anuluj synchronizację"
-
-#~ msgid "Hide metadata"
-#~ msgstr "Ukryj metadane"
-
-#~ msgid "Show metadata"
-#~ msgstr "Pokaż metadane"
-
-#~ msgid "Delete notebook"
-#~ msgstr "Usuń notatnik"
-
-#~ msgid ""
-#~ "Click on the (+) button to create a new note or notebook. Click on the "
-#~ "side menu to access your existing notebooks."
-#~ msgstr ""
-#~ "Naciśnij przycisk (+) aby utworzyć nową notatkę lub notatnik. Naciśnij "
-#~ "menu boczne, aby mieć dostęp do istniejących notatników."
-
-#~ msgid ""
-#~ "You currently have no notebook. Create one by clicking on (+) button."
-#~ msgstr "Brak notatników. Utwórz nowy naciskając przycisk (+)."
-
-#~ msgid "Welcome"
-#~ msgstr "Witaj"
-
-#~ msgid "Separate each tag by a comma."
-#~ msgstr "Oddziel każdy znacznik przecinkiem."
+msgstr "Нотатка не є завданням: “%s”"
