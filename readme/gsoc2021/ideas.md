@@ -54,7 +54,7 @@ Potential Mentor(s): [CalebJohn](https://github.com/CalebJohn/), [roman_r_m](htt
 
 ## 4. Real-time collaboration on a note
 
-Create a web applications that allows two or more users to collaborate in real time on the same note. Use the Joplin Server API to save and load the note.
+Create a web application that allows two or more users to collaborate in real time on the same note. Use the Joplin Server API to save and load the note.
 
 Expected Outcome: A web application that allows users to collaborate on a note
 
@@ -66,7 +66,7 @@ Potential Mentor(s): [PackElend](https://discourse.joplinapp.org/u/PackElend), [
 
 ## 5. Paste special
 
-A plugin that will allow pasting special text into Joplin and have it converted to Markdown. For example, paste an Excel or CSV table, and have it converted to a Markdown table. Paste some HTML or PDF text and again have it converted to formatted Markdown. This could be one plugin, or a collection of plugins, one for eadch "paste special" operation.
+A plugin that will allow pasting special text into Joplin and have it converted to Markdown. For example, paste an Excel or CSV table, and have it converted to a Markdown table. Paste some HTML or PDF text and again have it converted to formatted Markdown. This could be one plugin, or a collection of plugins, one for each "paste special" operation.
 
 Expected Outcome: One or more plugins that allow pasting special text.
 
