@@ -44,6 +44,7 @@ import ResourceService from './services/ResourceService';
 import DecryptionWorker from './services/DecryptionWorker';
 const { loadKeychainServiceAndSettings } = require('./services/SettingUtils');
 import MigrationService from './services/MigrationService';
+import handleSyncStartupOperation from './services/synchronizer/utils/handleSyncStartupOperation';
 const { toSystemSlashes } = require('./path-utils');
 const { setAutoFreeze } = require('immer');
 
@@ -740,6 +741,7 @@ export default class BaseApplication {
 		BaseModel.setDb(this.database_);
 
 		await loadKeychainServiceAndSettings(KeychainServiceDriver);
+		await handleSyncStartupOperation();
 
 		appLogger.info(`Client ID: ${Setting.value('clientId')}`);
 
