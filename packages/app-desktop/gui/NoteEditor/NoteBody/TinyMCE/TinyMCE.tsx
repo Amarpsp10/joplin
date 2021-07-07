@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useState, useEffect, useCallback, useRef, forwardRef, useImperativeHandle } from 'react';
-import { ScrollOptions, ScrollOptionTypes, EditorCommand, NoteBodyEditorProps } from '../../utils/types';
-import { resourcesStatus, commandAttachFileToBody, handlePasteEvent, processPastedHtml } from '../../utils/resourceHandling';
+import { ScrollOptions, ScrollOptionTypes, EditorCommand, NoteBodyEditorProps, ResourceInfos } from '../../utils/types';
+import { resourcesStatus, commandAttachFileToBody, handlePasteEvent, processPastedHtml, attachedResources } from '../../utils/resourceHandling';
 import useScroll from './utils/useScroll';
 import styles_ from './styles';
 import CommandService from '@joplin/lib/services/CommandService';
@@ -20,6 +20,7 @@ const taboverride = require('taboverride');
 import { reg } from '@joplin/lib/registry';
 import BaseItem from '@joplin/lib/models/BaseItem';
 import setupToolbarButtons from './utils/setupToolbarButtons';
+import { plainTextToHtml } from '@joplin/lib/htmlUtils';
 const { themeStyle } = require('@joplin/lib/theme');
 const { clipboard } = require('electron');
 const supportedLocales = require('./supportedLocales');
@@ -64,6 +65,26 @@ function newBlockSource(language: string = '', content: string = ''): any {
 		node: null,
 		language: language,
 	};
+}
+
+// In TinyMCE 5.2, when setting the body to '<div id="rendered-md"></div>',
+// it would end up as '<div id="rendered-md"><br/></div>' once rendered
+// (an additional <br/> was inserted).
+//
+// This behaviour was "fixed" later on, possibly in 5.6, which has this change:
+//
+// - Fixed getContent with text format returning a new line when the editor is empty #TINY-6281
+//
+// The problem is that the list plugin was, unknown to me, relying on this <br/>
+// being present. Without it, trying to add a bullet point or checkbox on an
+// empty document, does nothing. The exact reason for this is unclear
+// so as a workaround we manually add this <br> for empty documents,
+// which fixes the issue.
+//
+// Perhaps upgrading the list plugin (which is a fork of TinyMCE own list plugin)
+// would help?
+function awfulBrHack(html: string): string {
+	return html === '<div id="rendered-md"></div>' ? '<div id="rendered-md"><br/></div>' : html;
 }
 
 function findEditableContainer(node: any): any {
@@ -127,6 +148,12 @@ const joplinCommandToTinyMceCommands: JoplinCommandToTinyMceCommands = {
 	'search': { name: 'SearchReplace' },
 };
 
+interface LastOnChangeEventInfo {
+	content: string;
+	resourceInfos: ResourceInfos;
+	contentKey: string;
+}
+
 let loadedCssFiles_: string[] = [];
 let loadedJsFiles_: string[] = [];
 let dispatchDidUpdateIID_: any = null;
@@ -147,7 +174,7 @@ const TinyMCE = (props: NoteBodyEditorProps, ref: any) => {
 	const markupToHtml = useRef(null);
 	markupToHtml.current = props.markupToHtml;
 
-	const lastOnChangeEventInfo = useRef<any>({
+	const lastOnChangeEventInfo = useRef<LastOnChangeEventInfo>({
 		content: null,
 		resourceInfos: null,
 		contentKey: null,
@@ -338,7 +365,7 @@ const TinyMCE = (props: NoteBodyEditorProps, ref: any) => {
 			element.id = script.id;
 
 			element.onload = () => {
-				resolve();
+				resolve(null);
 			};
 
 			document.getElementsByTagName('head')[0].appendChild(element);
@@ -413,6 +440,16 @@ const TinyMCE = (props: NoteBodyEditorProps, ref: any) => {
 			.tox input,
 			.tox .tox-dialog__footer {
 				background-color: ${theme.backgroundColor} !important;
+			}
+
+			/*
+			When creating dialogs, TinyMCE doesn't seem to offer a way to style the components or to assign classes to them.
+			We want the code dialog box text area to be monospace, and since we can't target this precisely, we apply the style
+			to all textareas of all dialogs. As I think only the code dialog displays a textarea that should be fine.
+			*/
+			
+			.tox .tox-dialog textarea {
+				font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 			}
 
 			.tox .tox-editor-header {
@@ -807,6 +844,25 @@ const TinyMCE = (props: NoteBodyEditorProps, ref: any) => {
 		}
 	};
 
+	function resourceInfosEqual(ri1: ResourceInfos, ri2: ResourceInfos): boolean {
+		if (ri1 && !ri2 || !ri1 && ri2) return false;
+		if (!ri1 && !ri2) return true;
+
+		const keys1 = Object.keys(ri1);
+		const keys2 = Object.keys(ri2);
+
+		if (keys1.length !== keys2.length) return false;
+
+		// The attachedResources() call that generates the ResourceInfos object
+		// uses cache for the resource objects, so we can use strict equality
+		// for comparison.
+		for (const k of keys1) {
+			if (ri1[k] !== ri2[k]) return false;
+		}
+
+		return true;
+	}
+
 	useEffect(() => {
 		if (!editor) return () => {};
 
@@ -818,11 +874,13 @@ const TinyMCE = (props: NoteBodyEditorProps, ref: any) => {
 		let cancelled = false;
 
 		const loadContent = async () => {
-			if (lastOnChangeEventInfo.current.content !== props.content || lastOnChangeEventInfo.current.resourceInfos !== props.resourceInfos) {
+			const resourcesEqual = resourceInfosEqual(lastOnChangeEventInfo.current.resourceInfos, props.resourceInfos);
+
+			if (lastOnChangeEventInfo.current.content !== props.content || !resourcesEqual) {
 				const result = await props.markupToHtml(props.contentMarkupLanguage, props.content, markupRenderOptions({ resourceInfos: props.resourceInfos }));
 				if (cancelled) return;
 
-				editor.setContent(result.html);
+				editor.setContent(awfulBrHack(result.html));
 
 				if (lastOnChangeEventInfo.current.contentKey !== props.contentKey) {
 					// Need to clear UndoManager to avoid this problem:
@@ -922,6 +980,7 @@ const TinyMCE = (props: NoteBodyEditorProps, ref: any) => {
 		const contentMd = await prop_htmlToMarkdownRef.current(info.contentMarkupLanguage, info.editor.getContent(), info.contentOriginalCss);
 
 		lastOnChangeEventInfo.current.content = contentMd;
+		lastOnChangeEventInfo.current.resourceInfos = await attachedResources(contentMd);
 
 		props_onChangeRef.current({
 			changeId: info.changeId,
@@ -1017,31 +1076,37 @@ const TinyMCE = (props: NoteBodyEditorProps, ref: any) => {
 		}
 
 		async function onPaste(event: any) {
+			// We do not use the default pasting behaviour because the input has
+			// to be processed in various ways.
+			event.preventDefault();
+
 			const resourceMds = await handlePasteEvent(event);
 			if (resourceMds.length) {
 				const result = await markupToHtml.current(MarkupToHtml.MARKUP_LANGUAGE_MARKDOWN, resourceMds.join('\n'), markupRenderOptions({ bodyOnly: true }));
 				editor.insertContent(result.html);
 			} else {
-				const pastedText = event.clipboardData.getData('text');
+				const pastedText = event.clipboardData.getData('text/plain');
 
 				if (BaseItem.isMarkdownTag(pastedText)) { // Paste a link to a note
-					event.preventDefault();
 					const result = await markupToHtml.current(MarkupToHtml.MARKUP_LANGUAGE_MARKDOWN, pastedText, markupRenderOptions({ bodyOnly: true }));
 					editor.insertContent(result.html);
 				} else { // Paste regular text
-					// HACK: TinyMCE doesn't add an undo step when pasting, for unclear reasons
-					// so we manually add it here. We also can't do it immediately it seems, or
-					// else nothing is added to the stack, so do it on the next frame.
-
-					const pastedHtml = clipboard.readHTML();
-					if (pastedHtml) {
-						event.preventDefault();
+					const pastedHtml = event.clipboardData.getData('text/html');
+					if (pastedHtml) { // Handles HTML
 						const modifiedHtml = await processPastedHtml(pastedHtml);
 						editor.insertContent(modifiedHtml);
+					} else { // Handles plain text
+						pasteAsPlainText(pastedText);
 					}
 
-					window.requestAnimationFrame(() => editor.undoManager.add());
-					onChangeHandler();
+					// This code before was necessary to get undo working after
+					// pasting but it seems it's no longer necessary, so
+					// removing it for now. We also couldn't do it immediately
+					// it seems, or else nothing is added to the stack, so do it
+					// on the next frame.
+					//
+					// window.requestAnimationFrame(() =>
+					// editor.undoManager.add()); onChangeHandler();
 				}
 			}
 		}
@@ -1060,20 +1125,25 @@ const TinyMCE = (props: NoteBodyEditorProps, ref: any) => {
 			onChangeHandler();
 		}
 
+		function pasteAsPlainText(text: string = null) {
+			const pastedText = text === null ? clipboard.readText() : text;
+			if (pastedText) {
+				editor.insertContent(plainTextToHtml(pastedText));
+			}
+		}
+
 		function onKeyDown(event: any) {
-			// It seems "paste as text" is handled automatically by
-			// on Windows so the code below so we need to run the below
-			// code only on macOS (and maybe Linux). If we were to run
-			// this on Windows we would have this double-paste issue:
+			// It seems "paste as text" is handled automatically on Windows and Linux,
+			// so we need to run the below code only on macOS. If we were to run this
+			// on Windows/Linux, we would have this double-paste issue:
 			// https://github.com/laurent22/joplin/issues/4243
 
 			// Handle "paste as text". Note that when pressing CtrlOrCmd+Shift+V it's going
 			// to trigger the "keydown" event but not the "paste" event, so it's ok to process
 			// it here and we don't need to do anything special in onPaste
-			if (!shim.isWindows()) {
+			if (!shim.isWindows() && !shim.isLinux()) {
 				if ((event.metaKey || event.ctrlKey) && event.shiftKey && event.code === 'KeyV') {
-					const pastedText = clipboard.readText();
-					if (pastedText) editor.insertContent(pastedText);
+					pasteAsPlainText();
 				}
 			}
 		}

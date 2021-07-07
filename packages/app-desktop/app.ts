@@ -13,6 +13,7 @@ import Logger, { TargetType } from '@joplin/lib/Logger';
 import Setting from '@joplin/lib/models/Setting';
 import actionApi from '@joplin/lib/services/rest/actionApi.desktop';
 import BaseApplication from '@joplin/lib/BaseApplication';
+import DebugService from '@joplin/lib/debug/DebugService';
 import { _, setLocale } from '@joplin/lib/locale';
 import SpellCheckerService from '@joplin/lib/services/spellChecker/SpellCheckerService';
 import SpellCheckerServiceDriverNative from './services/spellChecker/SpellCheckerServiceDriverNative';
@@ -34,7 +35,7 @@ import Tag from '@joplin/lib/models/Tag';
 import { reg } from '@joplin/lib/registry';
 const packageInfo = require('./packageInfo.js');
 import DecryptionWorker from '@joplin/lib/services/DecryptionWorker';
-const ClipperServer = require('@joplin/lib/ClipperServer');
+import ClipperServer from '@joplin/lib/ClipperServer';
 const { webFrame } = require('electron');
 const Menu = bridge().Menu;
 const PluginManager = require('@joplin/lib/services/PluginManager');
@@ -47,6 +48,7 @@ const CssUtils = require('@joplin/lib/CssUtils');
 const commands = [
 	require('./gui/MainScreen/commands/editAlarm'),
 	require('./gui/MainScreen/commands/exportPdf'),
+	require('./gui/MainScreen/commands/gotoAnything'),
 	require('./gui/MainScreen/commands/hideModalMessage'),
 	require('./gui/MainScreen/commands/moveToFolder'),
 	require('./gui/MainScreen/commands/newFolder'),
@@ -65,6 +67,8 @@ const commands = [
 	require('./gui/MainScreen/commands/showModalMessage'),
 	require('./gui/MainScreen/commands/showNoteContentProperties'),
 	require('./gui/MainScreen/commands/showNoteProperties'),
+	require('./gui/MainScreen/commands/showPrompt'),
+	require('./gui/MainScreen/commands/showShareFolderDialog'),
 	require('./gui/MainScreen/commands/showShareNoteDialog'),
 	require('./gui/MainScreen/commands/showSpellCheckerMenu'),
 	require('./gui/MainScreen/commands/toggleEditors'),
@@ -94,12 +98,15 @@ const globalCommands = [
 	require('./commands/stopExternalEditing'),
 	require('./commands/toggleExternalEditing'),
 	require('./commands/toggleSafeMode'),
+	require('./commands/restoreNoteRevision'),
 	require('@joplin/lib/commands/historyBackward'),
 	require('@joplin/lib/commands/historyForward'),
 	require('@joplin/lib/commands/synchronize'),
 ];
 
 import editorCommandDeclarations from './gui/NoteEditor/commands/editorCommandDeclarations';
+import ShareService from '@joplin/lib/services/share/ShareService';
+import checkForUpdates from './checkForUpdates';
 
 const pluginClasses = [
 	require('./plugins/GotoAnything').default,
@@ -162,10 +169,6 @@ class Application extends BaseApplication {
 
 	hasGui() {
 		return true;
-	}
-
-	checkForUpdateLoggerPath() {
-		return `${Setting.value('profileDir')}/log-autoupdater.txt`;
 	}
 
 	reducer(state: AppState = appDefaultState, action: any) {
@@ -708,7 +711,7 @@ class Application extends BaseApplication {
 		if (shim.isWindows() || shim.isMac()) {
 			const runAutoUpdateCheck = () => {
 				if (Setting.value('autoUpdateEnabled')) {
-					bridge().checkForUpdates(true, bridge().window(), this.checkForUpdateLoggerPath(), { includePreReleases: Setting.value('autoUpdate.includePreReleases') });
+					void checkForUpdates(true, bridge().window(), { includePreReleases: Setting.value('autoUpdate.includePreReleases') });
 				}
 			};
 
@@ -729,6 +732,8 @@ class Application extends BaseApplication {
 		} else {
 			bridge().window().show();
 		}
+
+		void ShareService.instance().maintenance();
 
 		ResourceService.runInBackground();
 
@@ -753,7 +758,7 @@ class Application extends BaseApplication {
 		ClipperServer.instance().setDispatch(this.store().dispatch);
 
 		if (Setting.value('clipperServer.autoStart')) {
-			ClipperServer.instance().start();
+			void ClipperServer.instance().start();
 		}
 
 		ExternalEditWatcher.instance().setLogger(reg.logger());
@@ -764,15 +769,16 @@ class Application extends BaseApplication {
 		RevisionService.instance().runInBackground();
 
 		// Make it available to the console window - useful to call revisionService.collectRevisions()
-		(window as any).joplin = () => {
-			return {
+		if (Setting.value('env') === 'dev') {
+			(window as any).joplin = {
 				revisionService: RevisionService.instance(),
 				migrationService: MigrationService.instance(),
 				decryptionWorker: DecryptionWorker.instance(),
 				commandService: CommandService.instance(),
 				bridge: bridge(),
+				debug: new DebugService(reg.db()),
 			};
-		};
+		}
 
 		bridge().addEventListener('nativeThemeUpdated', this.bridge_nativeThemeUpdated);
 

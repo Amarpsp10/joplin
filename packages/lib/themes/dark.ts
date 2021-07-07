@@ -12,6 +12,7 @@ const theme: Theme = {
 	color: '#dddddd',
 	colorError: 'red',
 	colorWarn: '#9A5B00',
+	colorWarnUrl: '#ffff82',
 	colorFaded: '#999999', // For less important text
 	colorBright: '#ffffff', // For important text
 	dividerColor: '#555555',
@@ -24,6 +25,7 @@ const theme: Theme = {
 	color2: '#ffffff',
 	selectedColor2: '#013F74',
 	colorError2: '#ff6c6c',
+	colorWarn2: '#ffcb81',
 
 	// Color scheme "3" is used for the config screens for example/
 	// It's dark text over gray background.

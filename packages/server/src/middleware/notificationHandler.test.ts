@@ -17,41 +17,41 @@ describe('notificationHandler', function() {
 	});
 
 	test('should check admin password', async function() {
-		const { user, session } = await createUserAndSession(1, true);
+		const { session } = await createUserAndSession(1, true);
 
-		const admin = await models().user({ userId: user.id }).save({
+		const admin = await models().user().save({
 			email: defaultAdminEmail,
 			password: defaultAdminPassword,
 			is_admin: 1,
 		});
 
 		{
-			const context = await koaAppContext({ sessionId: session.id });
-			await notificationHandler(context, koaNext);
+			const ctx = await koaAppContext({ sessionId: session.id });
+			await notificationHandler(ctx, koaNext);
 
 			const notifications: Notification[] = await models().notification().all();
 			expect(notifications.length).toBe(1);
 			expect(notifications[0].key).toBe('change_admin_password');
 			expect(notifications[0].read).toBe(0);
 
-			expect(context.notifications.length).toBe(1);
+			expect(ctx.joplin.notifications.length).toBe(1);
 		}
 
 		{
-			await models().user({ userId: admin.id }).save({
+			await models().user().save({
 				id: admin.id,
 				password: 'changed!',
 			});
 
-			const context = await koaAppContext({ sessionId: session.id });
-			await notificationHandler(context, koaNext);
+			const ctx = await koaAppContext({ sessionId: session.id });
+			await notificationHandler(ctx, koaNext);
 
 			const notifications: Notification[] = await models().notification().all();
 			expect(notifications.length).toBe(1);
 			expect(notifications[0].key).toBe('change_admin_password');
 			expect(notifications[0].read).toBe(1);
 
-			expect(context.notifications.length).toBe(0);
+			expect(ctx.joplin.notifications.length).toBe(0);
 		}
 	});
 

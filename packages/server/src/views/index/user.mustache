@@ -14,6 +14,48 @@
 			<input class="input" type="email" name="email" value="{{user.email}}"/>
 		</div>
 	</div>
+
+	{{#global.owner.is_admin}}
+		{{#showAccountTypes}}
+			<div class="field">
+				<label class="label">Account type</label>
+				<div class="select">
+					<select name="account_type">
+						{{#accountTypes}}
+							<option value="{{value}}" {{#selected}}selected{{/selected}}>{{label}}</option>
+						{{/accountTypes}}
+					</select>
+				</div>
+				<p class="help">If the below properties are left to their default (empty) values, the account-specific properties will apply.</p>
+			</div>
+		{{/showAccountTypes}}
+
+		<div class="field">
+			<label class="label">Max item size</label>
+			<div class="control">
+				<input class="input" type="number" placeholder="Default" name="max_item_size" value="{{user.max_item_size}}"/>
+			</div>
+		</div>
+
+		<div class="field">
+			<label class="label">Max total size</label>
+			<div class="control">
+				<input class="input" type="number" placeholder="Default" name="max_total_item_size" value="{{user.max_total_item_size}}"/>
+			</div>
+		</div>
+
+		<div class="field">
+			<label class="label">Can share notebook</label>
+			<div class="select">
+				<select name="can_share_folder">
+					{{#canShareFolderOptions}}
+						<option value="{{value}}" {{#selected}}selected{{/selected}}>{{label}}</option>
+					{{/canShareFolderOptions}}
+				</select>
+			</div>
+		</div>
+	{{/global.owner.is_admin}}
+
 	<div class="field">
 		<label class="label">Password</label>
 		<div class="control">
@@ -25,9 +67,15 @@
 		<div class="control">
 			<input class="input" type="password" name="password2" autocomplete="new-password"/>
 		</div>
-	</div>
+		{{#global.owner.is_admin}}
+		<p class="help">When creating a new user, if no password is specified the user will have to set it by following the link in their email.</p>
+		{{/global.owner.is_admin}}
+	</div>	
 	<div class="control">
 		<input type="submit" name="post_button" class="button is-primary" value="{{buttonTitle}}" />
+		{{#showResetPasswordButton}}
+			<input type="submit" name="send_reset_password_email" class="button is-warning" value="Send reset password email" />
+		{{/showResetPasswordButton}}
 		{{#showDeleteButton}}
 			<input type="submit" name="delete_button" class="button is-danger" value="Delete" />
 		{{/showDeleteButton}}
